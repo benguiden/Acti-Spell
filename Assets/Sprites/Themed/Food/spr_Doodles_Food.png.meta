@@ -1,0 +1,1058 @@
+fileFormatVersion: 2
+guid: ea2b70a1fc1c4fe488694f7568e34702
+timeCreated: 1507223573
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spr_Doodles_Food_0
+    21300002: spr_Doodles_Food_1
+    21300004: spr_Doodles_Food_2
+    21300006: spr_Doodles_Food_3
+    21300008: spr_Doodles_Food_4
+    21300010: spr_Doodles_Food_5
+    21300012: spr_Doodles_Food_6
+    21300014: spr_Doodles_Food_7
+    21300016: spr_Doodles_Food_8
+    21300018: spr_Doodles_Food_9
+    21300020: spr_Doodles_Food_10
+    21300022: spr_Doodles_Food_11
+    21300024: spr_Doodles_Food_12
+    21300026: spr_Doodles_Food_13
+    21300028: spr_Doodles_Food_14
+    21300030: spr_Doodles_Food_15
+    21300032: spr_Doodles_Food_16
+    21300034: spr_Doodles_Food_17
+    21300036: spr_Doodles_Food_18
+    21300038: spr_Doodles_Food_19
+    21300040: spr_Doodles_Food_20
+    21300042: spr_Doodles_Food_21
+    21300044: spr_Doodles_Food_22
+    21300046: spr_Doodles_Food_23
+    21300048: spr_Doodles_Food_24
+    21300050: spr_Doodles_Food_25
+    21300052: spr_Doodles_Food_26
+    21300054: spr_Doodles_Food_27
+    21300056: spr_Doodles_Food_28
+    21300058: spr_Doodles_Food_29
+    21300060: spr_Doodles_Food_30
+    21300062: spr_Doodles_Food_31
+    21300064: spr_Doodles_Food_32
+    21300066: spr_Doodles_Food_33
+    21300068: spr_Doodles_Food_34
+    21300070: spr_Doodles_Food_35
+    21300072: spr_Doodles_Food_36
+    21300074: spr_Doodles_Food_37
+    21300076: spr_Doodles_Food_38
+    21300078: spr_Doodles_Food_39
+    21300080: spr_Doodles_Food_40
+    21300082: spr_Doodles_Food_41
+    21300084: spr_Doodles_Food_42
+    21300086: spr_Doodles_Food_43
+    21300088: spr_Doodles_Food_44
+    21300090: spr_Doodles_Food_45
+    21300092: spr_Doodles_Food_46
+    21300094: spr_Doodles_Food_47
+    21300096: spr_Doodles_Food_48
+    21300098: spr_Doodles_Food_49
+    21300100: spr_Doodles_Food_50
+    21300102: spr_Doodles_Food_51
+    21300104: spr_Doodles_Food_52
+    21300106: spr_Doodles_Food_53
+    21300108: spr_Doodles_Food_54
+    21300110: spr_Doodles_Food_55
+    21300112: spr_Doodles_Food_56
+    21300114: spr_Doodles_Food_57
+    21300116: spr_Doodles_Food_58
+    21300118: spr_Doodles_Food_59
+    21300120: spr_Doodles_Food_60
+    21300122: spr_Doodles_Food_61
+    21300124: spr_Doodles_Food_62
+    21300126: spr_Doodles_Food_63
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_Doodles_Food_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 936
+        width: 106
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 947
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 943
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_3
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 948
+        width: 110
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 956
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_5
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 942
+        width: 120
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_6
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 955
+        width: 109
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 927
+        width: 95
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_8
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 941
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_9
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 928
+        width: 95
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_10
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 936
+        width: 124
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_11
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 786
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_12
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 784
+        width: 117
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_13
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 772
+        width: 104
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_14
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 761
+        width: 93
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_15
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 786
+        width: 100
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_16
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 796
+        width: 81
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_17
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 800
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_18
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 759
+        width: 56
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_19
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 761
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_20
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 759
+        width: 93
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_21
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 785
+        width: 79
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 612
+        width: 52
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_23
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 587
+        width: 96
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_24
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 608
+        width: 58
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_25
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 587
+        width: 72
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_26
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 575
+        width: 108
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_27
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 584
+        width: 103
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_28
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 596
+        width: 112
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_29
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 587
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_30
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 596
+        width: 108
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_31
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 607
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_32
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 594
+        width: 118
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_33
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 407
+        width: 92
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_34
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 490
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_35
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 498
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_36
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 404
+        width: 92
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_37
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 406
+        width: 120
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 416
+        width: 100
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_39
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 404
+        width: 90
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_40
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 432
+        width: 107
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_41
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 447
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_42
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 483
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_43
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 485
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_44
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 428
+        width: 66
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_45
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 426
+        width: 116
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_46
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 436
+        width: 98
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_47
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 474
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_48
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 473
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_49
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 476
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_50
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 440
+        width: 81
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_51
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 466
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_52
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 467
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_53
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 417
+        width: 76
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_54
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 452
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_55
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 262
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_56
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 230
+        width: 56
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_57
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 230
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_58
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 228
+        width: 94
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_59
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 260
+        width: 81
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_60
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 228
+        width: 93
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_61
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 252
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_62
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 234
+        width: 76
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Food_63
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 222
+        width: 104
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
