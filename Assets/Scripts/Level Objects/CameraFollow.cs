@@ -19,6 +19,8 @@ public class CameraFollow: MonoBehaviour {
 
 	private float lowestY;
 
+	private float lastLowestTargetY;
+
 	void Start(){
 		targetY = this.transform.position.y;
 		if (target != null)
@@ -38,6 +40,8 @@ public class CameraFollow: MonoBehaviour {
 			else
 				newPos = Vector3.Lerp (this.transform.position, pos, Mathf.Pow (1f - smoothness, 1.5f));
 			if (newPos.y > transform.position.y) {
+				transform.position = newPos;
+			} else {
 				transform.position = newPos;
 			}
 
