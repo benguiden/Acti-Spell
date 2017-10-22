@@ -387,8 +387,11 @@ MonoBehaviour:
   scoreModifier: 0.5
   scoreText: {fileID: 1373717018}
   uiTransform: {fileID: 2078430475}
-  uiFullScore: 50
-  uiFullScoreOffset: 2
+  uiFullScoreOffset: 9.3
+  uiFullScore:
+  - 10
+  - 40
+  - 50
   wordMultipliers:
   - multiplier: 1
     correctWordCount: 1

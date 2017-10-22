@@ -20,11 +20,11 @@ public class Score : MonoBehaviour {
 	[Tooltip("The Tranform of the ui element that transforms in reference to the score.")]
 	public Transform uiTransform;
 
-	[Tooltip("The score at which the ui will be at it's highest position.")]
-	public float uiFullScore = 1f;
-
 	[Tooltip("The amount that the ui translates by on the Y-Axis at the full score.")]
 	public float uiFullScoreOffset;
+
+	[Tooltip("The score at which the ui will be at it's highest position.")]
+	public float[] uiFullScore;
 
 	[Tooltip("The different word multipliers with their word count amount.")]
 	public WordMultiplier[] wordMultipliers;
@@ -38,6 +38,7 @@ public class Score : MonoBehaviour {
 	private float uiOriginalYPos;
 	private int wordMultiplierIndex;
 	private int correctWordCount;
+	private int currentUiWrapIndex;
 	#endregion
 
 	[System.Serializable]
@@ -58,6 +59,7 @@ public class Score : MonoBehaviour {
 		uiOriginalYPos = uiTransform.localPosition.y;
 		wordMultiplierIndex = 0;
 		correctWordCount = 0;
+		currentUiWrapIndex = 0;
 
 		if (wordMultipliers.Length <= 0){
 			Debug.LogError("Error: No Word Multipliers set up in Score componenet.");
@@ -87,7 +89,17 @@ public class Score : MonoBehaviour {
 
 	private void SetUIPosition(){
 		Vector3 newPosition = uiTransform.localPosition;
-		newPosition.y = uiOriginalYPos + ((uiFullScoreOffset * ((float)score / uiFullScore)) % uiFullScoreOffset);
+
+		float wrappedScore = score;
+		for (int i = currentUiWrapIndex - 1; i >= 0; i--) {
+			wrappedScore -= uiFullScore [i];
+		}
+
+		if (wrappedScore >= uiFullScore [currentUiWrapIndex]) {
+			if (currentUiWrapIndex < uiFullScore.Length - 1)
+				currentUiWrapIndex++;
+		}
+		newPosition.y = uiOriginalYPos + ((uiFullScoreOffset * ((float)wrappedScore / uiFullScore [currentUiWrapIndex])) % uiFullScoreOffset);
 		uiTransform.localPosition = newPosition;
 	}
 

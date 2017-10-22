@@ -81,7 +81,6 @@ public class Platform : MonoBehaviour {
 	}
 
 	private IEnumerator StartBob(){
-		Debug.Log ("Bob");
 		float time = 0f;
 		Vector3 pos = this.transform.localPosition;
 		while (time < bobTime) {
