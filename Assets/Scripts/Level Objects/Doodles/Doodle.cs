@@ -47,6 +47,15 @@ public class Doodle : MonoBehaviour {
 		else
 			thisPos.y = Camera.main.transform.position.y + parent.spawnOffset - Random.Range (0f, 2f);
 		this.transform.position = thisPos;
+
+		//Set Graphic Position
+		float distance = this.transform.position.y - parent.reference.position.y;
+		Vector3 newPos = graphic.transform.position;
+		newPos.y = parent.reference.position.y + (distance / k);
+		newPos.x = 0f;
+		newPos.z = 0f;
+		graphic.transform.localPosition = newPos;
+
 	}
 
 	private void Update(){

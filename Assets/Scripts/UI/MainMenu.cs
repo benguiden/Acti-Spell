@@ -10,13 +10,13 @@ public class MainMenu : MonoBehaviour {
 	public GameObject backButton;
 	public GameObject quitButton;
 
-	AudioSource audio;
+	AudioSource audioSource;
 	public AudioClip EnterClick;
 	public AudioClip BackClick;
 	public AudioClip Mute;
 	// Use this for initialization
 	void Start () {
-		audio = gameObject.GetComponent<AudioSource> ();
+		audioSource = gameObject.GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -25,17 +25,17 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void startGame() {
-		audio.PlayOneShot (EnterClick);
+		audioSource.PlayOneShot (EnterClick);
 		SceneManager.LoadScene (0);
 	}
 
 	public void home() {
-		audio.PlayOneShot (BackClick);
+		audioSource.PlayOneShot (BackClick);
 		SceneManager.LoadScene (1);
 	}
 
 	public void credits() {
-		audio.PlayOneShot (EnterClick);
+		audioSource.PlayOneShot (EnterClick);
 			startButton.SetActive (false);
 			backButton.SetActive (true);
 			quitButton.SetActive (false);
@@ -43,7 +43,7 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void back() {
-		audio.PlayOneShot (BackClick);
+		audioSource.PlayOneShot (BackClick);
 			startButton.SetActive (true);
 			creditsButton.SetActive (true);
 			quitButton.SetActive (true);
