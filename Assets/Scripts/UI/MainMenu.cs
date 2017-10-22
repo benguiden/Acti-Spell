@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
@@ -26,12 +26,12 @@ public class MainMenu : MonoBehaviour {
 
 	public void startGame() {
 		audio.PlayOneShot (EnterClick);
-			EditorSceneManager.LoadScene (0);
+		SceneManager.LoadScene (0);
 	}
 
 	public void home() {
 		audio.PlayOneShot (BackClick);
-		EditorSceneManager.LoadScene (1);
+		SceneManager.LoadScene (1);
 	}
 
 	public void credits() {
