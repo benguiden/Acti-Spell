@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour {
 	#region private
 	private Vector2 movingBounds;
 	private bool grounded = false;
+	private bool groundedLast = false;
 
 	//Componenets
 	private SpriteRenderer childRen;
@@ -177,8 +178,10 @@ public class PlayerController : MonoBehaviour {
 				if (CheckCollision (platforms [i])) {
 					//Collision!
 					Vector3 pos = this.transform.position;
-					this.transform.position = new Vector3 (pos.x, platforms [i].BoundsYToPosition (1f) + (bounds.y / 2f) - boundsOffset.y, pos.z);
+					this.transform.position = new Vector3 (pos.x, platforms [i].BoundsYToPosition (1f)/* + (bounds.y / 2f) - boundsOffset.y*/, pos.z);
 					velocity.y = 0f;
+					if (groundedLast == false)
+						platforms [i].Bob ();
 					grounded = true;
 					anim.SetBool ("jumping", false);
 					jumpBoost = gravity * (jumpTime * 2);
@@ -187,6 +190,7 @@ public class PlayerController : MonoBehaviour {
 				Debug.LogWarning ("Attention: Trying to access destroyed platform.");
 			}
 		}
+		groundedLast = grounded;
 	}
 
 	private bool CheckCollision(Platform platform){

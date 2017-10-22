@@ -8,8 +8,19 @@ public class Platform : MonoBehaviour {
 
 	public Vector2 boundsOffset;
 
+	public AnimationCurve bobAmount;
+
+	public float bobTime;
+
 	[HideInInspector]
 	public int platformIndex;
+
+	//[HideInInspector]
+	//public bool isBobbing;
+
+	private float originalY;
+
+	private Coroutine bobCo;
 
 	private void Start(){
 		if (this.gameObject.tag == "Platform") {
@@ -18,7 +29,15 @@ public class Platform : MonoBehaviour {
 		} else {
 			Debug.LogWarning ("Warning: Instance of Platform with no 'Platform' tag.");
 		}
+		originalY = this.transform.localPosition.y;
+		//isBobbing = false;
 	}
+
+	/*private void Update(){
+		if (isBobbing) {
+			if (this.transform.localPosition.y > )
+		}
+	}*/
 
 	private void OnDestroy(){
 		if (LevelController.main.GetPlatform (platformIndex) != this) {
@@ -52,6 +71,28 @@ public class Platform : MonoBehaviour {
 	public float BoundsYToPosition(float y){
 		y = Mathf.Clamp01 (y);
 		return this.transform.position.y - (bounds.y / 2f) + (bounds.y * y) + boundsOffset.y;
+	}
+
+	public void Bob(){
+		if (bobCo != null) {
+			StopCoroutine (StartBob ());
+		}
+		bobCo = StartCoroutine (StartBob ());
+	}
+
+	private IEnumerator StartBob(){
+		Debug.Log ("Bob");
+		float time = 0f;
+		Vector3 pos = this.transform.localPosition;
+		while (time < bobTime) {
+			pos.y = originalY + (bobAmount.Evaluate (time / bobTime));
+			this.transform.localPosition = pos;
+			time += Time.deltaTime;
+			yield return null;
+		}
+		pos = this.transform.localPosition;
+		pos.y = originalY;
+		this.transform.localPosition = pos;
 	}
 
 }

@@ -54,6 +54,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounds: {x: 2, y: 0.25}
   boundsOffset: {x: 0, y: 0}
+  bobAmount:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: -0.5168174
+      outSlope: -0.5168174
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.5
+      value: -0.2
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  bobTime: 0.2
   platformIndex: 0
 --- !u!212 &212402841244734998
 SpriteRenderer:
@@ -64,6 +89,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -79,6 +105,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
