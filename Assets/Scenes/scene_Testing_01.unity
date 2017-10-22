@@ -622,7 +622,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1410300284}
-  - {fileID: 1937779149}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -641,6 +640,49 @@ MonoBehaviour:
   smoothness: 0.85
   failOffset: -8
   playerController: {fileID: 1900554596}
+--- !u!1 &692129769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 692129770}
+  - component: {fileID: 692129771}
+  m_Layer: 0
+  m_Name: Doodle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692129770
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 692129769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1937779149}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &692129771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 692129769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f034812a5686d6a4aaafe16a3fea5480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specifyYPosition: 1
+  yPosition: 3
+  parent: {fileID: 0}
 --- !u!1 &699780168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,6 +2202,49 @@ Prefab:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 874f8b401b0ef284bad5a0812861418e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1578138725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1578138726}
+  - component: {fileID: 1578138727}
+  m_Layer: 0
+  m_Name: Doodle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1578138726
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1578138725}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1937779149}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1578138727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1578138725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f034812a5686d6a4aaafe16a3fea5480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specifyYPosition: 1
+  yPosition: 9
+  parent: {fileID: 0}
 --- !u!1 &1581423366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,6 +2492,7 @@ Transform:
   - {fileID: 1581423367}
   - {fileID: 184998744}
   - {fileID: 742980377}
+  - {fileID: 1937779149}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2438,12 +2524,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1937779148}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9, y: 0, z: 60}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.5, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 535506418}
-  m_RootOrder: 1
+  m_Children:
+  - {fileID: 692129770}
+  - {fileID: 1578138726}
+  m_Father: {fileID: 1721865573}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1937779150
 MonoBehaviour:
@@ -2525,15 +2613,15 @@ MonoBehaviour:
     - {fileID: 21300048, guid: ea2b70a1fc1c4fe488694f7568e34702, type: 3}
     - {fileID: 21300050, guid: ea2b70a1fc1c4fe488694f7568e34702, type: 3}
     - {fileID: 21300052, guid: ea2b70a1fc1c4fe488694f7568e34702, type: 3}
-  rotationAmount: 30
-  scale: {x: 0.85, y: 1.15}
+  rotationAmount: 35
+  scale: {x: 0.75, y: 1.05}
   offsetAmount: 0.52
   spawnWidth: 6
   reference: {fileID: 535506418}
-  prefab: {fileID: 1589446735709954, guid: c6b3429a1601edc4288a6733da7b8387, type: 2}
   spawnOffset: 12
-  despawnOffset: -8
-  levelSpacing: {x: 3, y: 4}
+  despawnOffset: -16
+  levelSpacing: 4.5
+  parallaxAmount: 1.9230769
 --- !u!1 &2078430474
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,47 +4,61 @@ using UnityEngine;
 
 public class Doodle : MonoBehaviour {
 
-	[HideInInspector]
-	public float originalYPosition;
+	public bool specifyYPosition = false;
+
+	public float yPosition;
 
 	[HideInInspector]
 	public Doodles parent;
 
-	private bool started = false;
+	private GameObject graphic;
+
+	private float k;
 
 	private void Start(){
+		//Set Parent
+		if (parent == null) {
+			parent = this.transform.parent.gameObject.GetComponent<Doodles> ();
+			if (parent == null)
+				Debug.LogError("Error: No parent for Doodle with Doodles componenet.");
+		}
+
+		//Make Graphic
+		graphic = new GameObject("Graphic");
+		graphic.transform.parent = this.transform;
+
 		//Random Sprite
-		this.GetComponent<SpriteRenderer> ().sprite = parent.GetSprite (true);
-		this.GetComponent<SpriteRenderer> ().enabled = false;
+		graphic.AddComponent<SpriteRenderer> ().sprite = parent.GetSprite (true);
 
 		//Random Scale
 		float newScale = Random.Range(parent.scale.x, parent.scale.y);
-		this.transform.localScale = new Vector3 (newScale, newScale, 0f);
+		graphic.transform.localScale = new Vector3 (newScale, newScale, 0f);
 
 		//Random Rotation
 		float newRot = Random.Range(-parent.rotationAmount, parent.rotationAmount);
-		this.transform.localEulerAngles = new Vector3 (0f, 0f, newRot);
+		graphic.transform.localEulerAngles = new Vector3 (0f, 0f, newRot);
 
 		//Set Position
-		float newPos = Random.Range(-parent.spawnWidth/2f, parent.spawnWidth/2f);
-		Vector3 localPos = this.transform.localPosition;
-		this.transform.localPosition = new Vector3 (newPos, parent.spawnOffset + Random.Range(0f, 3f), localPos.z);
-		originalYPosition = this.transform.position.y;
+		k = parent.parallaxAmount;
+		Vector3 thisPos = this.transform.parent.position;
+		thisPos.x = Random.Range (-parent.spawnWidth, parent.spawnWidth);
+		if (specifyYPosition)
+			thisPos.y = yPosition;
+		else
+			thisPos.y = Camera.main.transform.position.y + parent.spawnOffset - Random.Range (0f, 2f);
+		this.transform.position = thisPos;
 	}
 
 	private void Update(){
 		//Set Y Position
-		float newPos = (originalYPosition - parent.reference.position.y) * parent.offsetAmount;
-		Vector3 localPos = this.transform.localPosition;
-		this.transform.localPosition = new Vector3 (localPos.x, newPos, localPos.z);
-		if (this.transform.localPosition.y <= parent.despawnOffset) {
-			parent.SpawnDoodle();
+		float distance = this.transform.position.y - parent.reference.position.y;
+		Vector3 newPos = graphic.transform.position;
+		newPos.y = parent.reference.position.y + (distance / k);
+		graphic.transform.position = newPos;
+
+		if (distance <= parent.despawnOffset)
 			Destroy (this.gameObject);
-		}
-		if (started == false) {
-			this.GetComponent<SpriteRenderer> ().enabled = true;
-			started = true;
-		}
+
 	}
 
 }

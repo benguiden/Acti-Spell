@@ -21,10 +21,13 @@ public class Doodles : MonoBehaviour
 	[Header ("Spawning")]
 	public float spawnWidth;
 	public Transform reference;
-	public Object prefab;
 	public float spawnOffset;
 	public float despawnOffset;
-	public Vector2 levelSpacing;
+	public float levelSpacing;
+
+	[Space]
+	[Header ("Look")]
+	public float parallaxAmount;
 
 	[System.Serializable]
 	public struct Theme
@@ -34,13 +37,26 @@ public class Doodles : MonoBehaviour
 		public Sprite[] spritesColour;
 	}
 
+	private float highestY;
+
 	#endregion
 
 	#region Mono Methods
 
 	private void Start ()
 	{
+		reference = Camera.main.transform;
+		highestY = 0f;
 		SpawnDoodle();
+	}
+
+	private void Update(){
+		while (reference.position.y - highestY >= levelSpacing) {
+			highestY += levelSpacing;
+			SpawnDoodle ();
+			if (Random.Range(0f, 1f) < 0.25f)
+				SpawnDoodle ();
+		}
 	}
 
 	#endregion
@@ -64,9 +80,9 @@ public class Doodles : MonoBehaviour
 	}
 
 	public void SpawnDoodle(){
-		GameObject doodle = (GameObject)Instantiate (prefab, this.transform);
-		doodle.name = "Doodle";
-		doodle.GetComponent<Doodle> ().parent = this;
+		GameObject doodle = new GameObject ("Doodle");
+		doodle.transform.parent = this.transform;
+		doodle.AddComponent<Doodle> ().parent = this;
 	}
 
 }
