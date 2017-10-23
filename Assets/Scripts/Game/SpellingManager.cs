@@ -16,6 +16,7 @@ public class SpellingManager : MonoBehaviour {
 
 	private AudioSource audioSource;
 	public AudioClip correct;
+	public Object correctSpellingPrefab;
 	#endregion
 
 	public string currentSpelling;
@@ -71,13 +72,21 @@ public class SpellingManager : MonoBehaviour {
 	}
 
 	private string NewWord(){
-		displayText.text = "";
+		StartCoroutine (ScribbleWord (1f));
 		currentSpelling = "";
 		currentLetterIndex = 0;
 		currentWordIndex = Random.Range (0, currentWordGroup.Count);
 		currentWord = currentWordGroup [currentWordIndex];
 		currentWordLetters = currentWord.ToCharArray ();
 		return currentWord;
+	}
+
+	private IEnumerator ScribbleWord(float time){
+		while (time > 0f) {
+			time -= Time.deltaTime;
+			yield return null;
+		}
+		displayText.text = "";
 	}
 
 	private void SpawnNewWord(){
@@ -121,6 +130,8 @@ public class SpellingManager : MonoBehaviour {
 				//Right word
 				Debug.Log("Correct!");
 				audioSource.PlayOneShot (correct);
+				((GameObject)Instantiate (correctSpellingPrefab, Camera.main.transform)).transform.localPosition = new Vector3 (-2.9f, -5f, 10f);
+
 				NewWord ();
 				LevelController.main.RemoveBubbles ();
 				state = SpellingState.SpawningWord;

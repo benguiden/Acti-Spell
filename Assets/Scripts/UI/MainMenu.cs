@@ -26,12 +26,12 @@ public class MainMenu : MonoBehaviour {
 
 	public void startGame() {
 		audioSource.PlayOneShot (EnterClick);
-		SceneManager.LoadScene (0);
+		SceneManager.LoadScene (1);
 	}
 
 	public void home() {
 		audioSource.PlayOneShot (BackClick);
-		SceneManager.LoadScene (1);
+		SceneManager.LoadScene (0);
 	}
 
 	public void credits() {
