@@ -97,7 +97,7 @@ public class SpellingManager : MonoBehaviour {
 		Vector3 newPos = spawnedWord.transform.position;
 		newPos.y = wordSpawnReference.position.y + wordSpawnOffset;
 		spawnedWord.transform.position = newPos;
-		spawnedWord.GetComponent<TextMesh> ().text = NewWord ();
+		spawnedWord.GetComponent<Font3D> ().SetText (NewWord ());
 		state = SpellingState.DespawningWord;
 	}
 

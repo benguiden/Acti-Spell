@@ -150,8 +150,6 @@ public class PlayerController : MonoBehaviour {
 			pos.x = -wrapWidth;
 		else if (pos.x < -wrapWidth)
 			pos.x = wrapWidth;
-		if (pos.y < 0f)
-			pos.y = 0f;
 		this.transform.position = pos;
 	}
 

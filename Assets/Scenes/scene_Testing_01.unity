@@ -267,8 +267,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 44074196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 384, y: 216, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalPosition: {x: 315.5, y: 177.5, z: 0}
+  m_LocalScale: {x: 0.65729165, y: 0.65729165, z: 0.65729165}
   m_Children:
   - {fileID: 1207483587}
   - {fileID: 699780169}
@@ -348,12 +348,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 184998742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -1, z: -2}
-  m_LocalScale: {x: 1.186, y: 2.3, z: 1}
+  m_LocalPosition: {x: -1, y: -0.75, z: -2}
+  m_LocalScale: {x: 0.19766667, y: 2.3, z: 1}
   m_Children:
   - {fileID: 30427305}
-  m_Father: {fileID: 1721865573}
-  m_RootOrder: 2
+  m_Father: {fileID: 798280245}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &261518058
 GameObject:
@@ -543,6 +543,76 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03963592158e9264db6695e5654137d7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &511838836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 511838838}
+  - component: {fileID: 511838837}
+  m_Layer: 0
+  m_Name: 3DFontVariables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &511838837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511838836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717dd5f5aa64b9c489b6e4b8f4e0597a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setStatic: 1
+  _letterSprites:
+  - {fileID: 21300000, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300002, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300004, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300006, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300008, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300010, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300012, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300014, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300016, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300018, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300020, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300022, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300024, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300026, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300028, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300030, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300032, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300034, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300036, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300038, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300040, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300042, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300044, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300046, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300048, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 21300050, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  _letterScale: 1
+  _letterGap: 0.2
+--- !u!4 &511838838
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511838836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &535506413
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +786,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699780168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 305, y: 240, z: 0}
+  m_LocalPosition: {x: 305, y: 240.04755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1345046080}
@@ -862,7 +932,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1721865573}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &742980378
 AudioSource:
@@ -1325,7 +1395,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1207483586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 360, y: 240, z: 0}
+  m_LocalPosition: {x: 360, y: 240.04755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1106773518}
@@ -1447,7 +1517,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1215610511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 305, y: 240, z: 0}
+  m_LocalPosition: {x: 305, y: 240.04755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 871587207}
@@ -2137,7 +2207,7 @@ MonoBehaviour:
   spawnWidth: 12
   prefab: {fileID: 1953124423789576, guid: 874f8b401b0ef284bad5a0812861418e, type: 2}
   spawnOffset: 8
-  despawnOffset: -8
+  despawnOffset: -9
   xSpacing: 2
   ySpacing: 0.25
   level:
@@ -2540,7 +2610,6 @@ Transform:
   m_Children:
   - {fileID: 1528656327}
   - {fileID: 1581423367}
-  - {fileID: 184998744}
   - {fileID: 742980377}
   - {fileID: 1937779149}
   m_Father: {fileID: 0}
@@ -2581,7 +2650,7 @@ Transform:
   - {fileID: 692129770}
   - {fileID: 1578138726}
   m_Father: {fileID: 1721865573}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1937779150
 MonoBehaviour:
