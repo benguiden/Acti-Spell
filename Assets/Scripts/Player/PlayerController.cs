@@ -32,6 +32,9 @@ public class PlayerController : MonoBehaviour {
 
 	public Vector2 velocity;
 
+	public Object dust;
+	public bool landed = false;
+
 	//Audio
 	public AudioClip bubblePop;
 	public AudioClip stomp;
@@ -134,6 +137,7 @@ public class PlayerController : MonoBehaviour {
 			anim.SetBool ("jumping", true);
 			sound.pitch = (Random.Range (0.8f, 1.3f));
 			sound.PlayOneShot (jumpSound);
+			landed = true;
 		}
 
 		grounded = false;
@@ -184,6 +188,11 @@ public class PlayerController : MonoBehaviour {
 					if (groundedLast == false)
 						platforms [i].Bob ();
 					grounded = true;
+					if (landed) {
+						GameObject speck = ((GameObject)Instantiate (dust, platforms [i].transform, false));
+						Destroy (speck, 1f);
+						landed = false;
+					}
 					anim.SetBool ("jumping", false);
 					jumpBoost = gravity * (jumpTime * 2);
 				}
