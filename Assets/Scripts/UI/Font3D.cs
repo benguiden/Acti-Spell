@@ -10,11 +10,15 @@ public class Font3D : MonoBehaviour {
 	public Sprite[] _letterSprites;
 	public float _letterScale;
 	public float _letterGap;
+	public float _k;
+	public Transform _reference;
 
 	//Static
 	public static Sprite[] letterSprites;
 	public static float letterScale;
 	public static float letterGap;
+	public static float k;
+	public static Transform reference;
 
 	//Private
 	private string text;
@@ -28,8 +32,18 @@ public class Font3D : MonoBehaviour {
 				Debug.LogError ("Error: Letter Sprites array length is not 26.");
 			letterScale = _letterScale;
 			letterGap = _letterGap;
+			k = _k;
+			reference = _reference;
 			Destroy (this.gameObject);
 		}
+	}
+
+	private void Update(){
+		//Set Y Position
+		float distance = this.transform.parent.position.y - reference.position.y;
+		Vector3 newPos = this.transform.position;
+		newPos.y = reference.position.y + (distance / k);
+		this.transform.position = newPos;
 	}
 	#endregion
 

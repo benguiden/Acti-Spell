@@ -47,7 +47,7 @@ public class CameraFollow: MonoBehaviour {
 
 			//Check Fail
 			if (target.position.y < this.transform.position.y + failOffset)
-				UnityEngine.SceneManagement.SceneManager.LoadScene (0);
+				UnityEngine.SceneManagement.SceneManager.LoadScene (1);
 		}
 	}
 }

@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour {
 	private Vector2 movingBounds;
 	private bool grounded = false;
 	private bool groundedLast = false;
+	private bool started = false;
 
 	//Componenets
 	private SpriteRenderer childRen;
@@ -91,7 +92,7 @@ public class PlayerController : MonoBehaviour {
 			CheckCollisions ();
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			UnityEngine.SceneManagement.SceneManager.LoadScene (0);
+			UnityEngine.SceneManagement.SceneManager.LoadScene (1);
 		}
 
 		CheckBubbleCollisions ();
@@ -123,10 +124,12 @@ public class PlayerController : MonoBehaviour {
 			velocity.x = 0f;
 		}
 
-		velocity.y -= Mathf.Abs (gravity * Time.deltaTime);
+		if (started)
+			velocity.y -= Mathf.Abs (gravity * Time.deltaTime);
 
 		//Jump
 		if ((Input.GetKey (KeyCode.UpArrow)) && (grounded)) {
+			started = true;
 			velocity.y = Mathf.Abs (jumpSpd);
 			anim.SetBool ("jumping", true);
 			sound.pitch = (Random.Range (0.8f, 1.3f));

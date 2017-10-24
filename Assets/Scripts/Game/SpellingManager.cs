@@ -54,7 +54,7 @@ public class SpellingManager : MonoBehaviour {
 			break;
 
 		case SpellingState.DespawningWord:
-			if (spawnedWord.transform.position.y < wordSpawnReference.position.y - wordSpawnOffset) {
+			if (spawnedWord.transform.position.y < wordSpawnReference.position.y - (wordSpawnOffset * 2)) {
 				Destroy (spawnedWord);
 				state = SpellingState.Spelling;
 			}
@@ -97,7 +97,7 @@ public class SpellingManager : MonoBehaviour {
 		Vector3 newPos = spawnedWord.transform.position;
 		newPos.y = wordSpawnReference.position.y + wordSpawnOffset;
 		spawnedWord.transform.position = newPos;
-		spawnedWord.GetComponent<Font3D> ().SetText (NewWord ());
+		spawnedWord.GetComponentInChildren<Font3D> ().SetText (NewWord ());
 		state = SpellingState.DespawningWord;
 	}
 

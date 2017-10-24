@@ -600,6 +600,8 @@ MonoBehaviour:
   - {fileID: 21300050, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
   _letterScale: 1
   _letterGap: 0.2
+  _k: 1.923077
+  _reference: {fileID: 535506418}
 --- !u!4 &511838838
 Transform:
   m_ObjectHideFlags: 0
@@ -1824,9 +1826,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: {fileID: 1354967615}
-  wordPrefab: {fileID: 1075429758841120, guid: 3851c0e3aadbfb045969296c66ff3ab4, type: 2}
+  wordPrefab: {fileID: 1011281045819630, guid: 3851c0e3aadbfb045969296c66ff3ab4, type: 2}
   wordSpawnReference: {fileID: 535506418}
-  wordSpawnOffset: 8
+  wordSpawnOffset: 11
   wordInitalY: 0
   correct: {fileID: 8300000, guid: 4ca6950566761074f96925bd31549b2a, type: 3}
   correctSpellingPrefab: {fileID: 1996222110178138, guid: 5e356f18d672b480baaf5fe4a690293f,
@@ -1861,7 +1863,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1367906084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2461,7 +2463,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1656590749}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.4, y: 0, z: 60}
+  m_LocalPosition: {x: -2.4, y: 0, z: 80}
   m_LocalScale: {x: 13, y: 13, z: 1}
   m_Children: []
   m_Father: {fileID: 1410300284}
@@ -2644,7 +2646,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1937779148}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 10}
+  m_LocalPosition: {x: 0, y: 2.5, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 692129770}
