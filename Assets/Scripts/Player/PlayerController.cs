@@ -217,6 +217,9 @@ public class PlayerController : MonoBehaviour {
 				SpellingManager.main.AddLetter(bubbles[i].letter);
 				sound.pitch = (Random.Range (0.5f, 1.5f));
 				sound.PlayOneShot (bubblePop);
+				Animator bubAnim = bubbles[i].GetComponent<Animator> ();
+				bubAnim.SetTrigger ("collected");
+			//	LevelController.main.GetBubble (i).gameObject.GetComponent<BubbleGenerationNew> ().radius = 0f;
 				Destroy (LevelController.main.GetBubble(i).gameObject);
 			}
 		}

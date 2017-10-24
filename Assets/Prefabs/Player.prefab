@@ -152,21 +152,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounds: {x: 0.7, y: 0.1}
-  boundsOffset: {x: 0, y: 0.05}
+  boundsOffset: {x: 0, y: -0.05}
   bubbleBounds: {x: 0.6, y: 1.75}
   bubbleBoundsOffset: {x: 0, y: 0.875}
   horizontalSpeed: 7
-  jumpTime: 0.45
-  gravity: 49.38272
-  jumpHeight: 5
+  jumpTime: 0.3
+  gravity: 44.444443
+  jumpHeight: 2
   wrapWidth: 6
-  jumpSpd: 22.222223
+  jumpSpd: 13.333333
+  jumpBoost: 0
   velocity: {x: 0, y: 0}
   bubblePop: {fileID: 8300000, guid: a2386d0ff780d734fa7e152c50056dc7, type: 3}
   stomp: {fileID: 8300000, guid: ec8bd6ad422347f41a351028a94a85af, type: 3}
   flipSound: {fileID: 8300000, guid: a1ea601bc40f01049aaff0175cf56334, type: 3}
   jumpSound: {fileID: 8300000, guid: f71ceae7097d8494db58f18d771b3ed8, type: 3}
   turning: 0
+  bubbleAnim: {fileID: 0}
 --- !u!212 &212699063321640650
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -176,6 +178,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -191,6 +194,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
