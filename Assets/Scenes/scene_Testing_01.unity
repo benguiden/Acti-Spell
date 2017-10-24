@@ -267,8 +267,13 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 44074196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
+  m_LocalPosition: {x: 179.5, y: 101, z: 0}
+  m_LocalScale: {x: 0.37395832, y: 0.37395832, z: 0.37395832}
+=======
   m_LocalPosition: {x: 315.5, y: 177.5, z: 0}
   m_LocalScale: {x: 0.65729165, y: 0.65729165, z: 0.65729165}
+>>>>>>> f37814b2b31f8f3225744656f7cfe851227c9908
   m_Children:
   - {fileID: 1207483587}
   - {fileID: 699780169}
@@ -515,31 +520,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114425001362999230, guid: 03963592158e9264db6695e5654137d7,
-        type: 2}
-      propertyPath: jumpHeight
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114425001362999230, guid: 03963592158e9264db6695e5654137d7,
-        type: 2}
-      propertyPath: jumpTime
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114425001362999230, guid: 03963592158e9264db6695e5654137d7,
-        type: 2}
-      propertyPath: gravity
-      value: 44.444443
-      objectReference: {fileID: 0}
-    - target: {fileID: 114425001362999230, guid: 03963592158e9264db6695e5654137d7,
-        type: 2}
-      propertyPath: jumpSpd
-      value: 13.333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 114425001362999230, guid: 03963592158e9264db6695e5654137d7,
-        type: 2}
-      propertyPath: boundsOffset.y
-      value: -0.05
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03963592158e9264db6695e5654137d7, type: 2}
   m_IsPrefabParent: 0
@@ -628,6 +608,7 @@ GameObject:
   - component: {fileID: 535506415}
   - component: {fileID: 535506414}
   - component: {fileID: 535506419}
+  - component: {fileID: 535506420}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -720,6 +701,17 @@ MonoBehaviour:
   smoothness: 0.85
   failOffset: -8
   playerController: {fileID: 1900554596}
+--- !u!114 &535506420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 535506413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad0910a1ba9ee74fa1ab4c7365b4331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &692129769
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +780,11 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699780168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
+  m_LocalPosition: {x: 332.00003, y: 234.08359, z: 0}
+=======
   m_LocalPosition: {x: 305, y: 240.04755, z: 0}
+>>>>>>> f37814b2b31f8f3225744656f7cfe851227c9908
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1345046080}
@@ -797,7 +793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -175, y: -30}
+  m_AnchoredPosition: {x: -148, y: -36}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &699780170
@@ -839,9 +835,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 535506414}
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 535506420}
+        m_MethodName: mute
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1397,7 +1393,11 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1207483586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
+  m_LocalPosition: {x: 263.00003, y: 237.08359, z: 0}
+=======
   m_LocalPosition: {x: 360, y: 240.04755, z: 0}
+>>>>>>> f37814b2b31f8f3225744656f7cfe851227c9908
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1106773518}
@@ -1406,7 +1406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -120, y: -30}
+  m_AnchoredPosition: {x: -217, y: -33}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1207483588
@@ -1519,7 +1519,11 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1215610511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
+  m_LocalPosition: {x: 332.00003, y: 234.08359, z: 0}
+=======
   m_LocalPosition: {x: 305, y: 240.04755, z: 0}
+>>>>>>> f37814b2b31f8f3225744656f7cfe851227c9908
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 871587207}
@@ -1528,7 +1532,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -175, y: -30}
+  m_AnchoredPosition: {x: -148, y: -36}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1215610513
@@ -1570,9 +1574,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 535506414}
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 535506420}
+        m_MethodName: unmute
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
