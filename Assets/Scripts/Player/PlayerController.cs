@@ -222,15 +222,15 @@ public class PlayerController : MonoBehaviour {
 	private void CheckBubbleCollisions(){
 		Bubble[] bubbles = LevelController.main.GetBubbles ();
 		for (int i = bubbles.Length - 1; i >= 0; i--) {
-			if (CheckBubbleCollision (bubbles [i])) {
+			if (CheckBubbleCollision (bubbles [i]) && bubbles [i].enabled == true) {
 				//Collision!
 				SpellingManager.main.AddLetter(bubbles[i].letter);
 				sound.pitch = (Random.Range (0.5f, 1.5f));
 				sound.PlayOneShot (bubblePop);
 				Animator bubAnim = bubbles[i].GetComponent<Animator> ();
 				bubAnim.SetTrigger ("collected");
-			//	LevelController.main.GetBubble (i).gameObject.GetComponent<BubbleGenerationNew> ().radius = 0f;
-				Destroy (LevelController.main.GetBubble(i).gameObject);
+				LevelController.main.GetBubble (i).gameObject.GetComponent<Bubble> ().enabled = false;
+				Destroy (LevelController.main.GetBubble(i).gameObject, 0.5f);
 			}
 		}
 	}
