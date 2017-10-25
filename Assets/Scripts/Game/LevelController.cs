@@ -76,8 +76,11 @@ public class LevelController : MonoBehaviour {
 	}
 
 	public void RemoveBubbles(){
-		foreach (Bubble bubble in bubbles)
-			Destroy (bubble.gameObject);
+		foreach (Bubble bubble in bubbles) {
+			Animator bubAnim = bubble.GetComponent<Animator> ();
+			bubAnim.SetTrigger ("collected");
+			Destroy (bubble.gameObject, 0.5f);
+		}
 	}
 	#endregion
 
