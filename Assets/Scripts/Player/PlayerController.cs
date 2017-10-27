@@ -53,6 +53,8 @@ public class PlayerController : MonoBehaviour {
 	private bool grounded = false;
 	private bool groundedLast = false;
 	private bool started = false;
+	private Vector2 lastVelocity;
+	private float lastDeltaTime;
 
 	//Componenets
 	private SpriteRenderer childRen;
@@ -96,6 +98,9 @@ public class PlayerController : MonoBehaviour {
 			CheckCollisions ();
 
 		CheckBubbleCollisions ();
+
+		lastVelocity = velocity;
+		lastDeltaTime = Time.deltaTime;
 
 	}
 	#endregion
@@ -266,8 +271,8 @@ public class PlayerController : MonoBehaviour {
 
 	#region Bounds
 	private void SetBounds(){
-		accelerationBoundsSize = bounds + (new Vector2(Mathf.Abs(velocity.x), Mathf.Abs(velocity.y)) * Time.deltaTime);
-		accelerationBoundsOffset = boundsOffset + (velocity * Time.deltaTime / 2f);
+		accelerationBoundsSize = bounds + (new Vector2 (Mathf.Abs (velocity.x), Mathf.Abs (velocity.y)) * Time.deltaTime) + (new Vector2 (Mathf.Abs (lastVelocity.x), Mathf.Abs (lastVelocity.y)) * lastDeltaTime);
+		accelerationBoundsOffset = boundsOffset + (velocity * Time.deltaTime) - (lastVelocity * lastDeltaTime);
 	}
 
 	public Vector2 BoundsToPosition(Vector2 boundPos){

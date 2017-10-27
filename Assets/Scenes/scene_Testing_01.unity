@@ -267,8 +267,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 44074196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 290, y: 163, z: 0}
-  m_LocalScale: {x: 0.6037037, y: 0.6037037, z: 0.6037037}
+  m_LocalPosition: {x: 315.5, y: 177.5, z: 0}
+  m_LocalScale: {x: 0.65729165, y: 0.65729165, z: 0.65729165}
   m_Children:
   - {fileID: 1207483587}
   - {fileID: 699780169}
@@ -521,6 +521,16 @@ Prefab:
       value: 
       objectReference: {fileID: 1876504001917846, guid: a52763a75881e9e45bf4c0559f749003,
         type: 2}
+    - target: {fileID: 114425001362999230, guid: 03963592158e9264db6695e5654137d7,
+        type: 2}
+      propertyPath: boundsOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114425001362999230, guid: 03963592158e9264db6695e5654137d7,
+        type: 2}
+      propertyPath: bounds.y
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03963592158e9264db6695e5654137d7, type: 2}
   m_IsPrefabParent: 0
@@ -783,7 +793,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699780168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 332.36813, y: 234, z: 0}
+  m_LocalPosition: {x: 332, y: 234.04755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1345046080}
@@ -1370,7 +1380,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1207483586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 263.36813, y: 237, z: 0}
+  m_LocalPosition: {x: 263, y: 237.04755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1106773518}
@@ -1492,7 +1502,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1215610511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 332.36813, y: 234, z: 0}
+  m_LocalPosition: {x: 332, y: 234.04755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 871587207}
