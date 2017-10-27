@@ -48,7 +48,8 @@ public class PlayerController : MonoBehaviour {
 	#endregion
 
 	#region private
-	private Vector2 movingBounds;
+	private Vector2 accelerationBoundsSize;
+	private Vector2 accelerationBoundsOffset;
 	private bool grounded = false;
 	private bool groundedLast = false;
 	private bool started = false;
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour {
 		Gizmos.color = Color.magenta;
 		Gizmos.DrawWireCube (this.transform.position, new Vector3 (wrapWidth * 2f, 0.1f, 0.1f));
 		Gizmos.color = Color.green;
-		Gizmos.DrawWireCube (this.transform.position + (Vector3)boundsOffset, new Vector3 (bounds.x, bounds.y, 0.1f));
+		Gizmos.DrawWireCube (this.transform.position + (Vector3)accelerationBoundsOffset, new Vector3 (accelerationBoundsSize.x, accelerationBoundsSize.y, 0.1f));
 		Gizmos.color = Color.blue;
 		Gizmos.DrawWireCube (this.transform.position + (Vector3)bubbleBoundsOffset, new Vector3 (bubbleBounds.x, bubbleBounds.y, 0.1f));
 	}
@@ -93,10 +94,6 @@ public class PlayerController : MonoBehaviour {
 
 		if (velocity.y <= 0f)
 			CheckCollisions ();
-
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			UnityEngine.SceneManagement.SceneManager.LoadScene (1);
-		}
 
 		CheckBubbleCollisions ();
 
@@ -269,26 +266,26 @@ public class PlayerController : MonoBehaviour {
 
 	#region Bounds
 	private void SetBounds(){
-		Vector2 posVelocity = new Vector2 (Mathf.Abs (velocity.x), Mathf.Abs (velocity.y));
-		movingBounds = bounds + (posVelocity * Time.deltaTime);
+		accelerationBoundsSize = bounds + (new Vector2(Mathf.Abs(velocity.x), Mathf.Abs(velocity.y)) * Time.deltaTime);
+		accelerationBoundsOffset = boundsOffset + (velocity * Time.deltaTime / 2f);
 	}
 
 	public Vector2 BoundsToPosition(Vector2 boundPos){
 		boundPos.x = Mathf.Clamp01 (boundPos.x);
 		boundPos.y = Mathf.Clamp01 (boundPos.y);
-		float xPosition = this.transform.position.x - (movingBounds.x / 2f) + (movingBounds.x * boundPos.x) + boundsOffset.x;
-		float yPosition = this.transform.position.y - (movingBounds.y / 2f) + (movingBounds.y * boundPos.y) + boundsOffset.y;
+		float xPosition = this.transform.position.x - (accelerationBoundsSize.x / 2f) + (accelerationBoundsSize.x * boundPos.x) + accelerationBoundsOffset.x;
+		float yPosition = this.transform.position.y - (accelerationBoundsSize.y / 2f) + (accelerationBoundsSize.y * boundPos.y) + accelerationBoundsOffset.y;
 		return new Vector2 (xPosition, yPosition);
 	}
 
 	public float BoundsXToPosition(float x){
 		x = Mathf.Clamp01 (x);
-		return this.transform.position.x - (movingBounds.x / 2f) + (movingBounds.x * x) + boundsOffset.x;
+		return this.transform.position.x - (accelerationBoundsSize.x / 2f) + (accelerationBoundsSize.x * x) + accelerationBoundsOffset.x;
 	}
 
 	public float BoundsYToPosition(float y){
 		y = Mathf.Clamp01 (y);
-		return this.transform.position.y - (movingBounds.y / 2f) + (movingBounds.y * y) + boundsOffset.y;
+		return this.transform.position.y - (accelerationBoundsSize.y / 2f) + (accelerationBoundsSize.y * y) + accelerationBoundsOffset.y;
 	}
 
 	public Vector2 BubbleBoundsToPosition(Vector2 boundPos){
