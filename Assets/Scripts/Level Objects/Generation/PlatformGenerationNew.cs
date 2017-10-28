@@ -72,17 +72,26 @@ public class PlatformGenerationNew : MonoBehaviour {
 	private void GeneratePlatformLevel(){
 		//Platform
 		lastLevel = nextLevel;
-		int platforms = Random.Range ((int)Mathf.Round (level.amount.x), (int)Mathf.Round (level.amount.y));
+		int platforms = (int)Mathf.Round(Random.Range (level.amount.x, level.amount.y));
 		List<Vector2> newPlatformsPos = new List<Vector2> ();
-		bubbleGenScript.platformSpots = new float[platforms];
+		List<float> previousSpots = new List<float> (bubbleGenScript.platformSpots);
+		for (int i = 0; i < previousSpots.Count; i++) {
+			newPlatformsPos.Add (new Vector2 (previousSpots [i], -100f));
+		}
 		for (int i = 0; i < platforms; i++) {
 			Vector2 platformPosition = new Vector2 ();
 			platformPosition.x = Random.Range (-spawnWidth / 2f, spawnWidth / 2f);
 			platformPosition.y = lastLevel + Random.Range (-level.yRange, level.yRange);
+
 			SpawnPlatform (ref platformPosition, newPlatformsPos.ToArray ());
 			newPlatformsPos.Add (platformPosition);
-			bubbleGenScript.platformSpots [i] = platformPosition.x;
+			previousSpots.Add (platformPosition.x);
+			Debug.Log (platformPosition.x);
 		}
+		if (previousSpots.Count > 3) {
+			previousSpots.RemoveRange (0, previousSpots.Count - 3);
+		}
+		bubbleGenScript.platformSpots = previousSpots.ToArray ();
 		nextLevel += Random.Range (level.levelSpacing.x, level.levelSpacing.y);
 
 	}
@@ -94,9 +103,9 @@ public class PlatformGenerationNew : MonoBehaviour {
 			float disBetween = Mathf.Abs (spawnPosition.x - prePlatformPos [i].x);
 			if (disBetween < xSpacing) {
 				if (spawnPosition.x < prePlatformPos [i].x)
-					spawnPosition.x -= xSpacing - disBetween;
+					spawnPosition.x -= xSpacing - disBetween - Random.Range(0f, 0.5f);
 				else
-					spawnPosition.x += xSpacing - disBetween;
+					spawnPosition.x += xSpacing - disBetween + Random.Range(0f, 0.5f);
 			}
 		}
 		#endregion

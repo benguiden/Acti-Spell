@@ -82,7 +82,7 @@ public class BubbleGenerationNew : MonoBehaviour {
 
 		//Spawn New Bubbles
 		for (int i = 0; i < spawnAmmount; i++) {
-			
+			float yOffset = Random.Range (0.25f, 1f);
 			//Decide Spawn Position
 			float bubbleXPosition;
 			if (platformSpots.Length < 1) {
@@ -91,10 +91,11 @@ public class BubbleGenerationNew : MonoBehaviour {
 				int platform = Random.Range (0, platformSpots.Length);
 				bubbleXPosition = platformSpots [platform];
 				bubbleXPosition += Random.Range (-1f, 1f);
+				bubbleXPosition = Mathf.Clamp (bubbleXPosition, -(spawnWidth / 2f) + radius, (spawnWidth / 2f) - radius);
 			}
 
-			SpawnBubble (ref bubbleXPosition, bubblePositions.ToArray ());
-			bubblePositions.Add (new Vector2 (bubbleXPosition, lastLevelY + spawnOffset));
+			SpawnBubble (ref bubbleXPosition, lastLevelY + (spawnOffset / 2f) + yOffset, bubblePositions.ToArray ());
+			bubblePositions.Add (new Vector2 (bubbleXPosition, lastLevelY + yOffset + (spawnOffset / 2f)));
 		}
 
 		//Set Next Level
@@ -102,22 +103,22 @@ public class BubbleGenerationNew : MonoBehaviour {
 
 	}
 
-	private void SpawnBubble(ref float xPosition, Vector2[] bubblePositions){
+	private void SpawnBubble(ref float xPosition, float yPosition, Vector2[] bubblePositions){
 		GameObject bubble = (GameObject)Instantiate (prefab, this.transform);
 
 		//Spacing
 		for (int i = 0; i < bubblePositions.Length; i++) {
 			float disBetween = Mathf.Abs (xPosition - bubblePositions [i].x);
-			if (disBetween < (radius * 2f)) {
+			if (disBetween < (radius * 2.5f)) {
 				if (xPosition < bubblePositions [i].x)
-					xPosition -= (radius * 2f) + disBetween;
+					xPosition -= (radius * 2.5f) + disBetween;
 				else
-					xPosition += (radius * 2f) + disBetween;
+					xPosition += (radius * 2.5f) + disBetween;
 			}
 		}
 
 		//Set Position
-		bubble.transform.position = new Vector3(xPosition, lastLevelY + spawnOffset, zPosition);
+		bubble.transform.position = new Vector3(xPosition, yPosition, zPosition);
 	}
 
 	private void RemoveBubbles(){
