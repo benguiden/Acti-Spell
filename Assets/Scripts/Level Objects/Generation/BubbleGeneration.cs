@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-public class BubbleGenerationNew : MonoBehaviour {
+public class BubbleGeneration : MonoBehaviour {
 
 	#region Variables & Objects
 	#region Reference

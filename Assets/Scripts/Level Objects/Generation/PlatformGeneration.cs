@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformGenerationNew : MonoBehaviour {
+public class PlatformGeneration : MonoBehaviour {
 
 	public Transform reference;
 
@@ -28,7 +28,7 @@ public class PlatformGenerationNew : MonoBehaviour {
 	private float nextLevel;
 	#endregion
 
-	public BubbleGenerationNew bubbleGenScript;
+	public BubbleGeneration bubbleGenScript;
 
 	#region Mono Methods
 	#if UNITY_EDITOR

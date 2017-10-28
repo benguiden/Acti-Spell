@@ -2093,7 +2093,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1528656327}
-  - component: {fileID: 1528656328}
   - component: {fileID: 1528656329}
   m_Layer: 0
   m_Name: Platforms
@@ -2116,26 +2115,6 @@ Transform:
   m_Father: {fileID: 1721865573}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1528656328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1528656326}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c25c7e6036e52d4390c813c14772502, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats:
-    horizontalSegments: 3
-    verticalSpacingMin: 3.5
-    verticalSpacingMax: 4.5
-  prefab: {fileID: 1953124423789576, guid: 874f8b401b0ef284bad5a0812861418e, type: 2}
-  reference: {fileID: 535506418}
-  referenceYOffset: -8
-  despawnOffset: -8
-  spawnWidth: 6
 --- !u!114 &1528656329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2317,7 +2296,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1581423367}
-  - component: {fileID: 1581423368}
   - component: {fileID: 1581423369}
   m_Layer: 0
   m_Name: Bubbles
@@ -2339,25 +2317,6 @@ Transform:
   m_Father: {fileID: 1721865573}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1581423368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1581423366}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dab6f15f627e22d4981a5e2a3353bb84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 1380494394212732, guid: f635db2084783ad4097b5be687176cb2, type: 2}
-  maxBubblesPerLevel: 2
-  verticalSpacingMin: 3
-  verticalSpacingMax: 4
-  reference: {fileID: 535506418}
-  referenceYOffset: -8
-  despawnOffset: -8
-  spawnWidth: 6
 --- !u!114 &1581423369
 MonoBehaviour:
   m_ObjectHideFlags: 0
