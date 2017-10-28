@@ -56,7 +56,13 @@ public class Font3D : MonoBehaviour {
 		}
 
 		//Make Sprite Array out of String
-		char[] letters = newString.ToLower().ToCharArray();
+		List<char> lettersRaw = new List<char>(newString.ToLower().ToCharArray());
+		for (int i = lettersRaw.Count - 1; i >= 0; i--) {
+			if (((int)lettersRaw [i] < 97) || ((int)lettersRaw [i] > 124)) {
+				lettersRaw.RemoveAt (i);
+			}
+		}
+		char[] letters = lettersRaw.ToArray ();
 		int[] spriteIndexes = new int[letters.Length];
 		float canvasWidth = 0f;
 		for (int i = 0; i < letters.Length; i++) {

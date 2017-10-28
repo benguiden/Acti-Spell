@@ -30,6 +30,12 @@ public class Score : MonoBehaviour {
 	public WordMultiplier[] wordMultipliers;
 
 	public static Score main;
+
+	[HideInInspector]
+	public int level;
+
+	[HideInInspector]
+	public bool nextLevelReady;
 	#endregion
 
 	#region Private Variables
@@ -38,7 +44,6 @@ public class Score : MonoBehaviour {
 	private float uiOriginalYPos;
 	private int wordMultiplierIndex;
 	private int correctWordCount;
-	private int currentUiWrapIndex;
 	#endregion
 
 	[System.Serializable]
@@ -59,7 +64,7 @@ public class Score : MonoBehaviour {
 		uiOriginalYPos = uiTransform.localPosition.y;
 		wordMultiplierIndex = 0;
 		correctWordCount = 0;
-		currentUiWrapIndex = 0;
+		level = 0;
 
 		if (wordMultipliers.Length <= 0){
 			Debug.LogError("Error: No Word Multipliers set up in Score componenet.");
@@ -89,17 +94,18 @@ public class Score : MonoBehaviour {
 
 	private void SetUIPosition(){
 		Vector3 newPosition = uiTransform.localPosition;
-
-		float wrappedScore = score;
-		for (int i = currentUiWrapIndex - 1; i >= 0; i--) {
+		float wrappedScore = highestPoint;
+		for (int i = level - 1; i >= 0; i--) {
 			wrappedScore -= uiFullScore [i];
 		}
 
-		if (wrappedScore >= uiFullScore [currentUiWrapIndex]) {
-			if (currentUiWrapIndex < uiFullScore.Length - 1)
-				currentUiWrapIndex++;
+		if (wrappedScore >= uiFullScore [level]) {
+			if (level < uiFullScore.Length - 1) {
+				level++;
+				nextLevelReady = true;
+			}
 		}
-		newPosition.y = uiOriginalYPos + ((uiFullScoreOffset * ((float)wrappedScore / uiFullScore [currentUiWrapIndex])) % uiFullScoreOffset);
+		newPosition.y = uiOriginalYPos + ((uiFullScoreOffset * ((float)wrappedScore / uiFullScore [level])) % uiFullScoreOffset);
 		uiTransform.localPosition = newPosition;
 	}
 

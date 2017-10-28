@@ -22,8 +22,10 @@ public class SpellingManager : MonoBehaviour {
 	public string currentSpelling;
 	private int currentLetterIndex;
 
-	public string[] library;
+	public TextAsset libraryFile;
+	public string[,] library;
 	private List<string> currentWordGroup;
+	private int[] rowLength;
 
 	private string currentWord;
 	private int currentWordIndex;
@@ -35,6 +37,10 @@ public class SpellingManager : MonoBehaviour {
 	public enum SpellingState{Spelling,SpawningWord,DespawningWord}
 
 	#region Mono Methods
+	private void Awake(){
+		InitalizeLibrary ();
+	}
+
 	private void Start(){
 		audioSource = gameObject.GetComponent<AudioSource> ();
 		main = this;
@@ -67,8 +73,41 @@ public class SpellingManager : MonoBehaviour {
 	}
 	#endregion
 
+	private void InitalizeLibrary(){
+		//To long string
+		string textFromFile = libraryFile.text.Replace ("\n", "");
+
+		//To rows of strings
+		string[] rows = textFromFile.Split (';');
+		rowLength = new int[rows.Length];
+		int wordCount = 0;
+
+		for (int i = 0; i < rows.Length - 1; i++) {
+			string[] words = rows [i].Split (',');
+			if (words.Length > wordCount)
+				wordCount = words.Length;
+			rowLength [i] = words.Length;
+		}
+
+		//Cast To Library
+		library = new string[rows.Length - 1, wordCount];
+		for (int r = 0; r < rows.Length - 1; r++) {
+			string[] words = rows [r].Split (',');
+			for (int w = 0; w < wordCount; w++) {
+				if (w < rowLength [r])
+					library [r, w] = words [w].ToUpper ();
+				else
+					library [r, w] = "";
+			}
+		}
+	}
+
 	private void NewWordGroup(){
-		currentWordGroup = new List<string> (library);
+		int level = Score.main.level;
+		currentWordGroup = new List<string> ();
+		for (int i = 0; i < rowLength [level]; i++) {
+			currentWordGroup.Add (library [level, i]);
+		}
 	}
 
 	private string NewWord(){
@@ -120,6 +159,12 @@ public class SpellingManager : MonoBehaviour {
 		if (letter != currentWordLetters [currentLetterIndex]) {
 			//Wrong word
 			Debug.Log("Incorrect!");
+
+			if (Score.main.nextLevelReady) {
+				NewWordGroup ();
+				Score.main.nextLevelReady = false;
+			}
+
 			NewWord ();
 			LevelController.main.RemoveBubbles ();
 			state = SpellingState.SpawningWord;
@@ -131,6 +176,11 @@ public class SpellingManager : MonoBehaviour {
 				Debug.Log("Correct!");
 				audioSource.PlayOneShot (correct);
 				((GameObject)Instantiate (correctSpellingPrefab, Camera.main.transform)).transform.localPosition = new Vector3 (-2.9f, -5f, 10f);
+
+				if (Score.main.nextLevelReady) {
+					NewWordGroup ();
+					Score.main.nextLevelReady = false;
+				}
 
 				NewWord ();
 				LevelController.main.RemoveBubbles ();

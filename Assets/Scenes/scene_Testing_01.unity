@@ -389,9 +389,8 @@ MonoBehaviour:
   uiTransform: {fileID: 2078430475}
   uiFullScoreOffset: 9.3
   uiFullScore:
-  - 10
-  - 90
   - 200
+  - 250
   wordMultipliers:
   - multiplier: 1
     correctWordCount: 1
@@ -423,6 +422,8 @@ MonoBehaviour:
     correctWordCount: 10
   - multiplier: 154
     correctWordCount: 10
+  level: 0
+  nextLevelReady: 0
 --- !u!4 &261518060
 Transform:
   m_ObjectHideFlags: 0
@@ -905,7 +906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &742980377
 Transform:
   m_ObjectHideFlags: 0
@@ -1795,27 +1796,7 @@ MonoBehaviour:
   correctSpellingPrefab: {fileID: 1996222110178138, guid: 5e356f18d672b480baaf5fe4a690293f,
     type: 2}
   currentSpelling: 
-  library:
-  - QUE
-  - RUN
-  - RIG
-  - ZOO
-  - HEX
-  - AWE
-  - OAR
-  - ZEN
-  - ORE
-  - HUE
-  - EASE
-  - PREY
-  - USER
-  - ACHE
-  - YOUR
-  - NAVY
-  - ITEM
-  - NEWS
-  - EDGE
-  - DENT
+  libraryFile: {fileID: 4900000, guid: 5c01a7cc42959794d9074935640ef456, type: 3}
   state: 0
 --- !u!4 &1367906086
 Transform:
@@ -2416,7 +2397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1656590750
 Transform:
   m_ObjectHideFlags: 0
