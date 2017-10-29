@@ -116,7 +116,12 @@ public class SpellingManager : MonoBehaviour {
 		currentLetterIndex = 0;
 		currentWordIndex = Random.Range (0, currentWordGroup.Count);
 		currentWord = currentWordGroup [currentWordIndex];
-		currentWordLetters = currentWord.ToCharArray ();
+		if (currentWordIndex == 0) {
+			string newWord = currentWord.Remove (0, 1);
+			currentWordLetters = newWord.ToCharArray ();
+		} else {
+			currentWordLetters = currentWord.ToCharArray ();
+		}
 		return currentWord;
 	}
 
