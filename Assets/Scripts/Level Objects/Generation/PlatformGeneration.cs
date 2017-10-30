@@ -86,7 +86,6 @@ public class PlatformGeneration : MonoBehaviour {
 			SpawnPlatform (ref platformPosition, newPlatformsPos.ToArray ());
 			newPlatformsPos.Add (platformPosition);
 			previousSpots.Add (platformPosition.x);
-			Debug.Log (platformPosition.x);
 		}
 		if (previousSpots.Count > 3) {
 			previousSpots.RemoveRange (0, previousSpots.Count - 3);
