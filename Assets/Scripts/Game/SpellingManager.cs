@@ -114,6 +114,7 @@ public class SpellingManager : MonoBehaviour {
 	private string NewWord(){
 		currentSpelling = "";
 		currentLetterIndex = 0;
+		PlayerController.Pitch = 0.3f;
 		currentWordIndex = Random.Range (0, currentWordGroup.Count);
 		currentWord = currentWordGroup [currentWordIndex];
 		if (currentWordIndex == 0) {
@@ -157,7 +158,7 @@ public class SpellingManager : MonoBehaviour {
 		if (letter != currentWordLetters [currentLetterIndex]) {
 			//Wrong word
 			Debug.Log("Incorrect!");
-
+			PlayerController.Pitch = 0.1f;
 			if (Score.main.nextLevelReady) {
 				NewWordGroup ();
 				Score.main.nextLevelReady = false;

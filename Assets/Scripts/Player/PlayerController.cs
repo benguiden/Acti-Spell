@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour {
 	public bool landed = false;
 
 	//Audio
+	public static float Pitch = 0.5f; 
 	public AudioClip bubblePop;
 	public AudioClip stomp;
 	public AudioClip flipSound;
@@ -227,7 +228,8 @@ public class PlayerController : MonoBehaviour {
 			if (CheckBubbleCollision (bubbles [i]) && bubbles [i].enabled == true) {
 				//Collision!
 				SpellingManager.main.AddLetter(bubbles[i].letter);
-				sound.pitch = (Random.Range (0.5f, 1.5f));
+				Pitch += 0.3f;
+				sound.pitch = Pitch;
 				sound.PlayOneShot (bubblePop);
 				Animator bubAnim = bubbles[i].GetComponent<Animator> ();
 				bubAnim.SetTrigger ("collected");
