@@ -39,11 +39,11 @@ public class SpellingManager : MonoBehaviour {
 	#region Mono Methods
 	private void Awake(){
 		InitalizeLibrary ();
+		main = this;
 	}
 
 	private void Start(){
 		audioSource = gameObject.GetComponent<AudioSource> ();
-		main = this;
 		currentSpelling = "";
 		state = SpellingState.SpawningWord;
 		NewWordGroup ();
@@ -111,7 +111,6 @@ public class SpellingManager : MonoBehaviour {
 	}
 
 	private string NewWord(){
-		StartCoroutine (ScribbleWord (1f));
 		currentSpelling = "";
 		currentLetterIndex = 0;
 		currentWordIndex = Random.Range (0, currentWordGroup.Count);
@@ -125,14 +124,6 @@ public class SpellingManager : MonoBehaviour {
 		return currentWord;
 	}
 
-	private IEnumerator ScribbleWord(float time){
-		while (time > 0f) {
-			time -= Time.deltaTime;
-			yield return null;
-		}
-		displayText.text = "";
-	}
-
 	private void SpawnNewWord(){
 		if (spawnedWord != null)
 			Destroy (spawnedWord);
@@ -142,6 +133,7 @@ public class SpellingManager : MonoBehaviour {
 		newPos.y = wordSpawnReference.position.y + wordSpawnOffset;
 		spawnedWord.transform.position = newPos;
 		spawnedWord.GetComponentInChildren<Font3D> ().SetText (NewWord ());
+		displayText.text = "";
 		state = SpellingState.DespawningWord;
 	}
 
@@ -170,9 +162,8 @@ public class SpellingManager : MonoBehaviour {
 				Score.main.nextLevelReady = false;
 			}
 
-			NewWord ();
+			CrossOut.main.CrossWordOut (currentWord);
 			LevelController.main.RemoveBubbles ();
-			state = SpellingState.SpawningWord;
 			Score.main.RestartWordMultiplier ();
 		} else {
 			currentLetterIndex++;
@@ -186,8 +177,7 @@ public class SpellingManager : MonoBehaviour {
 					NewWordGroup ();
 					Score.main.nextLevelReady = false;
 				}
-
-				NewWord ();
+					
 				LevelController.main.RemoveBubbles ();
 				state = SpellingState.SpawningWord;
 				Score.main.CheckWordCount (true);

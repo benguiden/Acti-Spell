@@ -1,0 +1,57 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CrossOut : MonoBehaviour {
+
+	#region Public Variables
+	public Object crossOutPrefab, correctSpellingPrefab;
+	public float crossoutTime;
+	public float correctSpellTime;
+	public float crossSize;
+
+	public static CrossOut main;
+	#endregion
+
+
+	#region Mono Methods
+	private void Awake(){
+		main = this;
+	}
+	#endregion
+
+
+	#region Public Method
+	public void CrossWordOut(string correctWord){
+		StartCoroutine (IECrossWordOut (correctWord));
+	}
+
+	private IEnumerator IECrossWordOut(string correctWord){
+		Transform line = ((GameObject)Instantiate (crossOutPrefab, this.transform)).transform;
+		float time = crossoutTime;
+		while (time > 0f) {
+			Vector3 lineScale = line.localScale;
+			lineScale.x = crossSize * (1f - (time / crossoutTime));
+			line.localScale = lineScale;
+			time -= Time.deltaTime;
+			yield return null;
+		}
+		TextMesh correctText = ((GameObject)Instantiate (correctSpellingPrefab, this.transform)).GetComponent<TextMesh> ();
+		int letterIndex = 0;
+		char[] correctLetters = correctWord.ToCharArray ();
+		while (letterIndex < correctLetters.Length) {
+			correctText.text += correctLetters [letterIndex];
+			time = correctSpellTime / (float)correctLetters.Length;
+			while (time > 0f) {
+				time -= Time.deltaTime;
+				yield return null;
+			}
+			letterIndex++;
+		}
+		SpellingManager.main.state = SpellingManager.SpellingState.SpawningWord;
+		Destroy (line.gameObject);
+		Destroy (correctText.gameObject);
+	}
+	#endregion
+
+}
