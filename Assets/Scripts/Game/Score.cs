@@ -102,6 +102,7 @@ public class Score : MonoBehaviour {
 		if (wrappedScore >= uiFullScore [level]) {
 			if (level < uiFullScore.Length - 1) {
 				level++;
+				print ("Level: " + level);
 				nextLevelReady = true;
 			}
 		}
