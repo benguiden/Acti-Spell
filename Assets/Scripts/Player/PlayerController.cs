@@ -114,6 +114,9 @@ public class PlayerController : MonoBehaviour {
 		//Move Left & Right
 		if ((Input.GetKey (KeyCode.RightArrow)) && !(Input.GetKey (KeyCode.LeftArrow))) {
 			velocity.x = horizontalSpeed;
+			if (grounded) {
+				anim.SetBool ("Walk", true);
+			}
 			childRen.flipX = false;
 			if (!sound.isPlaying && turning) {
 				sound.PlayOneShot (flipSound);
@@ -121,6 +124,9 @@ public class PlayerController : MonoBehaviour {
 			}
 		} else if (!(Input.GetKey (KeyCode.RightArrow)) && (Input.GetKey (KeyCode.LeftArrow))) {
 			velocity.x = -horizontalSpeed;
+			if (grounded) {
+				anim.SetBool ("Walk", true);
+			}
 			childRen.flipX = true;
 			if (!sound.isPlaying && !turning) {
 				sound.PlayOneShot (flipSound);
@@ -128,6 +134,7 @@ public class PlayerController : MonoBehaviour {
 			}
 		} else {
 			velocity.x = 0f;
+			anim.SetBool ("Walk", false);
 		}
 
 		if (started)
