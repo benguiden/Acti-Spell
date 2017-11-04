@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraFollow: MonoBehaviour {
 
@@ -67,6 +68,16 @@ public class CameraFollow: MonoBehaviour {
 
 	private IEnumerator EndGameUI(){
 		endGameObject.SetActive (true);
+
+		//Write Score
+		endGameObject.transform.Find ("Score Amount").GetComponent<Text> ().text = Mathf.Round (Score.main.GetScore ()).ToString ();
+
+		//Write Height
+		endGameObject.transform.Find ("Height Amount").GetComponent<Text> ().text = Mathf.Round (Score.main.GetHeight()).ToString ();
+
+		//Correct Word Count
+		endGameObject.transform.Find ("Correct Word Amount").GetComponent<Text> ().text = Score.main.GetTotalWords().ToString ();
+
 		float time = endGameCurveTime;
 		float scale;
 		while (time > 0f) {

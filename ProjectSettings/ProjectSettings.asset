@@ -124,7 +124,11 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 2800000, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 2800000, guid: 0e476d7276129ff44bffbde2b7cca079, type: 3}
+  - {fileID: 2800000, guid: ea2b70a1fc1c4fe488694f7568e34702, type: 3}
+  - {fileID: 2800000, guid: b23c4dd254c8cc64684a54dfc801595e, type: 3}
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
   xboxOneDisableKinectGpuReservation: 0

@@ -44,6 +44,7 @@ public class Score : MonoBehaviour {
 	private float uiOriginalYPos;
 	private int wordMultiplierIndex;
 	private int correctWordCount;
+	private int totalCorrectSpelling;
 	#endregion
 
 	[System.Serializable]
@@ -65,6 +66,7 @@ public class Score : MonoBehaviour {
 		wordMultiplierIndex = 0;
 		correctWordCount = 0;
 		level = 0;
+		totalCorrectSpelling = 0;
 
 		if (wordMultipliers.Length <= 0){
 			Debug.LogError("Error: No Word Multipliers set up in Score componenet.");
@@ -114,13 +116,23 @@ public class Score : MonoBehaviour {
 		return score;
 	}
 
+	public float GetHeight(){
+		return highestPoint;
+	}
+
+	public float GetTotalWords(){
+		return totalCorrectSpelling;
+	}
+
 	public void RestartWordMultiplier(){
 		wordMultiplierIndex = 0;
 	}
 
 	public void CheckWordCount(bool increase){
-		if (increase)
+		if (increase) {
 			correctWordCount++;
+			totalCorrectSpelling++;
+		}
 		if (correctWordCount >= wordMultipliers [wordMultiplierIndex].correctWordCount) {
 			ToNextWordMultiplier ();
 		}
