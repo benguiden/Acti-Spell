@@ -3733,7 +3733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05320751167ced545ae4cf1dbd3143db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTheme: Food
+  currentTheme: Animals
   themes:
   - name: Food
     sprites:
@@ -3802,6 +3802,59 @@ MonoBehaviour:
     - {fileID: 21300048, guid: ea2b70a1fc1c4fe488694f7568e34702, type: 3}
     - {fileID: 21300050, guid: ea2b70a1fc1c4fe488694f7568e34702, type: 3}
     - {fileID: 21300052, guid: ea2b70a1fc1c4fe488694f7568e34702, type: 3}
+  - name: Animals
+    sprites:
+    - {fileID: 21300000, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300004, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300006, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300010, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300012, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300014, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300016, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300018, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300020, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300022, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300024, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300026, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300028, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300030, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300032, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300034, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300036, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300038, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300042, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300044, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300046, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300048, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300050, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300054, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300058, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    spritesColour:
+    - {fileID: 21300060, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300062, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300064, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300066, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300068, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300070, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300072, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300074, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300076, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300078, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300080, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300082, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300084, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300086, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300088, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300090, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300092, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300094, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300096, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300098, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300100, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300102, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300104, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300106, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+    - {fileID: 21300108, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
   rotationAmount: 35
   scale: {x: 0.75, y: 1.05}
   offsetAmount: 0.52

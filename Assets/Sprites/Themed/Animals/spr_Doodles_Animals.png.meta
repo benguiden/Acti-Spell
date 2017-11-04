@@ -1,0 +1,4602 @@
+fileFormatVersion: 2
+guid: 71db99f6d9db5244abfeec510f18b87b
+timeCreated: 1509811770
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spr_Doodles_Animals_0
+    21300002: spr_Doodles_Animals_1
+    21300004: spr_Doodles_Animals_2
+    21300006: spr_Doodles_Animals_3
+    21300008: spr_Doodles_Animals_4
+    21300010: spr_Doodles_Animals_5
+    21300012: spr_Doodles_Animals_6
+    21300014: spr_Doodles_Animals_7
+    21300016: spr_Doodles_Animals_8
+    21300018: spr_Doodles_Animals_9
+    21300020: spr_Doodles_Animals_10
+    21300022: spr_Doodles_Animals_11
+    21300024: spr_Doodles_Animals_12
+    21300026: spr_Doodles_Animals_13
+    21300028: spr_Doodles_Animals_14
+    21300030: spr_Doodles_Animals_15
+    21300032: spr_Doodles_Animals_17
+    21300034: spr_Doodles_Animals_19
+    21300036: spr_Doodles_Animals_21
+    21300038: spr_Doodles_Animals_22
+    21300040: spr_Doodles_Animals_23
+    21300042: spr_Doodles_Animals_24
+    21300044: spr_Doodles_Animals_25
+    21300046: spr_Doodles_Animals_26
+    21300048: spr_Doodles_Animals_27
+    21300050: spr_Doodles_Animals_28
+    21300052: spr_Doodles_Animals_29
+    21300054: spr_Doodles_Animals_30
+    21300056: spr_Doodles_Animals_31
+    21300058: spr_Doodles_Animals_32
+    21300060: spr_Doodles_Animals_33
+    21300062: spr_Doodles_Animals_34
+    21300064: spr_Doodles_Animals_35
+    21300066: spr_Doodles_Animals_36
+    21300068: spr_Doodles_Animals_37
+    21300070: spr_Doodles_Animals_38
+    21300072: spr_Doodles_Animals_39
+    21300074: spr_Doodles_Animals_40
+    21300076: spr_Doodles_Animals_41
+    21300078: spr_Doodles_Animals_42
+    21300080: spr_Doodles_Animals_43
+    21300082: spr_Doodles_Animals_44
+    21300084: spr_Doodles_Animals_45
+    21300086: spr_Doodles_Animals_48
+    21300088: spr_Doodles_Animals_49
+    21300090: spr_Doodles_Animals_51
+    21300092: spr_Doodles_Animals_52
+    21300094: spr_Doodles_Animals_53
+    21300096: spr_Doodles_Animals_54
+    21300098: spr_Doodles_Animals_55
+    21300100: spr_Doodles_Animals_56
+    21300102: spr_Doodles_Animals_57
+    21300104: spr_Doodles_Animals_58
+    21300106: spr_Doodles_Animals_59
+    21300108: spr_Doodles_Animals_60
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1792
+        width: 379
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 117.5, y: 87.5}
+        - {x: 83.5, y: 103.5}
+        - {x: 59.5, y: 110.5}
+        - {x: 41.5, y: 108.5}
+        - {x: 24.5, y: 106.5}
+        - {x: 24.5, y: 105.5}
+        - {x: 22.5, y: 105.5}
+        - {x: 19.5, y: 103.5}
+        - {x: 15.5, y: 101.5}
+        - {x: 13.5, y: 98.5}
+        - {x: 15.5, y: 101.5}
+        - {x: 18.5, y: 102.5}
+        - {x: 20.5, y: 105.5}
+        - {x: 22.5, y: 105.5}
+        - {x: 25.5, y: 107.5}
+        - {x: 29.5, y: 107.5}
+        - {x: 32.5, y: 108.5}
+        - {x: 32.5, y: 113.5}
+        - {x: 10.5, y: 113.5}
+        - {x: -65.5, y: 96.5}
+        - {x: -147.5, y: 52.5}
+        - {x: -189.5, y: -4.5}
+        - {x: -189.5, y: -48.5}
+        - {x: -180.5, y: -57.5}
+        - {x: -154.5, y: -51.5}
+        - {x: -112.5, y: -114.5}
+        - {x: 97.5, y: -114.5}
+        - {x: 189.5, y: -3.5}
+        - {x: 189.5, y: 18.5}
+        - {x: 184.5, y: 29.5}
+      - - {x: 154.5, y: -22.5}
+        - {x: 157.5, y: -21.5}
+        - {x: 157.5, y: -18.5}
+        - {x: 154.5, y: -17.5}
+        - {x: 152.5, y: -19.5}
+      - - {x: 123.5, y: -9.5}
+        - {x: 123.5, y: -15.5}
+        - {x: 125.5, y: -17.5}
+        - {x: 137.5, y: -17.5}
+        - {x: 138.5, y: -15.5}
+        - {x: 138.5, y: -11.5}
+        - {x: 136.5, y: -9.5}
+      - - {x: 142.5, y: 33.5}
+        - {x: 142.5, y: 29.5}
+        - {x: 147.5, y: 23.5}
+        - {x: 161.5, y: 23.5}
+        - {x: 161.5, y: 28.5}
+        - {x: 153.5, y: 33.5}
+      - - {x: -123.5, y: 26.5}
+        - {x: -120.5, y: 27.5}
+        - {x: -120.5, y: 30.5}
+        - {x: -123.5, y: 31.5}
+        - {x: -125.5, y: 29.5}
+      - - {x: 182.5, y: 30.5}
+        - {x: 183.5, y: 28.5}
+        - {x: 186.5, y: 28.5}
+        - {x: 188.5, y: 29.5}
+        - {x: 188.5, y: 31.5}
+        - {x: 186.5, y: 34.5}
+        - {x: 184.5, y: 34.5}
+        - {x: 182.5, y: 33.5}
+      - - {x: 154.5, y: 41.5}
+        - {x: 154.5, y: 35.5}
+        - {x: 155.5, y: 34.5}
+        - {x: 162.5, y: 34.5}
+        - {x: 163.5, y: 36.5}
+        - {x: 163.5, y: 40.5}
+        - {x: 162.5, y: 41.5}
+      - - {x: 165.5, y: 36.5}
+        - {x: 168.5, y: 37.5}
+        - {x: 168.5, y: 40.5}
+        - {x: 165.5, y: 41.5}
+        - {x: 163.5, y: 39.5}
+      - - {x: 82.5, y: 109.5}
+        - {x: 80.5, y: 108.5}
+        - {x: 80.5, y: 102.5}
+        - {x: 84.5, y: 100.5}
+        - {x: 91.5, y: 100.5}
+        - {x: 91.5, y: 107.5}
+        - {x: 89.5, y: 109.5}
+      - - {x: -12.5, y: 112.5}
+        - {x: -16.5, y: 109.5}
+        - {x: -21.5, y: 105.5}
+        - {x: -20.5, y: 102.5}
+        - {x: -12.5, y: 102.5}
+        - {x: -7.5, y: 105.5}
+        - {x: -7.5, y: 111.5}
+        - {x: -8.5, y: 112.5}
+      - - {x: -37.5, y: 103.5}
+        - {x: -34.5, y: 104.5}
+        - {x: -34.5, y: 107.5}
+        - {x: -37.5, y: 108.5}
+        - {x: -39.5, y: 106.5}
+      - - {x: 36.5, y: 114.5}
+        - {x: 38.5, y: 109.5}
+        - {x: 42.5, y: 109.5}
+        - {x: 44.5, y: 111.5}
+        - {x: 44.5, y: 113.5}
+        - {x: 43.5, y: 114.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_2
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1808
+        width: 134
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63, y: 80.5}
+        - {x: -67, y: 51.5}
+        - {x: -67, y: -49.5}
+        - {x: -55, y: -80.5}
+        - {x: 55, y: -80.5}
+        - {x: 67, y: -74.5}
+        - {x: 67, y: 65.5}
+        - {x: 56, y: 80.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_3
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1828
+        width: 159
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.5, y: 66}
+        - {x: -75.5, y: 19}
+        - {x: -75.5, y: -61}
+        - {x: -74.5, y: -66}
+        - {x: -58.5, y: -66}
+        - {x: -56.5, y: -61}
+        - {x: -18.5, y: -59}
+        - {x: 25.5, y: -66}
+        - {x: 72.5, y: -66}
+        - {x: 75.5, y: -64}
+        - {x: 75.5, y: 66}
+      - - {x: -49.5, y: -60}
+        - {x: -47.5, y: -62}
+        - {x: -44.5, y: -61}
+        - {x: -44.5, y: -58}
+        - {x: -46.5, y: -56}
+        - {x: -49.5, y: -57}
+      - - {x: -74.5, y: -8}
+        - {x: -71.5, y: -8}
+        - {x: -69.5, y: -6}
+        - {x: -69.5, y: 3}
+        - {x: -75.5, y: 3}
+        - {x: -75.5, y: -6}
+      - - {x: 61.5, y: 12}
+        - {x: 59.5, y: 8}
+        - {x: 59.5, y: 4}
+        - {x: 64.5, y: 4}
+        - {x: 66.5, y: 9}
+        - {x: 63.5, y: 12}
+      - - {x: -79.5, y: 21}
+        - {x: -79.5, y: 8}
+        - {x: -78.5, y: 7}
+        - {x: -75.5, y: 8}
+        - {x: -72.5, y: 15}
+        - {x: -72.5, y: 21}
+      - - {x: -64.5, y: 8}
+        - {x: -61.5, y: 9}
+        - {x: -61.5, y: 12}
+        - {x: -64.5, y: 13}
+        - {x: -66.5, y: 11}
+      - - {x: -28.5, y: 14}
+        - {x: -31.5, y: 17}
+        - {x: -33.5, y: 17}
+        - {x: -35.5, y: 20}
+        - {x: -35.5, y: 24}
+        - {x: -33.5, y: 28}
+        - {x: -34.5, y: 30}
+        - {x: -37.5, y: 25}
+        - {x: -34.5, y: 22}
+        - {x: -34.5, y: 18}
+        - {x: -31.5, y: 15}
+        - {x: -29.5, y: 15}
+        - {x: -27.5, y: 13}
+        - {x: -30.5, y: 9}
+        - {x: -28.5, y: 10}
+      - - {x: 76.5, y: 27}
+        - {x: 78.5, y: 25}
+        - {x: 79.5, y: 25}
+        - {x: 79.5, y: 32}
+        - {x: 76.5, y: 31}
+      - - {x: 68.5, y: 26}
+        - {x: 71.5, y: 27}
+        - {x: 71.5, y: 30}
+        - {x: 68.5, y: 31}
+        - {x: 66.5, y: 29}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_5
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1828
+        width: 165
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 72}
+        - {x: -30.5, y: 59}
+        - {x: -25.5, y: 55}
+        - {x: -47.5, y: 65}
+        - {x: -73.5, y: 62}
+        - {x: -82.5, y: 58}
+        - {x: -82.5, y: -54}
+        - {x: -75.5, y: -72}
+        - {x: 77.5, y: -72}
+        - {x: 82.5, y: -48}
+        - {x: 82.5, y: 72}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_6
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 1848
+        width: 110
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 54}
+        - {x: -46, y: 33}
+        - {x: -49, y: 25}
+        - {x: -55, y: 11}
+        - {x: -55, y: -37}
+        - {x: -50, y: -47}
+        - {x: -21, y: -54}
+        - {x: 32, y: -54}
+        - {x: 55, y: -43}
+        - {x: 55, y: 38}
+        - {x: 38, y: 54}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_7
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1843
+        width: 146
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -66, y: 55.5}
+        - {x: -73, y: 25.5}
+        - {x: -73, y: -55.5}
+        - {x: 65, y: -55.5}
+        - {x: 73, y: -52.5}
+        - {x: 73, y: 55.5}
+      - - {x: 46, y: -35.5}
+        - {x: 49, y: -34.5}
+        - {x: 49, y: -31.5}
+        - {x: 46, y: -30.5}
+        - {x: 44, y: -32.5}
+      - - {x: 45, y: -19.5}
+        - {x: 47, y: -21.5}
+        - {x: 50, y: -20.5}
+        - {x: 50, y: -17.5}
+        - {x: 48, y: -15.5}
+        - {x: 45, y: -16.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_8
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1855
+        width: 133
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: 44.5}
+        - {x: -59.5, y: 44.5}
+        - {x: -66.5, y: 38.5}
+        - {x: -66.5, y: -12.5}
+        - {x: -52.5, y: -44.5}
+        - {x: 25.5, y: -44.5}
+        - {x: 31.5, y: -42.5}
+        - {x: 66.5, y: -5.5}
+        - {x: 66.5, y: 23.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_9
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1812
+        width: 128
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 94.5}
+        - {x: -64, y: 56.5}
+        - {x: -64, y: -92.5}
+        - {x: -57, y: -94.5}
+        - {x: 64, y: -94.5}
+        - {x: 64, y: 89.5}
+        - {x: 48, y: 94.5}
+      - - {x: -6, y: -59.5}
+        - {x: -5, y: -58.5}
+        - {x: -5, y: -54.5}
+        - {x: -8, y: -51.5}
+        - {x: -9, y: -52.5}
+        - {x: -8, y: -53.5}
+        - {x: -5, y: -50.5}
+        - {x: -5, y: -46.5}
+        - {x: -3, y: -62.5}
+        - {x: -3, y: -61.5}
+      - - {x: 28, y: -49.5}
+        - {x: 30, y: -47.5}
+        - {x: 31, y: -34.5}
+        - {x: 30, y: -33.5}
+        - {x: 33, y: -36.5}
+        - {x: 32, y: -43.5}
+        - {x: 29, y: -46.5}
+        - {x: 29, y: -52.5}
+        - {x: 28, y: -53.5}
+      - - {x: -33, y: -30.5}
+        - {x: -32, y: -30.5}
+        - {x: -29, y: -28.5}
+        - {x: -26, y: -27.5}
+        - {x: -28, y: -27.5}
+        - {x: -31, y: -30.5}
+        - {x: -32, y: -35.5}
+        - {x: -34, y: -37.5}
+        - {x: -33, y: -37.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1558
+        width: 264
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -124, y: 18}
+        - {x: -124, y: -60}
+        - {x: -92, y: -75}
+        - {x: 72, y: -75}
+        - {x: 132, y: -48}
+        - {x: 132, y: 6}
+        - {x: 66, y: 75}
+        - {x: 3, y: 75}
+        - {x: -120, y: 26}
+        - {x: -123, y: 23}
+      - - {x: 73, y: -71}
+        - {x: 75, y: -73}
+        - {x: 78, y: -72}
+        - {x: 78, y: -69}
+        - {x: 76, y: -67}
+        - {x: 73, y: -68}
+      - - {x: -126, y: -31}
+        - {x: -126, y: -40}
+        - {x: -123, y: -42}
+        - {x: -120, y: -41}
+        - {x: -119, y: -28}
+        - {x: -121, y: -26}
+        - {x: -124, y: -27}
+      - - {x: -132, y: 12}
+        - {x: -130, y: 12}
+        - {x: -128, y: 14}
+        - {x: -129, y: 17}
+        - {x: -132, y: 17}
+      - - {x: -23, y: 30}
+        - {x: -20, y: 31}
+        - {x: -20, y: 34}
+        - {x: -23, y: 35}
+        - {x: -25, y: 33}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_11
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 1483
+        width: 102
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 111.5}
+        - {x: -41, y: 105.5}
+        - {x: -51, y: 30.5}
+        - {x: -51, y: -104.5}
+        - {x: -28, y: -111.5}
+        - {x: 51, y: -111.5}
+        - {x: 51, y: 54.5}
+        - {x: 7, y: 111.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_12
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 1496
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -87, y: 90}
+        - {x: -87, y: -76}
+        - {x: -83, y: -90}
+        - {x: 27, y: -90}
+        - {x: 87, y: -83}
+        - {x: 87, y: 25}
+        - {x: 22, y: 90}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_13
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1512
+        width: 89
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.5, y: 62.5}
+        - {x: -44.5, y: 62.5}
+        - {x: -44.5, y: -26.5}
+        - {x: -43.5, y: -35.5}
+        - {x: -33.5, y: -62.5}
+        - {x: 28.5, y: -62.5}
+        - {x: 42.5, y: -45.5}
+        - {x: 42.5, y: 45.5}
+        - {x: 41.5, y: 50.5}
+      - - {x: 41.5, y: 25.5}
+        - {x: 43.5, y: 23.5}
+        - {x: 44.5, y: 23.5}
+        - {x: 44.5, y: 28.5}
+        - {x: 42.5, y: 28.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_14
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 1498
+        width: 154
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 2}
+        - {x: 22, y: -11}
+        - {x: 22, y: -24}
+        - {x: 23, y: -29}
+        - {x: 22, y: -25}
+        - {x: 8, y: 76}
+        - {x: 4, y: 78}
+        - {x: -77, y: 78}
+        - {x: -77, y: 15}
+        - {x: -67, y: -78}
+        - {x: 65, y: -78}
+        - {x: 77, y: -47}
+        - {x: 77, y: 29}
+        - {x: 42, y: 29}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_15
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1504
+        width: 188
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 66}
+        - {x: -94, y: 65}
+        - {x: -94, y: -13}
+        - {x: -31, y: -66}
+        - {x: 73, y: -66}
+        - {x: 94, y: -30}
+        - {x: 94, y: 59}
+        - {x: 73, y: 66}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_17
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1536
+        width: 128
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50, y: -9}
+        - {x: 50, y: -6}
+        - {x: 48, y: -4}
+        - {x: 40, y: -4}
+        - {x: 40, y: -2}
+        - {x: 49, y: -4}
+        - {x: 53, y: -11}
+        - {x: 57, y: -14}
+        - {x: 59, y: -14}
+        - {x: 62, y: -13}
+        - {x: 61, y: -4}
+        - {x: 58, y: 2}
+        - {x: 56, y: 4}
+        - {x: 47, y: 6}
+        - {x: 49, y: 9}
+        - {x: 60, y: 2}
+        - {x: 64, y: 1}
+        - {x: 64, y: 23}
+        - {x: 61, y: 30}
+        - {x: -58, y: 30}
+        - {x: -64, y: 18}
+        - {x: -64, y: -25}
+        - {x: -62, y: -30}
+        - {x: 43, y: -30}
+        - {x: 60, y: -24}
+        - {x: 58, y: -18}
+        - {x: 55, y: -14}
+      - - {x: -46, y: -1}
+        - {x: -52, y: -6}
+        - {x: -56, y: -11}
+        - {x: -57, y: -12}
+        - {x: -55, y: -14}
+      - - {x: -49, y: 8}
+        - {x: -46, y: 10}
+        - {x: -42, y: 10}
+        - {x: -44, y: 9}
+        - {x: -48, y: 9}
+        - {x: -50, y: 7}
+        - {x: -49, y: 7}
+      - - {x: -34, y: 19}
+        - {x: -37, y: 22}
+        - {x: -49, y: 21}
+        - {x: -50, y: 18}
+        - {x: -50, y: 17}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_19
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 1528
+        width: 183
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 10}
+        - {x: -54.5, y: -21}
+        - {x: -54.5, y: -34}
+        - {x: -52.5, y: -42}
+        - {x: -34.5, y: -57}
+        - {x: 0.5, y: -68}
+        - {x: 45.5, y: -68}
+        - {x: 91.5, y: -49}
+        - {x: 91.5, y: 10}
+      - - {x: -72.5, y: -11}
+        - {x: -74.5, y: -14}
+        - {x: -74.5, y: -20}
+        - {x: -73.5, y: -28}
+        - {x: -69.5, y: -31}
+        - {x: -58.5, y: -31}
+        - {x: -55.5, y: -29}
+        - {x: -55.5, y: -15}
+        - {x: -64.5, y: -11}
+      - - {x: -64.5, y: 23}
+        - {x: -67.5, y: 22}
+        - {x: -67.5, y: 2}
+        - {x: -62.5, y: -4}
+        - {x: -43.5, y: -4}
+        - {x: -41.5, y: -3}
+        - {x: -41.5, y: 16}
+        - {x: -43.5, y: 23}
+      - - {x: -88.5, y: 68}
+        - {x: -91.5, y: 67}
+        - {x: -91.5, y: 36}
+        - {x: -82.5, y: 26}
+        - {x: -50.5, y: 26}
+        - {x: -47.5, y: 33}
+        - {x: -47.5, y: 63}
+        - {x: -52.5, y: 68}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_21
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1156
+        width: 217
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -108.5, y: 111}
+        - {x: -108.5, y: 9}
+        - {x: -8.5, y: -134}
+        - {x: 108.5, y: -134}
+        - {x: 108.5, y: 134}
+        - {x: -92.5, y: 134}
+        - {x: -106.5, y: 117}
+      - - {x: 28.5, y: -117}
+        - {x: 31.5, y: -114}
+        - {x: 32.5, y: -110}
+        - {x: 31.5, y: -79}
+        - {x: 32.5, y: -69}
+        - {x: 32.5, y: -93}
+        - {x: 33.5, y: -110}
+        - {x: 33.5, y: -111}
+        - {x: 32.5, y: -111}
+        - {x: 26.5, y: -116}
+        - {x: 27.5, y: -117}
+      - - {x: 76.5, y: -9}
+        - {x: 79.5, y: -5}
+        - {x: 70.5, y: -13}
+        - {x: 71.5, y: -13}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_22
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1228
+        width: 98
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: -58}
+        - {x: 24, y: -65}
+        - {x: 32, y: -73}
+        - {x: 49, y: -43}
+        - {x: 49, y: 27}
+        - {x: 42, y: 53}
+        - {x: 36, y: 71}
+        - {x: -41, y: 71}
+        - {x: -41, y: -35}
+        - {x: -29, y: -76}
+        - {x: 21, y: -76}
+        - {x: 23, y: -73}
+        - {x: 23, y: -60}
+        - {x: 21, y: -58}
+      - - {x: -17, y: -74}
+        - {x: -14, y: -73}
+        - {x: -14, y: -70}
+        - {x: -18, y: -63}
+        - {x: -22, y: -63}
+        - {x: -23, y: -66}
+      - - {x: 29, y: -46}
+        - {x: 32, y: -43}
+        - {x: 32, y: -41}
+        - {x: 29, y: -38}
+        - {x: 28, y: -38}
+        - {x: 27, y: -39}
+        - {x: 28, y: -38}
+        - {x: 29, y: -34}
+        - {x: 32, y: -31}
+        - {x: 31, y: -31}
+        - {x: 31, y: -35}
+        - {x: 30, y: -36}
+        - {x: 30, y: -40}
+        - {x: 32, y: -43}
+        - {x: 30, y: -48}
+        - {x: 30, y: -50}
+        - {x: 31, y: -50}
+      - - {x: -29, y: -45}
+        - {x: -26, y: -48}
+        - {x: -23, y: -47}
+        - {x: -23, y: -44}
+        - {x: -26, y: -41}
+        - {x: -29, y: -42}
+      - - {x: 34, y: 19}
+        - {x: 37, y: 20}
+        - {x: 37, y: 23}
+        - {x: 34, y: 24}
+        - {x: 32, y: 22}
+      - - {x: 34, y: 29}
+        - {x: 34, y: 28}
+        - {x: 36, y: 26}
+        - {x: 37, y: 26}
+        - {x: 40, y: 29}
+        - {x: 40, y: 31}
+        - {x: 37, y: 32}
+      - - {x: -47, y: 55}
+        - {x: -49, y: 54}
+        - {x: -49, y: 43}
+        - {x: -45, y: 43}
+        - {x: -44, y: 49}
+        - {x: -44, y: 55}
+      - - {x: -5, y: 55}
+        - {x: -2, y: 56}
+        - {x: -2, y: 59}
+        - {x: -5, y: 60}
+        - {x: -7, y: 58}
+      - - {x: 35, y: 63}
+        - {x: 38, y: 58}
+        - {x: 41, y: 59}
+        - {x: 41, y: 65}
+        - {x: 40, y: 67}
+        - {x: 38, y: 67}
+        - {x: 35, y: 66}
+      - - {x: -3, y: 76}
+        - {x: -10, y: 69}
+        - {x: -10, y: 64}
+        - {x: -2, y: 64}
+        - {x: 1, y: 71}
+        - {x: 1, y: 76}
+      - - {x: 4, y: 67}
+        - {x: 7, y: 68}
+        - {x: 7, y: 71}
+        - {x: 4, y: 72}
+        - {x: 2, y: 70}
+      - - {x: 30, y: 72}
+        - {x: 31, y: 69}
+        - {x: 34, y: 69}
+        - {x: 36, y: 71}
+        - {x: 35, y: 74}
+        - {x: 32, y: 74}
+      - - {x: -18, y: 74}
+        - {x: -18, y: 76}
+        - {x: -23, y: 76}
+        - {x: -21, y: 73}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_24
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1245
+        width: 166
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -76}
+        - {x: -6, y: -78}
+        - {x: 1, y: -78}
+        - {x: 2, y: -77}
+        - {x: 1, y: -74}
+        - {x: -4, y: -74}
+      - - {x: -42, y: 78}
+        - {x: -52, y: 41}
+        - {x: -42, y: 10}
+        - {x: -38, y: 5}
+        - {x: -37, y: 2}
+        - {x: -38, y: 4}
+        - {x: -44, y: 7}
+        - {x: -44, y: 9}
+        - {x: -52, y: 19}
+        - {x: -65, y: 19}
+        - {x: -80, y: 11}
+        - {x: -80, y: -77}
+        - {x: 76, y: -77}
+        - {x: 77, y: -73}
+        - {x: 77, y: 68}
+        - {x: 60, y: 78}
+      - - {x: -77, y: -24}
+        - {x: -79, y: -26}
+        - {x: -77, y: -31}
+        - {x: -74, y: -31}
+        - {x: -72, y: -29}
+        - {x: -72, y: -27}
+        - {x: -75, y: -24}
+      - - {x: 80, y: -24}
+        - {x: 82, y: -26}
+        - {x: 83, y: -26}
+        - {x: 83, y: -20}
+        - {x: 80, y: -21}
+      - - {x: 79, y: -10}
+        - {x: 78, y: -16}
+        - {x: 80, y: -18}
+        - {x: 82, y: -18}
+        - {x: 83, y: -17}
+        - {x: 83, y: -8}
+        - {x: 81, y: -8}
+      - - {x: -83, y: -9}
+        - {x: -80, y: -8}
+        - {x: -80, y: -5}
+        - {x: -82, y: -3}
+        - {x: -83, y: -3}
+      - - {x: 78, y: 5}
+        - {x: 77, y: 3}
+        - {x: 77, y: 0}
+        - {x: 79, y: -4}
+        - {x: 83, y: -4}
+        - {x: 83, y: 3}
+        - {x: 82, y: 5}
+      - - {x: 77, y: 15}
+        - {x: 76, y: 9}
+        - {x: 78, y: 7}
+        - {x: 80, y: 7}
+        - {x: 83, y: 10}
+        - {x: 83, y: 12}
+        - {x: 80, y: 16}
+      - - {x: -70, y: 14}
+        - {x: -70, y: 12}
+        - {x: -68, y: 10}
+        - {x: -64, y: 10}
+        - {x: -62, y: 12}
+        - {x: -63, y: 15}
+        - {x: -68, y: 16}
+      - - {x: -27, y: 13}
+        - {x: -30, y: 16}
+        - {x: -31, y: 16}
+        - {x: -31, y: 17}
+        - {x: -34, y: 20}
+        - {x: -35, y: 20}
+        - {x: -33, y: 18}
+        - {x: -30, y: 18}
+        - {x: -31, y: 17}
+        - {x: -31, y: 15}
+        - {x: -28, y: 12}
+        - {x: -27, y: 12}
+      - - {x: 30, y: 13}
+        - {x: 27, y: 16}
+        - {x: 23, y: 16}
+        - {x: 29, y: 12}
+        - {x: 30, y: 12}
+      - - {x: 44, y: 20}
+        - {x: 38, y: 20}
+        - {x: 38, y: 13}
+        - {x: 41, y: 12}
+        - {x: 49, y: 12}
+        - {x: 49, y: 16}
+        - {x: 47, y: 19}
+      - - {x: -51, y: 47}
+        - {x: -50, y: 44}
+        - {x: -47, y: 44}
+        - {x: -45, y: 46}
+        - {x: -46, y: 49}
+        - {x: -49, y: 49}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_25
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1260
+        width: 116
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34, y: 22}
+        - {x: -9, y: 60}
+        - {x: -57, y: 60}
+        - {x: -58, y: 58}
+        - {x: -58, y: 4}
+        - {x: -26, y: -60}
+        - {x: -10, y: -60}
+        - {x: 1, y: -49}
+        - {x: 2, y: -45}
+        - {x: 6, y: -43}
+        - {x: -1, y: -51}
+        - {x: -2, y: -59}
+        - {x: 0, y: -60}
+        - {x: 18, y: -60}
+        - {x: 22, y: -57}
+        - {x: 58, y: -45}
+        - {x: 58, y: -18}
+      - - {x: -46, y: 12}
+        - {x: -43, y: 13}
+        - {x: -43, y: 16}
+        - {x: -46, y: 17}
+        - {x: -48, y: 15}
+      - - {x: -13, y: 49}
+        - {x: -13, y: 48}
+        - {x: -10, y: 45}
+        - {x: -5, y: 47}
+        - {x: -5, y: 50}
+        - {x: -7, y: 52}
+        - {x: -10, y: 52}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_26
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1291
+        width: 79
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 44.5}
+        - {x: -23.5, y: 39.5}
+        - {x: -32.5, y: 31.5}
+        - {x: -39.5, y: 1.5}
+        - {x: -39.5, y: -42.5}
+        - {x: -37.5, y: -44.5}
+        - {x: 16.5, y: -44.5}
+        - {x: 38.5, y: -40.5}
+        - {x: 39.5, y: -33.5}
+        - {x: 39.5, y: 30.5}
+        - {x: 14.5, y: 44.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_27
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1159
+        width: 205
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102.5, y: -52.5}
+        - {x: 102.5, y: -28.5}
+        - {x: 94.5, y: -28.5}
+        - {x: 87.5, y: -15.5}
+        - {x: -22.5, y: 59.5}
+        - {x: -24.5, y: 58.5}
+        - {x: -20.5, y: 60.5}
+        - {x: -16.5, y: 64.5}
+        - {x: -3.5, y: 131.5}
+        - {x: -12.5, y: 140.5}
+        - {x: -63.5, y: 140.5}
+        - {x: -69.5, y: 138.5}
+        - {x: -102.5, y: 112.5}
+        - {x: -102.5, y: 18.5}
+        - {x: -58.5, y: -139.5}
+        - {x: -47.5, y: -112.5}
+        - {x: -47.5, y: -109.5}
+        - {x: -47.5, y: -111.5}
+        - {x: -45.5, y: -113.5}
+        - {x: -39.5, y: -140.5}
+        - {x: 46.5, y: -140.5}
+        - {x: 49.5, y: -138.5}
+        - {x: 57.5, y: -81.5}
+        - {x: 93.5, y: -58.5}
+      - - {x: -39.5, y: -139.5}
+        - {x: -38.5, y: -140.5}
+        - {x: -32.5, y: -140.5}
+        - {x: -32.5, y: -136.5}
+        - {x: -34.5, y: -131.5}
+        - {x: -36.5, y: -130.5}
+        - {x: -39.5, y: -131.5}
+      - - {x: 10.5, y: -114.5}
+        - {x: 9.5, y: -122.5}
+        - {x: 11.5, y: -124.5}
+        - {x: 13.5, y: -124.5}
+        - {x: 15.5, y: -123.5}
+        - {x: 15.5, y: -114.5}
+        - {x: 13.5, y: -113.5}
+      - - {x: -58.5, y: 16.5}
+        - {x: -56.5, y: 14.5}
+        - {x: -53.5, y: 15.5}
+        - {x: -53.5, y: 18.5}
+        - {x: -55.5, y: 20.5}
+        - {x: -58.5, y: 19.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_28
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 1170
+        width: 199
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.5, y: -121.5}
+        - {x: -1.5, y: -123.5}
+        - {x: 0.5, y: -125.5}
+        - {x: 4.5, y: -125.5}
+        - {x: 6.5, y: -123.5}
+        - {x: 5.5, y: -120.5}
+        - {x: 0.5, y: -120.5}
+      - - {x: 9.5, y: -123.5}
+        - {x: 10.5, y: -125.5}
+        - {x: 17.5, y: -125.5}
+        - {x: 18.5, y: -124.5}
+        - {x: 17.5, y: -121.5}
+        - {x: 11.5, y: -121.5}
+      - - {x: -48.5, y: 125.5}
+        - {x: -99.5, y: 81.5}
+        - {x: -99.5, y: 52.5}
+        - {x: -81.5, y: 31.5}
+        - {x: -79.5, y: -74.5}
+        - {x: -50.5, y: -118.5}
+        - {x: -41.5, y: -118.5}
+        - {x: -21.5, y: -107.5}
+        - {x: -19.5, y: -103.5}
+        - {x: -16.5, y: -116.5}
+        - {x: -7.5, y: -118.5}
+        - {x: 57.5, y: -118.5}
+        - {x: 94.5, y: -98.5}
+        - {x: 94.5, y: 53.5}
+        - {x: -4.5, y: 125.5}
+      - - {x: -53.5, y: -104.5}
+        - {x: -55.5, y: -105.5}
+        - {x: -55.5, y: -111.5}
+        - {x: -49.5, y: -115.5}
+        - {x: -45.5, y: -115.5}
+        - {x: -45.5, y: -108.5}
+        - {x: -50.5, y: -104.5}
+      - - {x: -18.5, y: -112.5}
+        - {x: -17.5, y: -115.5}
+        - {x: -13.5, y: -115.5}
+        - {x: -11.5, y: -114.5}
+        - {x: -11.5, y: -112.5}
+        - {x: -14.5, y: -108.5}
+        - {x: -16.5, y: -108.5}
+        - {x: -18.5, y: -109.5}
+      - - {x: -19.5, y: -106.5}
+        - {x: -17.5, y: -108.5}
+        - {x: -14.5, y: -107.5}
+        - {x: -14.5, y: -104.5}
+        - {x: -16.5, y: -102.5}
+        - {x: -19.5, y: -103.5}
+      - - {x: -61.5, y: -96.5}
+        - {x: -62.5, y: -98.5}
+        - {x: -62.5, y: -101.5}
+        - {x: -58.5, y: -105.5}
+        - {x: -53.5, y: -105.5}
+        - {x: -53.5, y: -100.5}
+        - {x: -55.5, y: -96.5}
+      - - {x: -58.5, y: -44.5}
+        - {x: -62.5, y: -44.5}
+        - {x: -66.5, y: -50.5}
+        - {x: -66.5, y: -61.5}
+        - {x: -64.5, y: -62.5}
+        - {x: -62.5, y: -62.5}
+        - {x: -57.5, y: -57.5}
+        - {x: -56.5, y: -51.5}
+        - {x: -56.5, y: -45.5}
+      - - {x: -58.5, y: -37.5}
+        - {x: -61.5, y: -40.5}
+        - {x: -61.5, y: -41.5}
+        - {x: -58.5, y: -44.5}
+        - {x: -57.5, y: -44.5}
+        - {x: -54.5, y: -41.5}
+        - {x: -54.5, y: -40.5}
+        - {x: -57.5, y: -37.5}
+      - - {x: -58.5, y: -29.5}
+        - {x: -61.5, y: -29.5}
+        - {x: -64.5, y: -32.5}
+        - {x: -64.5, y: -33.5}
+        - {x: -62.5, y: -36.5}
+        - {x: -56.5, y: -36.5}
+        - {x: -54.5, y: -35.5}
+        - {x: -54.5, y: -31.5}
+      - - {x: -60.5, y: -6.5}
+        - {x: -63.5, y: -8.5}
+        - {x: -63.5, y: -29.5}
+        - {x: -58.5, y: -29.5}
+        - {x: -53.5, y: -27.5}
+        - {x: -53.5, y: -6.5}
+      - - {x: -57.5, y: 6.5}
+        - {x: -60.5, y: 2.5}
+        - {x: -60.5, y: -2.5}
+        - {x: -56.5, y: -6.5}
+        - {x: -53.5, y: -5.5}
+        - {x: -51.5, y: 1.5}
+        - {x: -51.5, y: 6.5}
+        - {x: -54.5, y: 7.5}
+      - - {x: 62.5, y: -0.5}
+        - {x: 61.5, y: 2.5}
+        - {x: 58.5, y: -0.5}
+        - {x: 56.5, y: -3.5}
+        - {x: 56.5, y: -4.5}
+      - - {x: 44.5, y: 8.5}
+        - {x: 42.5, y: 6.5}
+        - {x: 42.5, y: 3.5}
+        - {x: 44.5, y: 1.5}
+        - {x: 46.5, y: 1.5}
+        - {x: 49.5, y: 4.5}
+        - {x: 49.5, y: 5.5}
+        - {x: 46.5, y: 8.5}
+      - - {x: 31.5, y: 14.5}
+        - {x: 29.5, y: 12.5}
+        - {x: 29.5, y: 10.5}
+        - {x: 33.5, y: 6.5}
+        - {x: 36.5, y: 6.5}
+        - {x: 38.5, y: 8.5}
+        - {x: 38.5, y: 10.5}
+        - {x: 34.5, y: 14.5}
+      - - {x: 95.5, y: 18.5}
+        - {x: 95.5, y: 12.5}
+        - {x: 98.5, y: 8.5}
+        - {x: 99.5, y: 8.5}
+        - {x: 99.5, y: 18.5}
+        - {x: 98.5, y: 19.5}
+      - - {x: 28.5, y: 22.5}
+        - {x: 26.5, y: 21.5}
+        - {x: 26.5, y: 16.5}
+        - {x: 27.5, y: 15.5}
+        - {x: 31.5, y: 15.5}
+        - {x: 32.5, y: 17.5}
+        - {x: 32.5, y: 20.5}
+        - {x: 31.5, y: 22.5}
+      - - {x: -63.5, y: 32.5}
+        - {x: -64.5, y: 30.5}
+        - {x: -64.5, y: 26.5}
+        - {x: -55.5, y: 17.5}
+        - {x: -52.5, y: 17.5}
+        - {x: -50.5, y: 19.5}
+        - {x: -50.5, y: 27.5}
+        - {x: -56.5, y: 32.5}
+      - - {x: 16.5, y: 33.5}
+        - {x: 12.5, y: 30.5}
+        - {x: 12.5, y: 28.5}
+        - {x: 16.5, y: 22.5}
+        - {x: 19.5, y: 20.5}
+        - {x: 22.5, y: 21.5}
+        - {x: 22.5, y: 28.5}
+        - {x: 19.5, y: 33.5}
+      - - {x: -71.5, y: 27.5}
+        - {x: -68.5, y: 28.5}
+        - {x: -68.5, y: 31.5}
+        - {x: -71.5, y: 32.5}
+        - {x: -73.5, y: 30.5}
+      - - {x: 9.5, y: 34.5}
+        - {x: 10.5, y: 31.5}
+        - {x: 13.5, y: 31.5}
+        - {x: 15.5, y: 33.5}
+        - {x: 14.5, y: 36.5}
+        - {x: 11.5, y: 36.5}
+      - - {x: -71.5, y: 108.5}
+        - {x: -73.5, y: 107.5}
+        - {x: -73.5, y: 103.5}
+        - {x: -72.5, y: 101.5}
+        - {x: -68.5, y: 101.5}
+        - {x: -66.5, y: 103.5}
+        - {x: -66.5, y: 105.5}
+        - {x: -67.5, y: 108.5}
+      - - {x: -49.5, y: 123.5}
+        - {x: -49.5, y: 118.5}
+        - {x: -48.5, y: 116.5}
+        - {x: -46.5, y: 116.5}
+        - {x: -41.5, y: 119.5}
+        - {x: -41.5, y: 123.5}
+        - {x: -43.5, y: 125.5}
+        - {x: -47.5, y: 125.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_29
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1299
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -2}
+        - {x: 3, y: -2}
+        - {x: 3, y: 2}
+        - {x: -3, y: 2}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_30
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 1206
+        width: 208
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: -69.5}
+        - {x: 0, y: -71.5}
+        - {x: 0, y: -75.5}
+        - {x: 18, y: -75.5}
+        - {x: 19, y: -74.5}
+        - {x: 19, y: -71.5}
+        - {x: 18, y: -69.5}
+      - - {x: 51, y: -70.5}
+        - {x: 47, y: -73.5}
+        - {x: 48, y: -75.5}
+        - {x: 54, y: -75.5}
+        - {x: 55, y: -74.5}
+        - {x: 55, y: -72.5}
+        - {x: 53, y: -70.5}
+      - - {x: 76, y: 70.5}
+        - {x: -98, y: 70.5}
+        - {x: -104, y: 68.5}
+        - {x: -104, y: -28.5}
+        - {x: -52, y: -33.5}
+        - {x: -49, y: -26.5}
+        - {x: -42, y: -21.5}
+        - {x: -42, y: -18.5}
+        - {x: -43, y: -27.5}
+        - {x: -42, y: -33.5}
+        - {x: -23, y: -49.5}
+        - {x: -15, y: -44.5}
+        - {x: -25, y: -64.5}
+        - {x: -15, y: -71.5}
+        - {x: 39, y: -71.5}
+        - {x: 104, y: -59.5}
+        - {x: 104, y: 47.5}
+      - - {x: 48, y: -36.5}
+        - {x: 49, y: -35.5}
+        - {x: 51, y: -35.5}
+        - {x: 55, y: -33.5}
+        - {x: 60, y: -32.5}
+        - {x: 76, y: -16.5}
+        - {x: 76, y: -14.5}
+        - {x: 78, y: -12.5}
+        - {x: 77, y: -12.5}
+        - {x: 77, y: -17.5}
+        - {x: 75, y: -18.5}
+        - {x: 69, y: -25.5}
+        - {x: 60, y: -33.5}
+        - {x: 58, y: -33.5}
+        - {x: 55, y: -35.5}
+        - {x: 39, y: -36.5}
+        - {x: 40, y: -37.5}
+      - - {x: -40, y: -8.5}
+        - {x: -40, y: -14.5}
+        - {x: -41, y: -15.5}
+        - {x: -40, y: -15.5}
+      - - {x: 13, y: -6.5}
+        - {x: 16, y: -10.5}
+        - {x: 19, y: -10.5}
+        - {x: 17, y: -8.5}
+        - {x: 11, y: -8.5}
+        - {x: 10, y: -9.5}
+      - - {x: 91, y: 19.5}
+        - {x: 94, y: 20.5}
+        - {x: 94, y: 23.5}
+        - {x: 91, y: 24.5}
+        - {x: 89, y: 22.5}
+      - - {x: -5, y: 54.5}
+        - {x: -7, y: 51.5}
+        - {x: -6, y: 48.5}
+        - {x: 12, y: 48.5}
+        - {x: 12, y: 54.5}
+      - - {x: -20, y: 55.5}
+        - {x: -17, y: 51.5}
+        - {x: -14, y: 52.5}
+        - {x: -12, y: 57.5}
+        - {x: -17, y: 60.5}
+        - {x: -20, y: 57.5}
+      - - {x: -83, y: 73.5}
+        - {x: -83, y: 75.5}
+        - {x: -88, y: 75.5}
+        - {x: -86, y: 72.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_32
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 933
+        width: 269
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -71.5, y: 81}
+        - {x: -111.5, y: 76}
+        - {x: -100.5, y: 42}
+        - {x: -100.5, y: 33}
+        - {x: -101.5, y: 32}
+        - {x: -101.5, y: 30}
+        - {x: -101.5, y: 33}
+        - {x: -100.5, y: 34}
+        - {x: -100.5, y: 43}
+        - {x: -107.5, y: 50}
+        - {x: -119.5, y: 49}
+        - {x: -120.5, y: 46}
+        - {x: -121.5, y: 36}
+        - {x: -121.5, y: 33}
+        - {x: -125.5, y: 35}
+        - {x: -120.5, y: 46}
+        - {x: -120.5, y: 50}
+        - {x: -121.5, y: 53}
+        - {x: -134.5, y: 52}
+        - {x: -134.5, y: 24}
+        - {x: -87.5, y: -81}
+        - {x: 71.5, y: -81}
+        - {x: 134.5, y: 1}
+        - {x: 134.5, y: 41}
+        - {x: 82.5, y: 81}
+      - - {x: -111.5, y: 39}
+        - {x: -110.5, y: 39}
+        - {x: -110.5, y: 33}
+        - {x: -111.5, y: 33}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_33
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 933
+        width: 129
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64.5, y: 25.5}
+        - {x: 32.5, y: 79.5}
+        - {x: -31.5, y: 79.5}
+        - {x: -64.5, y: 14.5}
+        - {x: -64.5, y: -37.5}
+        - {x: -50.5, y: -73.5}
+        - {x: -38.5, y: -79.5}
+        - {x: 31.5, y: -79.5}
+        - {x: 52.5, y: -69.5}
+        - {x: 64.5, y: -44.5}
+      - - {x: -31.5, y: -65.5}
+        - {x: -32.5, y: -67.5}
+        - {x: -27.5, y: -67.5}
+        - {x: -25.5, y: -65.5}
+      - - {x: 26.5, y: -65.5}
+        - {x: 29.5, y: -63.5}
+        - {x: 32.5, y: -63.5}
+        - {x: 31.5, y: -65.5}
+      - - {x: -24.5, y: 24.5}
+        - {x: 0.5, y: 49.5}
+        - {x: 28.5, y: -45.5}
+        - {x: 3.5, y: -57.5}
+      - - {x: 41.5, y: -25.5}
+        - {x: 40.5, y: -24.5}
+        - {x: 39.5, y: -12.5}
+        - {x: 37.5, y: -9.5}
+        - {x: 34.5, y: -7.5}
+        - {x: 40.5, y: -15.5}
+        - {x: 41.5, y: -30.5}
+        - {x: 42.5, y: -29.5}
+      - - {x: -55.5, y: -13.5}
+        - {x: -53.5, y: -12.5}
+        - {x: -44.5, y: 3.5}
+        - {x: -39.5, y: 16.5}
+        - {x: -39.5, y: 24.5}
+        - {x: -36.5, y: 27.5}
+        - {x: -37.5, y: 31.5}
+        - {x: -38.5, y: 27.5}
+        - {x: -35.5, y: 23.5}
+        - {x: -35.5, y: 18.5}
+        - {x: -54.5, y: -15.5}
+        - {x: -56.5, y: -16.5}
+        - {x: -55.5, y: -15.5}
+      - - {x: 35.5, y: 32.5}
+        - {x: 34.5, y: 38.5}
+        - {x: 35.5, y: 39.5}
+        - {x: 34.5, y: 43.5}
+        - {x: 33.5, y: 39.5}
+        - {x: 35.5, y: 37.5}
+        - {x: 36.5, y: 18.5}
+      - - {x: -6.5, y: 38.5}
+        - {x: -13.5, y: 32.5}
+        - {x: -13.5, y: 26.5}
+        - {x: -5.5, y: 22.5}
+        - {x: 8.5, y: 22.5}
+        - {x: 13.5, y: 29.5}
+        - {x: 13.5, y: 35.5}
+        - {x: 9.5, y: 38.5}
+      - - {x: -14.5, y: 55.5}
+        - {x: -18.5, y: 55.5}
+        - {x: -21.5, y: 52.5}
+        - {x: -22.5, y: 48.5}
+        - {x: -22.5, y: 38.5}
+        - {x: -20.5, y: 37.5}
+        - {x: -9.5, y: 37.5}
+        - {x: -9.5, y: 38.5}
+        - {x: -8.5, y: 41.5}
+        - {x: -8.5, y: 52.5}
+      - - {x: 18.5, y: 57.5}
+        - {x: 12.5, y: 57.5}
+        - {x: 6.5, y: 55.5}
+        - {x: 6.5, y: 42.5}
+        - {x: 9.5, y: 37.5}
+        - {x: 18.5, y: 37.5}
+        - {x: 22.5, y: 44.5}
+        - {x: 22.5, y: 52.5}
+      - - {x: -4.5, y: 48.5}
+        - {x: -5.5, y: 44.5}
+        - {x: -3.5, y: 42.5}
+        - {x: -1.5, y: 42.5}
+        - {x: 0.5, y: 44.5}
+        - {x: 0.5, y: 47.5}
+        - {x: -1.5, y: 49.5}
+      - - {x: -0.5, y: 67.5}
+        - {x: -3.5, y: 70.5}
+        - {x: -9.5, y: 70.5}
+        - {x: -15.5, y: 68.5}
+        - {x: -15.5, y: 67.5}
+        - {x: -7.5, y: 67.5}
+        - {x: -3.5, y: 68.5}
+        - {x: -0.5, y: 71.5}
+        - {x: 3.5, y: 69.5}
+        - {x: -0.5, y: 66.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_34
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 952
+        width: 159
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -72.5, y: 64}
+        - {x: -72.5, y: -64}
+        - {x: -59.5, y: -64}
+        - {x: -56.5, y: -58}
+        - {x: -13.5, y: -64}
+        - {x: 73.5, y: -64}
+        - {x: 74.5, y: -7}
+        - {x: 74.5, y: 50}
+        - {x: 65.5, y: 64}
+      - - {x: -49.5, y: -57}
+        - {x: -47.5, y: -59}
+        - {x: -44.5, y: -58}
+        - {x: -44.5, y: -55}
+        - {x: -46.5, y: -53}
+        - {x: -49.5, y: -54}
+      - - {x: -15.5, y: 5}
+        - {x: -16.5, y: 5}
+        - {x: -15.5, y: 4}
+        - {x: -13.5, y: 4}
+      - - {x: -58.5, y: -21}
+        - {x: -57.5, y: -22}
+        - {x: -59.5, y: -23}
+        - {x: -58.5, y: -22}
+      - - {x: -19.5, y: -6}
+        - {x: -29.5, y: -6}
+        - {x: -29.5, y: -17}
+        - {x: -24.5, y: -22}
+        - {x: -14.5, y: -22}
+        - {x: -12.5, y: -19}
+        - {x: -12.5, y: -16}
+      - - {x: 59.5, y: -11}
+        - {x: 59.5, y: -10}
+        - {x: 57.5, y: -10}
+        - {x: 56.5, y: -11}
+      - - {x: -74.5, y: -5}
+        - {x: -71.5, y: -5}
+        - {x: -69.5, y: -3}
+        - {x: -69.5, y: 6}
+        - {x: -75.5, y: 6}
+        - {x: -75.5, y: -3}
+      - - {x: 39.5, y: 6}
+        - {x: 43.5, y: 9}
+        - {x: 43.5, y: 11}
+        - {x: 42.5, y: 8}
+      - - {x: 61.5, y: 15}
+        - {x: 59.5, y: 11}
+        - {x: 59.5, y: 7}
+        - {x: 64.5, y: 7}
+        - {x: 66.5, y: 12}
+        - {x: 63.5, y: 15}
+      - - {x: -35.5, y: 26}
+        - {x: -32.5, y: 20}
+        - {x: -28.5, y: 16}
+        - {x: -28.5, y: 12}
+      - - {x: -79.5, y: 24}
+        - {x: -79.5, y: 11}
+        - {x: -78.5, y: 10}
+        - {x: -75.5, y: 11}
+        - {x: -72.5, y: 18}
+        - {x: -72.5, y: 24}
+      - - {x: 30.5, y: 15}
+        - {x: 26.5, y: 15}
+        - {x: 24.5, y: 13}
+        - {x: 30.5, y: 13}
+        - {x: 37.5, y: 19}
+        - {x: 38.5, y: 22}
+        - {x: 37.5, y: 30}
+        - {x: 38.5, y: 29}
+        - {x: 39.5, y: 23}
+        - {x: 38.5, y: 23}
+        - {x: 35.5, y: 20}
+        - {x: 35.5, y: 15}
+        - {x: 33.5, y: 13}
+        - {x: 33.5, y: 12}
+      - - {x: -64.5, y: 11}
+        - {x: -61.5, y: 12}
+        - {x: -61.5, y: 15}
+        - {x: -64.5, y: 16}
+        - {x: -66.5, y: 14}
+      - - {x: 76.5, y: 30}
+        - {x: 78.5, y: 28}
+        - {x: 79.5, y: 28}
+        - {x: 79.5, y: 35}
+        - {x: 76.5, y: 34}
+      - - {x: 68.5, y: 29}
+        - {x: 71.5, y: 30}
+        - {x: 71.5, y: 33}
+        - {x: 68.5, y: 34}
+        - {x: 66.5, y: 32}
+      - - {x: -47.5, y: 40}
+        - {x: -48.5, y: 41}
+        - {x: -48.5, y: 46}
+        - {x: -46.5, y: 53}
+        - {x: -44.5, y: 54}
+        - {x: -45.5, y: 53}
+        - {x: -45.5, y: 48}
+        - {x: -48.5, y: 44}
+        - {x: -47.5, y: 38}
+      - - {x: 53.5, y: 52}
+        - {x: 54.5, y: 44}
+        - {x: 52.5, y: 40}
+        - {x: 53.5, y: 40}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_35
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 952
+        width: 164
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 61.5}
+        - {x: 21, y: 51.5}
+        - {x: 30, y: 71.5}
+        - {x: -79, y: 71.5}
+        - {x: -82, y: 61.5}
+        - {x: -82, y: -68.5}
+        - {x: -78, y: -71.5}
+        - {x: 44, y: -71.5}
+        - {x: 82, y: -60.5}
+        - {x: 82, y: 54.5}
+        - {x: 68, y: 66.5}
+      - - {x: -34, y: -61.5}
+        - {x: -29, y: -56.5}
+        - {x: -29, y: -52.5}
+        - {x: -31, y: -47.5}
+        - {x: -34, y: -45.5}
+        - {x: -35, y: -45.5}
+        - {x: -37, y: -43.5}
+        - {x: -41, y: -43.5}
+        - {x: -43, y: -42.5}
+        - {x: -47, y: -35.5}
+        - {x: -50, y: -32.5}
+        - {x: -54, y: -31.5}
+        - {x: -64, y: -31.5}
+        - {x: -69, y: -35.5}
+        - {x: -69, y: -39.5}
+        - {x: -67, y: -44.5}
+        - {x: -64, y: -48.5}
+        - {x: -65, y: -44.5}
+        - {x: -67, y: -35.5}
+        - {x: -67, y: -31.5}
+        - {x: -54, y: -30.5}
+        - {x: -51, y: -27.5}
+        - {x: -50, y: -22.5}
+        - {x: -47, y: -19.5}
+        - {x: -47, y: -15.5}
+        - {x: -49, y: -13.5}
+        - {x: -49, y: -8.5}
+        - {x: -52, y: -5.5}
+        - {x: -46, y: -6.5}
+        - {x: -43, y: -4.5}
+        - {x: -41, y: 0.5}
+        - {x: -41, y: 2.5}
+        - {x: -44, y: 7.5}
+        - {x: -49, y: 8.5}
+        - {x: -55, y: 8.5}
+        - {x: -56, y: 7.5}
+        - {x: -55, y: 8.5}
+        - {x: -57, y: 12.5}
+        - {x: -45, y: 46.5}
+        - {x: -34, y: 0.5}
+        - {x: -41, y: -0.5}
+        - {x: -43, y: -4.5}
+        - {x: -46, y: -4.5}
+        - {x: -49, y: -7.5}
+        - {x: -49, y: -11.5}
+        - {x: -48, y: -13.5}
+        - {x: -49, y: -14.5}
+        - {x: -49, y: -31.5}
+        - {x: -46, y: -34.5}
+        - {x: -45, y: -36.5}
+        - {x: -35, y: -45.5}
+        - {x: -32, y: -45.5}
+        - {x: -30, y: -47.5}
+        - {x: -23, y: -47.5}
+        - {x: -22, y: -51.5}
+        - {x: -33, y: -61.5}
+        - {x: -34, y: -60.5}
+      - - {x: -6, y: -55.5}
+        - {x: -7, y: 7.5}
+        - {x: 5, y: 12.5}
+        - {x: 6, y: -53.5}
+      - - {x: -52, y: -57.5}
+        - {x: -47, y: -61.5}
+        - {x: -45, y: -61.5}
+        - {x: -48, y: -60.5}
+        - {x: -49, y: -59.5}
+      - - {x: 40, y: -60.5}
+        - {x: 41, y: -59.5}
+        - {x: 46, y: -58.5}
+        - {x: 49, y: -55.5}
+        - {x: 49, y: -51.5}
+        - {x: 47, y: -49.5}
+        - {x: 47, y: -46.5}
+        - {x: 42, y: -41.5}
+        - {x: 41, y: -37.5}
+        - {x: 46, y: -34.5}
+        - {x: 49, y: -31.5}
+        - {x: 49, y: -26.5}
+        - {x: 55, y: -23.5}
+        - {x: 58, y: -26.5}
+        - {x: 67, y: -25.5}
+        - {x: 71, y: -21.5}
+        - {x: 70, y: -19.5}
+        - {x: 69, y: -31.5}
+        - {x: 66, y: -28.5}
+        - {x: 65, y: -28.5}
+        - {x: 62, y: -24.5}
+        - {x: 58, y: -24.5}
+        - {x: 57, y: -25.5}
+        - {x: 55, y: -25.5}
+        - {x: 50, y: -28.5}
+        - {x: 47, y: -31.5}
+        - {x: 47, y: -36.5}
+        - {x: 46, y: -36.5}
+        - {x: 43, y: -39.5}
+        - {x: 43, y: -43.5}
+        - {x: 46, y: -46.5}
+        - {x: 47, y: -46.5}
+        - {x: 47, y: -47.5}
+        - {x: 50, y: -50.5}
+        - {x: 54, y: -50.5}
+        - {x: 56, y: -48.5}
+        - {x: 60, y: -48.5}
+        - {x: 63, y: -47.5}
+        - {x: 67, y: -43.5}
+        - {x: 67, y: -40.5}
+        - {x: 65, y: -41.5}
+        - {x: 62, y: -45.5}
+        - {x: 62, y: -46.5}
+        - {x: 60, y: -48.5}
+        - {x: 58, y: -48.5}
+        - {x: 48, y: -56.5}
+        - {x: 47, y: -58.5}
+        - {x: 43, y: -58.5}
+        - {x: 37, y: -59.5}
+        - {x: 37, y: -60.5}
+      - - {x: 25, y: -51.5}
+        - {x: 22, y: -48.5}
+        - {x: 23, y: -55.5}
+        - {x: 26, y: -58.5}
+        - {x: 28, y: -58.5}
+        - {x: 29, y: -57.5}
+      - - {x: -31, y: -34.5}
+        - {x: -34, y: -22.5}
+        - {x: -38, y: -20.5}
+        - {x: -39, y: -21.5}
+        - {x: -38, y: -20.5}
+        - {x: -38, y: -13.5}
+        - {x: -36, y: -11.5}
+        - {x: -37, y: -11.5}
+        - {x: -34, y: -14.5}
+        - {x: -29, y: -35.5}
+        - {x: -28, y: -36.5}
+        - {x: -28, y: -35.5}
+      - - {x: 25, y: -31.5}
+        - {x: 34, y: -11.5}
+        - {x: 39, y: -11.5}
+        - {x: 31, y: -32.5}
+      - - {x: 18, y: -9.5}
+        - {x: 17, y: -8.5}
+        - {x: 17, y: 18.5}
+        - {x: 16, y: 22.5}
+        - {x: 15, y: 8.5}
+        - {x: 21, y: 2.5}
+        - {x: 24, y: 1.5}
+        - {x: 30, y: 1.5}
+        - {x: 39, y: 4.5}
+        - {x: 39, y: 0.5}
+        - {x: 42, y: -2.5}
+        - {x: 45, y: -3.5}
+        - {x: 55, y: -3.5}
+        - {x: 58, y: -1.5}
+        - {x: 59, y: -2.5}
+        - {x: 58, y: -2.5}
+        - {x: 53, y: -4.5}
+        - {x: 51, y: -7.5}
+        - {x: 51, y: -13.5}
+        - {x: 53, y: -11.5}
+        - {x: 53, y: -7.5}
+        - {x: 50, y: -4.5}
+        - {x: 46, y: -3.5}
+        - {x: 44, y: -0.5}
+        - {x: 41, y: 0.5}
+        - {x: 34, y: 0.5}
+        - {x: 29, y: -1.5}
+        - {x: 24, y: -5.5}
+        - {x: 20, y: -9.5}
+        - {x: 20, y: -10.5}
+        - {x: 17, y: -13.5}
+        - {x: 18, y: -13.5}
+      - - {x: -47, y: 26.5}
+        - {x: -52, y: 20.5}
+        - {x: -52, y: 11.5}
+        - {x: -48, y: 3.5}
+        - {x: -39, y: 1.5}
+        - {x: -21, y: 1.5}
+        - {x: -19, y: 8.5}
+        - {x: -19, y: 21.5}
+        - {x: -23, y: 26.5}
+      - - {x: 49, y: 10.5}
+        - {x: 50, y: 9.5}
+        - {x: 53, y: 12.5}
+        - {x: 56, y: 16.5}
+        - {x: 44, y: 31.5}
+        - {x: 29, y: 28.5}
+        - {x: 28, y: 27.5}
+        - {x: 18, y: 27.5}
+        - {x: 18, y: 26.5}
+        - {x: 20, y: 28.5}
+        - {x: 36, y: 40.5}
+        - {x: 65, y: 17.5}
+        - {x: 51, y: 10.5}
+        - {x: 50, y: 11.5}
+      - - {x: -34, y: 15.5}
+        - {x: -40, y: 15.5}
+        - {x: -30, y: 15.5}
+        - {x: -30, y: 14.5}
+      - - {x: 30, y: 17.5}
+        - {x: 38, y: 16.5}
+        - {x: 40, y: 16.5}
+        - {x: 41, y: 18.5}
+      - - {x: -58, y: 48.5}
+        - {x: -68, y: 41.5}
+        - {x: -68, y: 24.5}
+        - {x: -62, y: 22.5}
+        - {x: -47, y: 22.5}
+        - {x: -43, y: 28.5}
+        - {x: -43, y: 42.5}
+        - {x: -44, y: 48.5}
+      - - {x: -5, y: 32.5}
+        - {x: 3, y: 32.5}
+        - {x: 5, y: 29.5}
+        - {x: 6, y: 29.5}
+        - {x: 5, y: 33.5}
+        - {x: -4, y: 34.5}
+        - {x: -11, y: 27.5}
+        - {x: -10, y: 26.5}
+        - {x: -9, y: 27.5}
+      - - {x: 44, y: 50.5}
+        - {x: 44, y: 26.5}
+        - {x: 67, y: 26.5}
+        - {x: 69, y: 31.5}
+        - {x: 69, y: 50.5}
+      - - {x: -55, y: 37.5}
+        - {x: -53, y: 36.5}
+        - {x: -53, y: 32.5}
+        - {x: -57, y: 32.5}
+      - - {x: 54, y: 38.5}
+        - {x: 55, y: 40.5}
+        - {x: 58, y: 37.5}
+        - {x: 56, y: 38.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_36
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 972
+        width: 110
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 22.5}
+        - {x: 49, y: 32.5}
+        - {x: 32, y: 52.5}
+        - {x: -38, y: 52.5}
+        - {x: -55, y: 47.5}
+        - {x: -55, y: -14.5}
+        - {x: -48, y: -42.5}
+        - {x: -39, y: -43.5}
+        - {x: -12, y: -52.5}
+        - {x: 36, y: -52.5}
+        - {x: 55, y: -49.5}
+        - {x: 55, y: 5.5}
+        - {x: 49, y: 5.5}
+      - - {x: 11, y: -38.5}
+        - {x: 10, y: -31.5}
+        - {x: 14, y: -26.5}
+        - {x: 19, y: -21.5}
+        - {x: 19, y: -19.5}
+        - {x: 21, y: -16.5}
+        - {x: 21, y: -13.5}
+        - {x: 20, y: -12.5}
+        - {x: 20, y: -8.5}
+        - {x: 17, y: -5.5}
+        - {x: 9, y: -5.5}
+        - {x: 14, y: 4.5}
+        - {x: 17, y: 4.5}
+        - {x: 20, y: 7.5}
+        - {x: 20, y: 11.5}
+        - {x: 23, y: 11.5}
+        - {x: 22, y: 8.5}
+        - {x: 19, y: 7.5}
+        - {x: 17, y: 4.5}
+        - {x: 17, y: -5.5}
+        - {x: 23, y: -11.5}
+        - {x: 25, y: -16.5}
+        - {x: 21, y: -17.5}
+        - {x: 18, y: -20.5}
+        - {x: 18, y: -22.5}
+        - {x: 15, y: -26.5}
+        - {x: 13, y: -31.5}
+        - {x: 13, y: -37.5}
+        - {x: 10, y: -40.5}
+        - {x: 11, y: -41.5}
+      - - {x: -16, y: -30.5}
+        - {x: -15, y: -31.5}
+        - {x: -12, y: -28.5}
+        - {x: -12, y: -20.5}
+        - {x: -17, y: -13.5}
+        - {x: -15, y: -7.5}
+        - {x: -12, y: -4.5}
+        - {x: -12, y: 5.5}
+        - {x: -17, y: 10.5}
+        - {x: -21, y: 9.5}
+        - {x: -19, y: 8.5}
+        - {x: -16, y: 11.5}
+        - {x: -17, y: 16.5}
+        - {x: -17, y: 13.5}
+        - {x: -12, y: 9.5}
+        - {x: -7, y: 9.5}
+        - {x: -4, y: 10.5}
+        - {x: 0, y: 15.5}
+        - {x: 1, y: 21.5}
+        - {x: 0, y: 24.5}
+        - {x: -4, y: 27.5}
+        - {x: -4, y: 26.5}
+        - {x: -1, y: 26.5}
+        - {x: -1, y: 8.5}
+        - {x: -2, y: 7.5}
+        - {x: -7, y: 5.5}
+        - {x: -13, y: 0.5}
+        - {x: -14, y: -2.5}
+        - {x: -14, y: -8.5}
+        - {x: -13, y: -11.5}
+        - {x: -6, y: -17.5}
+        - {x: -3, y: -16.5}
+        - {x: -2, y: -15.5}
+        - {x: -2, y: -24.5}
+        - {x: -1, y: -25.5}
+        - {x: -3, y: -23.5}
+        - {x: -9, y: -23.5}
+        - {x: -13, y: -26.5}
+      - - {x: 9, y: 26.5}
+        - {x: 12, y: 23.5}
+        - {x: 9, y: 21.5}
+      - - {x: 5, y: 38.5}
+        - {x: 1, y: 38.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_37
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 968
+        width: 145
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.5, y: 53.5}
+        - {x: -38.5, y: 29.5}
+        - {x: -62.5, y: 2.5}
+        - {x: -72.5, y: -30.5}
+        - {x: -72.5, y: -53.5}
+        - {x: 37.5, y: -53.5}
+        - {x: 72.5, y: -3.5}
+        - {x: 72.5, y: 53.5}
+      - - {x: -51.5, y: -42.5}
+        - {x: -55.5, y: -42.5}
+        - {x: -51.5, y: -40.5}
+        - {x: -39.5, y: -44.5}
+        - {x: -25.5, y: -46.5}
+        - {x: -13.5, y: -46.5}
+        - {x: -11.5, y: -48.5}
+        - {x: -7.5, y: -48.5}
+        - {x: -4.5, y: -45.5}
+        - {x: 11.5, y: -37.5}
+        - {x: 19.5, y: -29.5}
+        - {x: 24.5, y: -18.5}
+        - {x: 24.5, y: -2.5}
+        - {x: 23.5, y: -1.5}
+        - {x: 25.5, y: -2.5}
+        - {x: 30.5, y: 1.5}
+        - {x: 32.5, y: 4.5}
+        - {x: 35.5, y: 10.5}
+        - {x: 48.5, y: 23.5}
+        - {x: 50.5, y: 23.5}
+        - {x: 48.5, y: 21.5}
+        - {x: 48.5, y: 17.5}
+        - {x: 53.5, y: 10.5}
+        - {x: 60.5, y: 13.5}
+        - {x: 61.5, y: 18.5}
+        - {x: 61.5, y: 20.5}
+        - {x: 59.5, y: 22.5}
+        - {x: 62.5, y: 19.5}
+        - {x: 61.5, y: 18.5}
+        - {x: 61.5, y: 10.5}
+        - {x: 60.5, y: 9.5}
+        - {x: 36.5, y: 10.5}
+        - {x: 32.5, y: 3.5}
+        - {x: 22.5, y: -40.5}
+        - {x: -3.5, y: -45.5}
+        - {x: -4.5, y: -46.5}
+        - {x: -5.5, y: -45.5}
+        - {x: -7.5, y: -46.5}
+        - {x: -39.5, y: -46.5}
+        - {x: -40.5, y: -45.5}
+      - - {x: -48.5, y: -26.5}
+        - {x: -47.5, y: 2.5}
+        - {x: -43.5, y: 7.5}
+        - {x: -39.5, y: 7.5}
+        - {x: -36.5, y: 10.5}
+        - {x: -36.5, y: 13.5}
+        - {x: -30.5, y: 16.5}
+        - {x: -27.5, y: 15.5}
+        - {x: -23.5, y: 15.5}
+        - {x: -20.5, y: 18.5}
+        - {x: -14.5, y: 18.5}
+        - {x: -11.5, y: 15.5}
+        - {x: -7.5, y: 15.5}
+        - {x: -5.5, y: 17.5}
+        - {x: 5.5, y: 10.5}
+        - {x: 5.5, y: 6.5}
+        - {x: 8.5, y: 3.5}
+        - {x: 11.5, y: 4.5}
+        - {x: 8.5, y: 5.5}
+        - {x: 2.5, y: 12.5}
+        - {x: -4.5, y: 15.5}
+        - {x: -7.5, y: 15.5}
+        - {x: -8.5, y: 16.5}
+        - {x: -18.5, y: 16.5}
+        - {x: -19.5, y: 15.5}
+        - {x: -23.5, y: 15.5}
+        - {x: -26.5, y: 14.5}
+        - {x: -35.5, y: 13.5}
+        - {x: -46.5, y: 2.5}
+        - {x: -47.5, y: -11.5}
+        - {x: -44.5, y: -18.5}
+        - {x: -35.5, y: -26.5}
+        - {x: -30.5, y: -29.5}
+        - {x: -23.5, y: -32.5}
+        - {x: -15.5, y: -32.5}
+        - {x: -8.5, y: -25.5}
+        - {x: -3.5, y: -19.5}
+        - {x: -6.5, y: -3.5}
+        - {x: -24.5, y: -1.5}
+        - {x: -27.5, y: -4.5}
+        - {x: -28.5, y: -14.5}
+        - {x: -25.5, y: -16.5}
+        - {x: -30.5, y: -18.5}
+        - {x: -30.5, y: -0.5}
+        - {x: -20.5, y: 5.5}
+        - {x: 4.5, y: -4.5}
+        - {x: 1.5, y: -18.5}
+        - {x: -14.5, y: -32.5}
+        - {x: -16.5, y: -32.5}
+        - {x: -28.5, y: -34.5}
+      - - {x: 17.5, y: -36.5}
+        - {x: 20.5, y: -35.5}
+        - {x: 20.5, y: -32.5}
+        - {x: 17.5, y: -31.5}
+        - {x: 15.5, y: -33.5}
+      - - {x: 44.5, y: -33.5}
+        - {x: 47.5, y: -32.5}
+        - {x: 47.5, y: -29.5}
+        - {x: 44.5, y: -28.5}
+        - {x: 42.5, y: -30.5}
+      - - {x: 9.5, y: -24.5}
+        - {x: 13.5, y: -18.5}
+        - {x: 13.5, y: -16.5}
+        - {x: 14.5, y: -15.5}
+        - {x: 14.5, y: -2.5}
+        - {x: 13.5, y: -5.5}
+        - {x: 15.5, y: -7.5}
+        - {x: 15.5, y: -14.5}
+        - {x: 13.5, y: -17.5}
+        - {x: 13.5, y: -20.5}
+        - {x: 11.5, y: -21.5}
+        - {x: 10.5, y: -24.5}
+        - {x: 5.5, y: -29.5}
+        - {x: 2.5, y: -31.5}
+        - {x: 3.5, y: -31.5}
+      - - {x: 43.5, y: -17.5}
+        - {x: 45.5, y: -19.5}
+        - {x: 48.5, y: -18.5}
+        - {x: 48.5, y: -15.5}
+        - {x: 46.5, y: -13.5}
+        - {x: 43.5, y: -14.5}
+      - - {x: 44.5, y: 20.5}
+        - {x: 47.5, y: 21.5}
+        - {x: 47.5, y: 24.5}
+        - {x: 44.5, y: 25.5}
+        - {x: 42.5, y: 23.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_38
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 980
+        width: 129
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52.5, y: 43}
+        - {x: -64.5, y: 30}
+        - {x: -64.5, y: 13}
+        - {x: -59.5, y: 8}
+        - {x: -58.5, y: 8}
+        - {x: -56.5, y: 6}
+        - {x: -64.5, y: 11}
+        - {x: -64.5, y: -10}
+        - {x: -37.5, y: -43}
+        - {x: 42.5, y: -43}
+        - {x: 64.5, y: -14}
+        - {x: 64.5, y: 18}
+        - {x: 19.5, y: 43}
+      - - {x: -29.5, y: -20}
+        - {x: -35.5, y: -18}
+        - {x: -41.5, y: -12}
+        - {x: -42.5, y: -12}
+        - {x: -41.5, y: -14}
+        - {x: -37.5, y: -15}
+        - {x: -34.5, y: -12}
+        - {x: -34.5, y: -11}
+        - {x: -37.5, y: -9}
+        - {x: -36.5, y: -11}
+        - {x: -36.5, y: -15}
+        - {x: -33.5, y: -18}
+        - {x: -29.5, y: -18}
+        - {x: -26.5, y: -15}
+        - {x: -26.5, y: -11}
+        - {x: -27.5, y: -10}
+        - {x: -28.5, y: -10}
+        - {x: -28.5, y: -15}
+        - {x: -25.5, y: -18}
+        - {x: -20.5, y: -19}
+        - {x: 3.5, y: -12}
+        - {x: 26.5, y: 2}
+        - {x: 29.5, y: 5}
+        - {x: 29.5, y: 9}
+        - {x: 26.5, y: 12}
+        - {x: 22.5, y: 13}
+        - {x: 21.5, y: 13}
+        - {x: 24.5, y: 10}
+        - {x: 26.5, y: 10}
+        - {x: 29.5, y: 13}
+        - {x: 30.5, y: 7}
+        - {x: 35.5, y: 0}
+        - {x: 41.5, y: 0}
+        - {x: 10.5, y: -16}
+      - - {x: -31.5, y: 2}
+        - {x: -30.5, y: 1}
+        - {x: -28.5, y: 1}
+        - {x: -25.5, y: 4}
+        - {x: -26.5, y: 6}
+      - - {x: -47.5, y: 8}
+        - {x: -49.5, y: 8}
+        - {x: -50.5, y: 7}
+        - {x: -45.5, y: 4}
+        - {x: -43.5, y: 4}
+        - {x: -40.5, y: 7}
+        - {x: -40.5, y: 9}
+        - {x: -45.5, y: 15}
+        - {x: -44.5, y: 14}
+        - {x: -41.5, y: 17}
+        - {x: -41.5, y: 19}
+        - {x: -41.5, y: 18}
+        - {x: -40.5, y: 17}
+        - {x: -40.5, y: 18}
+        - {x: -43.5, y: 15}
+        - {x: -43.5, y: 13}
+        - {x: -39.5, y: 9}
+        - {x: -39.5, y: 10}
+        - {x: -40.5, y: 9}
+        - {x: -40.5, y: 8}
+        - {x: -41.5, y: 8}
+        - {x: -44.5, y: 5}
+        - {x: -44.5, y: 3}
+        - {x: -42.5, y: 2}
+        - {x: -42.5, y: 4}
+      - - {x: -16.5, y: 5}
+        - {x: -16.5, y: 10}
+        - {x: -15.5, y: 10}
+        - {x: -16.5, y: 9}
+        - {x: -16.5, y: 5}
+        - {x: -14.5, y: 4}
+        - {x: -15.5, y: 5}
+      - - {x: 4.5, y: 10}
+        - {x: 2.5, y: 10}
+        - {x: 4.5, y: 8}
+        - {x: 7.5, y: 8}
+      - - {x: -11.5, y: 18}
+        - {x: -12.5, y: 17}
+        - {x: -9.5, y: 12}
+        - {x: -8.5, y: 13}
+      - - {x: -26.5, y: 17}
+        - {x: -33.5, y: 24}
+        - {x: -35.5, y: 23}
+        - {x: -30.5, y: 18}
+        - {x: -23.5, y: 15}
+        - {x: -20.5, y: 18}
+        - {x: -20.5, y: 20}
+        - {x: -22.5, y: 22}
+        - {x: -21.5, y: 22}
+        - {x: -20.5, y: 21}
+        - {x: -20.5, y: 17}
+        - {x: -22.5, y: 17}
+        - {x: -23.5, y: 16}
+        - {x: -26.5, y: 15}
+      - - {x: 8.5, y: 19}
+        - {x: 4.5, y: 23}
+        - {x: 3.5, y: 23}
+        - {x: 6.5, y: 26}
+        - {x: 6.5, y: 28}
+        - {x: 4.5, y: 31}
+        - {x: 3.5, y: 29}
+        - {x: 7.5, y: 23}
+        - {x: 7.5, y: 17}
+        - {x: 10.5, y: 14}
+        - {x: 11.5, y: 15}
+      - - {x: -2.5, y: 21}
+        - {x: -5.5, y: 24}
+        - {x: -6.5, y: 24}
+        - {x: -8.5, y: 26}
+        - {x: -11.5, y: 26}
+        - {x: -14.5, y: 25}
+        - {x: -11.5, y: 24}
+        - {x: -4.5, y: 30}
+        - {x: -5.5, y: 30}
+        - {x: -7.5, y: 27}
+        - {x: -7.5, y: 25}
+        - {x: -6.5, y: 22}
+        - {x: -0.5, y: 17}
+        - {x: -0.5, y: 18}
+        - {x: -2.5, y: 17}
+      - - {x: 12.5, y: 30}
+        - {x: 14.5, y: 28}
+        - {x: 14.5, y: 29}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_39
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 939
+        width: 120
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: -68}
+        - {x: 28, y: -69}
+        - {x: 29, y: -80}
+        - {x: 36, y: -85}
+        - {x: 60, y: -89}
+        - {x: 60, y: 73}
+        - {x: 55, y: 92}
+        - {x: -14, y: 92}
+        - {x: -39, y: 80}
+        - {x: -53, y: 51}
+        - {x: -60, y: 10}
+        - {x: -60, y: -89}
+        - {x: -56, y: -89}
+        - {x: -39, y: -86}
+        - {x: -35, y: -76}
+        - {x: -20, y: -85}
+        - {x: -11, y: -84}
+        - {x: -3, y: -82}
+        - {x: 9, y: -92}
+        - {x: 25, y: -92}
+        - {x: 26, y: -91}
+        - {x: 28, y: -79}
+        - {x: 28, y: -72}
+      - - {x: 15, y: -44}
+        - {x: 15, y: -61}
+        - {x: 16, y: -68}
+      - - {x: -45, y: -43}
+        - {x: -48, y: -40}
+        - {x: -49, y: -35}
+        - {x: -44, y: -18}
+        - {x: -36, y: -18}
+        - {x: -29, y: -15}
+        - {x: -20, y: -5}
+        - {x: -16, y: 4}
+        - {x: -15, y: -7}
+        - {x: -34, y: -18}
+        - {x: -40, y: -20}
+        - {x: -43, y: -23}
+        - {x: -46, y: -29}
+        - {x: -47, y: -47}
+        - {x: -44, y: -50}
+      - - {x: -21, y: -59}
+        - {x: -21, y: -51}
+        - {x: -22, y: -46}
+        - {x: -19, y: -44}
+        - {x: -18, y: -42}
+        - {x: -19, y: -42}
+        - {x: -19, y: -43}
+        - {x: -21, y: -49}
+        - {x: -21, y: -58}
+        - {x: -20, y: -61}
+      - - {x: 51, y: -39}
+        - {x: 50, y: -37}
+        - {x: 50, y: -40}
+      - - {x: -1, y: -63}
+        - {x: -4, y: -60}
+        - {x: -2, y: -66}
+        - {x: -1, y: -66}
+      - - {x: -34, y: -40}
+        - {x: -33, y: -39}
+        - {x: -33, y: -35}
+        - {x: -36, y: -32}
+        - {x: -37, y: -33}
+        - {x: -36, y: -34}
+        - {x: -33, y: -31}
+        - {x: -28, y: -30}
+        - {x: -23, y: -30}
+        - {x: -22, y: -29}
+        - {x: -32, y: -40}
+        - {x: -35, y: -43}
+        - {x: -34, y: -46}
+        - {x: -33, y: -45}
+      - - {x: -13, y: -34}
+        - {x: -11, y: -31}
+        - {x: -9, y: -27}
+        - {x: -13, y: -34}
+        - {x: -14, y: -36}
+        - {x: -13, y: -36}
+      - - {x: 42, y: -31}
+        - {x: 46, y: -33}
+        - {x: 43, y: -32}
+        - {x: 43, y: -31}
+      - - {x: 15, y: -26}
+        - {x: 10, y: -16}
+        - {x: 8, y: -15}
+        - {x: 8, y: -12}
+        - {x: 7, y: -6}
+        - {x: 9, y: 17}
+        - {x: 5, y: 22}
+        - {x: -9, y: 75}
+        - {x: 22, y: 24}
+        - {x: 21, y: 21}
+        - {x: 21, y: 17}
+        - {x: 22, y: 16}
+        - {x: 22, y: 9}
+        - {x: 21, y: 8}
+        - {x: 20, y: 1}
+        - {x: 20, y: -8}
+        - {x: 21, y: -9}
+        - {x: 21, y: -15}
+        - {x: 24, y: -18}
+        - {x: 25, y: -18}
+        - {x: 30, y: -24}
+        - {x: 34, y: -28}
+        - {x: 38, y: -28}
+        - {x: 28, y: -20}
+        - {x: 24, y: -20}
+        - {x: 23, y: -19}
+        - {x: 23, y: -15}
+        - {x: 20, y: -12}
+        - {x: 20, y: 10}
+        - {x: 23, y: 13}
+        - {x: 23, y: 17}
+        - {x: 22, y: 20}
+        - {x: 18, y: 24}
+        - {x: 12, y: 24}
+        - {x: 9, y: 21}
+        - {x: 9, y: 17}
+        - {x: 8, y: -11}
+        - {x: 9, y: -12}
+        - {x: 9, y: -19}
+        - {x: 12, y: -22}
+        - {x: 14, y: -31}
+        - {x: 15, y: -29}
+      - - {x: 6, y: 54}
+        - {x: 6, y: 70}
+        - {x: 3, y: 71}
+        - {x: -7, y: 71}
+        - {x: -14, y: 50}
+        - {x: -14, y: 43}
+        - {x: -5, y: 35}
+        - {x: 0, y: 35}
+        - {x: 4, y: 39}
+        - {x: 4, y: 42}
+        - {x: 2, y: 44}
+      - - {x: 13, y: 70}
+        - {x: 10, y: 65}
+        - {x: 10, y: 56}
+        - {x: 14, y: 52}
+        - {x: 19, y: 52}
+        - {x: 26, y: 55}
+        - {x: 26, y: 67}
+        - {x: 19, y: 70}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_40
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 671
+        width: 381
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 91.5, y: 108.5}
+        - {x: -87.5, y: 108.5}
+        - {x: -190.5, y: 5.5}
+        - {x: -190.5, y: -39.5}
+        - {x: -174.5, y: -47.5}
+        - {x: -162.5, y: -43.5}
+        - {x: -160.5, y: -41.5}
+        - {x: -160.5, y: -35.5}
+        - {x: -161.5, y: -33.5}
+        - {x: -160.5, y: -33.5}
+        - {x: -160.5, y: -35.5}
+        - {x: -158.5, y: -37.5}
+        - {x: -153.5, y: -39.5}
+        - {x: -149.5, y: -30.5}
+        - {x: -132.5, y: -2.5}
+        - {x: -105.5, y: -80.5}
+        - {x: -88.5, y: -106.5}
+        - {x: -85.5, y: -108.5}
+        - {x: 82.5, y: -108.5}
+        - {x: 190.5, y: -18.5}
+        - {x: 190.5, y: 37.5}
+        - {x: 125.5, y: 94.5}
+      - - {x: -67.5, y: -97.5}
+        - {x: -65.5, y: -96.5}
+        - {x: -62.5, y: -100.5}
+        - {x: -67.5, y: -100.5}
+      - - {x: -77.5, y: -99.5}
+        - {x: -79.5, y: -97.5}
+      - - {x: -50.5, y: -96.5}
+        - {x: -50.5, y: -98.5}
+      - - {x: 40.5, y: -90.5}
+        - {x: 42.5, y: -90.5}
+        - {x: 43.5, y: -95.5}
+        - {x: 38.5, y: -95.5}
+      - - {x: 24.5, y: -93.5}
+        - {x: 25.5, y: -94.5}
+        - {x: 27.5, y: -92.5}
+        - {x: 25.5, y: -93.5}
+      - - {x: -73.5, y: -78.5}
+        - {x: -75.5, y: -63.5}
+        - {x: -62.5, y: -66.5}
+        - {x: -50.5, y: -84.5}
+      - - {x: 52.5, y: -31.5}
+        - {x: 52.5, y: -29.5}
+        - {x: 55.5, y: -26.5}
+        - {x: 54.5, y: -25.5}
+        - {x: 53.5, y: -80.5}
+        - {x: 38.5, y: -78.5}
+      - - {x: 11.5, y: -57.5}
+        - {x: 10.5, y: -59.5}
+        - {x: 11.5, y: -66.5}
+        - {x: 12.5, y: -66.5}
+      - - {x: -94.5, y: -49.5}
+        - {x: -93.5, y: -47.5}
+        - {x: -94.5, y: -46.5}
+        - {x: -93.5, y: -48.5}
+        - {x: -94.5, y: -57.5}
+        - {x: -94.5, y: -61.5}
+      - - {x: 52.5, y: 15.5}
+        - {x: 52.5, y: 17.5}
+        - {x: 72.5, y: 39.5}
+        - {x: 72.5, y: 75.5}
+        - {x: 58.5, y: 80.5}
+        - {x: 117.5, y: 66.5}
+        - {x: 100.5, y: 41.5}
+        - {x: 56.5, y: 20.5}
+        - {x: 53.5, y: 17.5}
+        - {x: 52.5, y: 13.5}
+        - {x: 32.5, y: -27.5}
+      - - {x: 158.5, y: 11.5}
+        - {x: 157.5, y: 11.5}
+        - {x: 158.5, y: 10.5}
+        - {x: 159.5, y: 6.5}
+      - - {x: 142.5, y: 11.5}
+        - {x: 143.5, y: 16.5}
+        - {x: 146.5, y: 7.5}
+        - {x: 144.5, y: 8.5}
+      - - {x: 132.5, y: 16.5}
+        - {x: 132.5, y: 20.5}
+        - {x: 130.5, y: 16.5}
+        - {x: 130.5, y: 14.5}
+        - {x: 131.5, y: 14.5}
+      - - {x: 118.5, y: 26.5}
+        - {x: 120.5, y: 28.5}
+        - {x: 121.5, y: 32.5}
+        - {x: 125.5, y: 36.5}
+        - {x: 126.5, y: 35.5}
+        - {x: 125.5, y: 35.5}
+        - {x: 122.5, y: 32.5}
+        - {x: 121.5, y: 25.5}
+        - {x: 121.5, y: 21.5}
+        - {x: 122.5, y: 21.5}
+      - - {x: 67.5, y: 40.5}
+        - {x: 65.5, y: 38.5}
+        - {x: 65.5, y: 33.5}
+        - {x: 68.5, y: 30.5}
+        - {x: 70.5, y: 30.5}
+        - {x: 72.5, y: 32.5}
+        - {x: 71.5, y: 38.5}
+        - {x: 69.5, y: 40.5}
+      - - {x: 98.5, y: 87.5}
+        - {x: 94.5, y: 87.5}
+        - {x: 88.5, y: 85.5}
+        - {x: 88.5, y: 66.5}
+        - {x: 92.5, y: 64.5}
+        - {x: 102.5, y: 64.5}
+        - {x: 103.5, y: 65.5}
+        - {x: 103.5, y: 76.5}
+        - {x: 102.5, y: 85.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_41
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 672
+        width: 101
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 110.5}
+        - {x: -24.5, y: 110.5}
+        - {x: -32.5, y: 71.5}
+        - {x: -50.5, y: 7.5}
+        - {x: -50.5, y: -100.5}
+        - {x: -29.5, y: -110.5}
+        - {x: 43.5, y: -110.5}
+        - {x: 46.5, y: -109.5}
+        - {x: 50.5, y: -100.5}
+        - {x: 50.5, y: 51.5}
+        - {x: 20.5, y: 104.5}
+      - - {x: -1.5, y: -100.5}
+        - {x: -3.5, y: -100.5}
+        - {x: -6.5, y: -98.5}
+        - {x: -7.5, y: -98.5}
+        - {x: -6.5, y: -99.5}
+        - {x: -4.5, y: -98.5}
+        - {x: -3.5, y: -99.5}
+        - {x: -0.5, y: -99.5}
+        - {x: 4.5, y: -97.5}
+        - {x: -0.5, y: -85.5}
+        - {x: -19.5, y: -59.5}
+        - {x: 5.5, y: -0.5}
+        - {x: 8.5, y: 54.5}
+        - {x: 34.5, y: 34.5}
+        - {x: 35.5, y: 34.5}
+        - {x: 35.5, y: 35.5}
+        - {x: 32.5, y: 32.5}
+        - {x: 32.5, y: 29.5}
+        - {x: 34.5, y: 26.5}
+        - {x: 27.5, y: 17.5}
+        - {x: 18.5, y: 1.5}
+        - {x: 14.5, y: -15.5}
+        - {x: 15.5, y: -24.5}
+        - {x: 19.5, y: -30.5}
+        - {x: 22.5, y: -33.5}
+        - {x: 25.5, y: -37.5}
+        - {x: 26.5, y: -35.5}
+        - {x: 23.5, y: -32.5}
+        - {x: 20.5, y: -32.5}
+        - {x: 17.5, y: -35.5}
+        - {x: 18.5, y: -35.5}
+        - {x: 17.5, y: -34.5}
+        - {x: 17.5, y: -29.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 14.5, y: -11.5}
+        - {x: 6.5, y: -3.5}
+        - {x: -2.5, y: -32.5}
+        - {x: 19.5, y: -50.5}
+        - {x: 31.5, y: -62.5}
+        - {x: 24.5, y: -85.5}
+        - {x: 22.5, y: -83.5}
+        - {x: 22.5, y: -84.5}
+        - {x: 23.5, y: -83.5}
+        - {x: 24.5, y: -79.5}
+        - {x: 25.5, y: -66.5}
+        - {x: 25.5, y: -58.5}
+        - {x: 15.5, y: -47.5}
+        - {x: 6.5, y: -43.5}
+        - {x: -5.5, y: -43.5}
+        - {x: -8.5, y: -46.5}
+        - {x: -8.5, y: -50.5}
+        - {x: 7.5, y: -101.5}
+        - {x: 14.5, y: -100.5}
+        - {x: 16.5, y: -100.5}
+        - {x: 20.5, y: -99.5}
+        - {x: 25.5, y: -95.5}
+        - {x: 28.5, y: -94.5}
+        - {x: 27.5, y: -93.5}
+        - {x: 24.5, y: -96.5}
+        - {x: 24.5, y: -98.5}
+        - {x: 25.5, y: -98.5}
+        - {x: 24.5, y: -97.5}
+        - {x: 18.5, y: -97.5}
+        - {x: 14.5, y: -101.5}
+        - {x: 14.5, y: -103.5}
+        - {x: 9.5, y: -102.5}
+      - - {x: 3.5, y: -94.5}
+        - {x: 0.5, y: -96.5}
+        - {x: 0.5, y: -98.5}
+        - {x: 2.5, y: -100.5}
+        - {x: 5.5, y: -100.5}
+        - {x: 7.5, y: -99.5}
+        - {x: 7.5, y: -96.5}
+        - {x: 6.5, y: -94.5}
+      - - {x: -25.5, y: -77.5}
+        - {x: -27.5, y: -75.5}
+        - {x: -30.5, y: -74.5}
+        - {x: -33.5, y: -74.5}
+        - {x: -37.5, y: -78.5}
+        - {x: -34.5, y: -74.5}
+        - {x: -34.5, y: -69.5}
+        - {x: -38.5, y: -65.5}
+        - {x: -39.5, y: -60.5}
+        - {x: -39.5, y: -58.5}
+        - {x: -41.5, y: -56.5}
+        - {x: -39.5, y: -59.5}
+        - {x: -33.5, y: -61.5}
+        - {x: -30.5, y: -71.5}
+        - {x: -29.5, y: -72.5}
+        - {x: -29.5, y: -76.5}
+        - {x: -26.5, y: -81.5}
+        - {x: -25.5, y: -82.5}
+      - - {x: 18.5, y: 48.5}
+        - {x: 16.5, y: 46.5}
+        - {x: 16.5, y: 32.5}
+        - {x: 17.5, y: 29.5}
+        - {x: 28.5, y: 29.5}
+        - {x: 30.5, y: 30.5}
+        - {x: 30.5, y: 46.5}
+        - {x: 25.5, y: 48.5}
+      - - {x: -13.5, y: 92.5}
+        - {x: -15.5, y: 95.5}
+        - {x: -17.5, y: 90.5}
+        - {x: -16.5, y: 77.5}
+        - {x: -15.5, y: 72.5}
+        - {x: -12.5, y: 67.5}
+        - {x: -11.5, y: 68.5}
+      - - {x: 4.5, y: 72.5}
+        - {x: 3.5, y: 79.5}
+        - {x: 4.5, y: 80.5}
+        - {x: 4.5, y: 82.5}
+        - {x: 3.5, y: 83.5}
+        - {x: 3.5, y: 85.5}
+        - {x: 5.5, y: 79.5}
+        - {x: 3.5, y: 77.5}
+        - {x: 3.5, y: 72.5}
+        - {x: 6.5, y: 67.5}
+        - {x: 7.5, y: 67.5}
+        - {x: 8.5, y: 68.5}
+      - - {x: -5.5, y: 95.5}
+        - {x: -7.5, y: 98.5}
+        - {x: -13.5, y: 90.5}
+        - {x: -3.5, y: 70.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_42
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 685
+        width: 174
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 54}
+        - {x: -27, y: 88}
+        - {x: -78, y: 88}
+        - {x: -87, y: 71}
+        - {x: -87, y: 43}
+        - {x: -73, y: 41}
+        - {x: -49, y: 43}
+        - {x: -53, y: -77}
+        - {x: -33, y: -88}
+        - {x: 40, y: -88}
+        - {x: 85, y: -77}
+        - {x: 87, y: -75}
+        - {x: 87, y: -58}
+      - - {x: -12, y: -75}
+        - {x: -11, y: -74}
+        - {x: -9, y: -76}
+        - {x: -12, y: -76}
+        - {x: -13, y: -77}
+        - {x: -12, y: -77}
+      - - {x: -32, y: -65}
+        - {x: -35, y: -62}
+        - {x: -35, y: -63}
+        - {x: -34, y: -62}
+        - {x: -31, y: -64}
+        - {x: -27, y: -64}
+        - {x: -24, y: -61}
+        - {x: -24, y: -60}
+        - {x: -26, y: -61}
+        - {x: -26, y: -65}
+      - - {x: 7, y: -60}
+        - {x: 8, y: -57}
+        - {x: 6, y: -62}
+      - - {x: 40, y: -61}
+        - {x: 40, y: -55}
+        - {x: 44, y: -59}
+        - {x: 42, y: -61}
+      - - {x: 24, y: -51}
+        - {x: 31, y: -51}
+        - {x: 28, y: -55}
+        - {x: 24, y: -55}
+      - - {x: -31, y: -42}
+        - {x: -32, y: -40}
+        - {x: -31, y: -41}
+        - {x: -24, y: -42}
+        - {x: -25, y: -43}
+      - - {x: -23, y: -28}
+        - {x: -20, y: -25}
+        - {x: -19, y: -20}
+        - {x: -22, y: -33}
+      - - {x: -15, y: -6}
+        - {x: -16, y: -7}
+        - {x: -15, y: -8}
+        - {x: -12, y: -5}
+        - {x: -10, y: 1}
+        - {x: -6, y: 1}
+        - {x: -6, y: 2}
+        - {x: -7, y: 2}
+        - {x: -10, y: -1}
+        - {x: -11, y: -6}
+        - {x: -14, y: -8}
+        - {x: -12, y: -8}
+      - - {x: -5, y: 15}
+        - {x: -4, y: 23}
+        - {x: 1, y: 23}
+        - {x: -2, y: 15}
+      - - {x: -7, y: 38}
+        - {x: -8, y: 40}
+        - {x: -3, y: 40}
+        - {x: 0, y: 33}
+      - - {x: -63, y: 75}
+        - {x: -65, y: 72}
+        - {x: -64, y: 69}
+        - {x: -60, y: 66}
+        - {x: -53, y: 61}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_43
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 700
+        width: 86
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 64}
+        - {x: -43, y: 41}
+        - {x: -43, y: -36}
+        - {x: -37, y: -64}
+        - {x: 38, y: -64}
+        - {x: 43, y: -48}
+        - {x: 43, y: 35}
+        - {x: 30, y: 64}
+      - - {x: -7, y: -37}
+        - {x: -10, y: -38}
+        - {x: -9, y: -39}
+        - {x: -2, y: -32}
+        - {x: -5, y: -24}
+        - {x: -14, y: -25}
+        - {x: -20, y: 4}
+        - {x: -22, y: 7}
+        - {x: -29, y: 4}
+        - {x: -31, y: -1}
+        - {x: -34, y: -4}
+        - {x: -33, y: -8}
+        - {x: -32, y: 4}
+        - {x: -31, y: 9}
+        - {x: -28, y: 16}
+        - {x: -29, y: 27}
+        - {x: -30, y: 24}
+        - {x: -27, y: 20}
+        - {x: -28, y: 13}
+        - {x: -7, y: -5}
+        - {x: 20, y: 5}
+        - {x: 26, y: 13}
+        - {x: 26, y: 22}
+        - {x: 25, y: 26}
+        - {x: 26, y: 24}
+        - {x: 29, y: 17}
+        - {x: 30, y: 16}
+        - {x: 31, y: -12}
+        - {x: 32, y: -8}
+        - {x: 30, y: -5}
+        - {x: 28, y: 0}
+        - {x: 24, y: 5}
+        - {x: 16, y: 2}
+        - {x: 17, y: -35}
+        - {x: 14, y: -36}
+        - {x: 10, y: -38}
+        - {x: 13, y: -39}
+        - {x: 16, y: -36}
+        - {x: 16, y: -32}
+        - {x: 11, y: -23}
+        - {x: 1, y: -25}
+        - {x: -2, y: -36}
+      - - {x: 12, y: -17}
+        - {x: 11, y: -20}
+        - {x: 11, y: -26}
+        - {x: 15, y: -29}
+        - {x: 22, y: -29}
+        - {x: 24, y: -24}
+        - {x: 24, y: -20}
+        - {x: 22, y: -17}
+      - - {x: -24, y: -16}
+        - {x: -24, y: -25}
+        - {x: -23, y: -27}
+        - {x: -18, y: -27}
+        - {x: -13, y: -25}
+        - {x: -12, y: -19}
+        - {x: -14, y: -14}
+        - {x: -19, y: -14}
+      - - {x: -7, y: -11}
+        - {x: -7, y: -19}
+        - {x: -3, y: -22}
+        - {x: 2, y: -22}
+        - {x: 5, y: -19}
+        - {x: 5, y: -11}
+      - - {x: 9, y: -4}
+        - {x: 8, y: -6}
+        - {x: 8, y: -11}
+        - {x: 10, y: -13}
+        - {x: 13, y: -14}
+        - {x: 18, y: -14}
+        - {x: 19, y: -12}
+        - {x: 19, y: -7}
+        - {x: 16, y: -4}
+      - - {x: -17, y: -1}
+        - {x: -18, y: -5}
+        - {x: -18, y: -10}
+        - {x: -14, y: -12}
+        - {x: -9, y: -12}
+        - {x: -6, y: -8}
+        - {x: -6, y: -2}
+        - {x: -10, y: -1}
+      - - {x: 40, y: 25}
+        - {x: 42, y: 23}
+        - {x: 43, y: 23}
+        - {x: 43, y: 28}
+        - {x: 41, y: 28}
+      - - {x: -28, y: 45}
+        - {x: -28, y: 39}
+      - - {x: 28, y: 40}
+        - {x: 25, y: 43}
+        - {x: 11, y: 45}
+        - {x: 3, y: 44}
+        - {x: -9, y: 46}
+        - {x: -11, y: 46}
+        - {x: -12, y: 45}
+        - {x: -15, y: 47}
+        - {x: -21, y: 46}
+        - {x: -15, y: 45}
+        - {x: -12, y: 47}
+        - {x: 26, y: 44}
+        - {x: 27, y: 38}
+        - {x: 28, y: 39}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_44
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 687
+        width: 153
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.5, y: 27}
+        - {x: 12.5, y: 77}
+        - {x: -76.5, y: 77}
+        - {x: -76.5, y: -35}
+        - {x: -71.5, y: -77}
+        - {x: 55.5, y: -77}
+        - {x: 63.5, y: -65}
+        - {x: 76.5, y: -13}
+        - {x: 76.5, y: 22}
+      - - {x: -0.5, y: -71}
+        - {x: 5.5, y: -65}
+        - {x: 5.5, y: -63}
+        - {x: -10.5, y: -29}
+        - {x: -14.5, y: -29}
+        - {x: -18.5, y: -33}
+        - {x: -17.5, y: -35}
+        - {x: -16.5, y: -33}
+        - {x: -20.5, y: -29}
+        - {x: -22.5, y: -29}
+        - {x: -26.5, y: -33}
+        - {x: -25.5, y: -43}
+        - {x: -24.5, y: -40}
+        - {x: -27.5, y: -37}
+        - {x: -27.5, y: -34}
+        - {x: -25.5, y: -32}
+        - {x: -25.5, y: -28}
+        - {x: -30.5, y: -19}
+        - {x: -42.5, y: -22}
+        - {x: -39.5, y: -40}
+        - {x: -37.5, y: -49}
+        - {x: -36.5, y: -50}
+        - {x: -36.5, y: -49}
+        - {x: -38.5, y: -51}
+        - {x: -41.5, y: -48}
+        - {x: -49.5, y: -24}
+        - {x: -52.5, y: -21}
+        - {x: -52.5, y: -22}
+        - {x: -51.5, y: -21}
+        - {x: -49.5, y: -10}
+        - {x: -27.5, y: 3}
+        - {x: -25.5, y: 6}
+        - {x: -26.5, y: 6}
+        - {x: -23.5, y: 3}
+        - {x: -26.5, y: -6}
+        - {x: 16.5, y: -44}
+        - {x: 7.5, y: -61}
+        - {x: 4.5, y: -64}
+        - {x: -2.5, y: -69}
+        - {x: -3.5, y: -71}
+      - - {x: -19.5, y: -60}
+        - {x: -17.5, y: -56}
+        - {x: -13.5, y: -62}
+      - - {x: 28.5, y: -61}
+        - {x: 31.5, y: -62}
+        - {x: 34.5, y: -61}
+        - {x: 40.5, y: -55}
+        - {x: 44.5, y: -53}
+        - {x: 34.5, y: -61}
+        - {x: 33.5, y: -60}
+      - - {x: 11.5, y: -44}
+        - {x: 4.5, y: -57}
+        - {x: 4.5, y: -62}
+        - {x: 10.5, y: -62}
+        - {x: 18.5, y: -52}
+        - {x: 18.5, y: -46}
+        - {x: 17.5, y: -44}
+      - - {x: 1.5, y: -44}
+        - {x: 1.5, y: -45}
+        - {x: 3.5, y: -47}
+        - {x: 5.5, y: -47}
+        - {x: 8.5, y: -44}
+        - {x: 7.5, y: -41}
+        - {x: 4.5, y: -41}
+      - - {x: -41.5, y: 12}
+        - {x: -42.5, y: 11}
+        - {x: -41.5, y: 12}
+        - {x: -42.5, y: 17}
+      - - {x: -41.5, y: 25}
+        - {x: -48.5, y: 25}
+        - {x: -48.5, y: 14}
+        - {x: -35.5, y: 14}
+        - {x: -32.5, y: 18}
+        - {x: -32.5, y: 20}
+        - {x: -34.5, y: 22}
+      - - {x: -32.5, y: 48}
+        - {x: -43.5, y: 38}
+        - {x: -43.5, y: 22}
+        - {x: -27.5, y: 22}
+        - {x: -21.5, y: 31}
+        - {x: -21.5, y: 45}
+        - {x: -24.5, y: 48}
+      - - {x: -54.5, y: 40}
+        - {x: -54.5, y: 34}
+        - {x: -53.5, y: 33}
+        - {x: -42.5, y: 33}
+        - {x: -40.5, y: 35}
+        - {x: -40.5, y: 44}
+        - {x: -42.5, y: 48}
+        - {x: -47.5, y: 48}
+        - {x: -52.5, y: 46}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_45
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 693
+        width: 181
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 90.5, y: -13.5}
+        - {x: 90.5, y: 53.5}
+        - {x: 55.5, y: 65.5}
+        - {x: -69.5, y: 65.5}
+        - {x: -88.5, y: 61.5}
+        - {x: -90.5, y: 49.5}
+        - {x: -90.5, y: -5.5}
+        - {x: -74.5, y: -16.5}
+        - {x: -11.5, y: -65.5}
+        - {x: 73.5, y: -65.5}
+      - - {x: 50.5, y: -55.5}
+        - {x: 51.5, y: -55.5}
+        - {x: 56.5, y: -53.5}
+        - {x: 61.5, y: -47.5}
+        - {x: 61.5, y: -44.5}
+        - {x: 60.5, y: -49.5}
+        - {x: 55.5, y: -54.5}
+        - {x: 53.5, y: -58.5}
+      - - {x: 2.5, y: -53.5}
+        - {x: 3.5, y: -52.5}
+        - {x: 2.5, y: -53.5}
+        - {x: 2.5, y: -55.5}
+        - {x: -1.5, y: -55.5}
+      - - {x: 53.5, y: -39.5}
+        - {x: 54.5, y: -39.5}
+        - {x: 55.5, y: -38.5}
+        - {x: 54.5, y: -38.5}
+        - {x: 51.5, y: -43.5}
+        - {x: 47.5, y: -36.5}
+      - - {x: -83.5, y: 6.5}
+        - {x: -83.5, y: 14.5}
+        - {x: -84.5, y: 13.5}
+        - {x: -82.5, y: 11.5}
+        - {x: -82.5, y: 8.5}
+        - {x: -77.5, y: 2.5}
+        - {x: -73.5, y: 2.5}
+        - {x: -70.5, y: 5.5}
+        - {x: -70.5, y: 17.5}
+        - {x: -71.5, y: 18.5}
+        - {x: -70.5, y: 17.5}
+        - {x: -68.5, y: 9.5}
+        - {x: -65.5, y: 2.5}
+        - {x: -67.5, y: -6.5}
+      - - {x: -59.5, y: 19.5}
+        - {x: -60.5, y: 17.5}
+        - {x: -60.5, y: 13.5}
+        - {x: -56.5, y: 8.5}
+      - - {x: 78.5, y: 23.5}
+        - {x: 76.5, y: 30.5}
+        - {x: 75.5, y: 34.5}
+        - {x: 83.5, y: 35.5}
+        - {x: 82.5, y: 36.5}
+        - {x: 79.5, y: 33.5}
+        - {x: 79.5, y: 25.5}
+        - {x: 82.5, y: 22.5}
+        - {x: 79.5, y: 20.5}
+        - {x: 79.5, y: 17.5}
+      - - {x: -60.5, y: 38.5}
+        - {x: -46.5, y: 41.5}
+        - {x: -45.5, y: 40.5}
+        - {x: -48.5, y: 37.5}
+        - {x: -48.5, y: 33.5}
+        - {x: -45.5, y: 30.5}
+        - {x: -44.5, y: 31.5}
+        - {x: -45.5, y: 32.5}
+        - {x: -49.5, y: 32.5}
+        - {x: -49.5, y: 35.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_48
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 719
+        width: 180
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 4.5}
+        - {x: -53, y: -19.5}
+        - {x: -53, y: -45.5}
+        - {x: -22, y: -66.5}
+        - {x: 71, y: -66.5}
+        - {x: 90, y: -60.5}
+        - {x: 90, y: 4.5}
+      - - {x: -7, y: -45.5}
+        - {x: -4, y: -50.5}
+        - {x: -1, y: -53.5}
+        - {x: -2, y: -52.5}
+        - {x: -5, y: -52.5}
+        - {x: -7, y: -50.5}
+        - {x: -15, y: -16.5}
+        - {x: -18, y: -14.5}
+        - {x: -21, y: -14.5}
+        - {x: -21, y: -15.5}
+        - {x: -17, y: -12.5}
+        - {x: -11, y: -13.5}
+      - - {x: 73, y: -34.5}
+        - {x: 64, y: -35.5}
+        - {x: 68, y: -35.5}
+        - {x: 69, y: -34.5}
+        - {x: 77, y: -34.5}
+      - - {x: -68, y: -14.5}
+        - {x: -72, y: -17.5}
+        - {x: -72, y: -27.5}
+        - {x: -67, y: -31.5}
+        - {x: -58, y: -31.5}
+        - {x: -56, y: -26.5}
+        - {x: -56, y: -16.5}
+        - {x: -62, y: -14.5}
+      - - {x: 77, y: -22.5}
+        - {x: 74, y: -23.5}
+        - {x: 77, y: -24.5}
+        - {x: 80, y: -21.5}
+        - {x: 82, y: -15.5}
+        - {x: 82, y: -6.5}
+        - {x: 79, y: -8.5}
+        - {x: 79, y: -12.5}
+        - {x: 78, y: -13.5}
+        - {x: 78, y: -25.5}
+        - {x: 80, y: -28.5}
+        - {x: 81, y: -27.5}
+      - - {x: -66, y: 20.5}
+        - {x: -66, y: 0.5}
+        - {x: -60, y: -4.5}
+        - {x: -45, y: -4.5}
+        - {x: -41, y: -0.5}
+        - {x: -41, y: 18.5}
+        - {x: -54, y: 20.5}
+      - - {x: -55, y: 9.5}
+        - {x: -54, y: 6.5}
+        - {x: -53, y: 5.5}
+        - {x: -52, y: 6.5}
+      - - {x: -89, y: 66.5}
+        - {x: -89, y: 36.5}
+        - {x: -86, y: 26.5}
+        - {x: -54, y: 26.5}
+        - {x: -48, y: 32.5}
+        - {x: -48, y: 59.5}
+        - {x: -50, y: 66.5}
+      - - {x: -75, y: 39.5}
+        - {x: -73, y: 56.5}
+        - {x: -63, y: 53.5}
+        - {x: -58, y: 46.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_49
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 725
+        width: 126
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59, y: -13}
+        - {x: 63, y: -4}
+        - {x: 57, y: 4}
+        - {x: 46, y: 8}
+        - {x: 49, y: 11}
+        - {x: 59, y: 3}
+        - {x: 63, y: 4}
+        - {x: 63, y: 26}
+        - {x: 59, y: 28}
+        - {x: -61, y: 28}
+        - {x: -63, y: 16}
+        - {x: -63, y: -28}
+        - {x: 49, y: -28}
+        - {x: 63, y: -27}
+        - {x: 63, y: -21}
+        - {x: 45, y: -3}
+        - {x: 56, y: -12}
+      - - {x: -22, y: -13}
+        - {x: -19, y: -16}
+        - {x: -19, y: -15}
+        - {x: -20, y: -13}
+        - {x: -23, y: -10}
+        - {x: -30, y: 5}
+      - - {x: -3, y: -11}
+        - {x: 1, y: -17}
+        - {x: 9, y: -17}
+        - {x: 13, y: -16}
+        - {x: 13, y: -3}
+        - {x: 12, y: 1}
+        - {x: 0, y: 1}
+        - {x: -3, y: -5}
+      - - {x: -52, y: -5}
+        - {x: -52, y: -2}
+        - {x: -58, y: -10}
+        - {x: -57, y: -10}
+      - - {x: -47, y: 12}
+        - {x: -37, y: 13}
+        - {x: -39, y: 14}
+        - {x: -42, y: 11}
+      - - {x: 35, y: 18}
+        - {x: 39, y: 20}
+        - {x: 34, y: 20}
+        - {x: 31, y: 17}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_51
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 444
+        width: 251
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49.5, y: 73.5}
+        - {x: -18.5, y: 73.5}
+        - {x: -125.5, y: 36.5}
+        - {x: -125.5, y: -65.5}
+        - {x: -83.5, y: -73.5}
+        - {x: 57.5, y: -73.5}
+        - {x: 125.5, y: -50.5}
+        - {x: 125.5, y: 9.5}
+        - {x: 108.5, y: 43.5}
+      - - {x: 0.5, y: -60.5}
+        - {x: 2.5, y: -61.5}
+        - {x: 11.5, y: -50.5}
+        - {x: 8.5, y: -32.5}
+        - {x: -83.5, y: -22.5}
+        - {x: -92.5, y: -26.5}
+        - {x: -91.5, y: -30.5}
+        - {x: -90.5, y: -31.5}
+        - {x: -90.5, y: -30.5}
+        - {x: -93.5, y: -33.5}
+        - {x: -95.5, y: -34.5}
+        - {x: -99.5, y: -38.5}
+        - {x: -102.5, y: -38.5}
+        - {x: -105.5, y: -41.5}
+        - {x: -107.5, y: -44.5}
+        - {x: -98.5, y: -36.5}
+        - {x: -96.5, y: -33.5}
+        - {x: -96.5, y: -31.5}
+        - {x: -99.5, y: -28.5}
+        - {x: -102.5, y: -28.5}
+        - {x: -107.5, y: -29.5}
+        - {x: -112.5, y: -37.5}
+        - {x: -109.5, y: -37.5}
+        - {x: -102.5, y: -30.5}
+        - {x: -103.5, y: -29.5}
+        - {x: -97.5, y: -23.5}
+        - {x: -97.5, y: -19.5}
+        - {x: -100.5, y: -16.5}
+        - {x: -102.5, y: -16.5}
+        - {x: -104.5, y: -18.5}
+        - {x: -107.5, y: -18.5}
+        - {x: -107.5, y: -17.5}
+        - {x: -102.5, y: -17.5}
+        - {x: -101.5, y: -16.5}
+        - {x: -96.5, y: -16.5}
+        - {x: -93.5, y: -13.5}
+        - {x: -93.5, y: -11.5}
+        - {x: -97.5, y: -7.5}
+        - {x: -105.5, y: -7.5}
+        - {x: -106.5, y: -6.5}
+        - {x: -109.5, y: -6.5}
+        - {x: -110.5, y: -5.5}
+        - {x: -110.5, y: -2.5}
+        - {x: -112.5, y: -1.5}
+        - {x: -111.5, y: -4.5}
+        - {x: -107.5, y: -5.5}
+        - {x: -103.5, y: -8.5}
+        - {x: -98.5, y: -8.5}
+        - {x: -94.5, y: -4.5}
+        - {x: -91.5, y: -6.5}
+        - {x: -91.5, y: -10.5}
+        - {x: -88.5, y: -14.5}
+        - {x: 39.5, y: 20.5}
+        - {x: 106.5, y: -17.5}
+        - {x: 99.5, y: -13.5}
+        - {x: 84.5, y: -6.5}
+        - {x: 51.5, y: -14.5}
+        - {x: 42.5, y: -31.5}
+        - {x: 4.5, y: -62.5}
+        - {x: 3.5, y: -63.5}
+        - {x: -3.5, y: -66.5}
+        - {x: -2.5, y: -66.5}
+      - - {x: 76.5, y: -34.5}
+        - {x: 74.5, y: -36.5}
+        - {x: 75.5, y: -36.5}
+      - - {x: 60.5, y: -26.5}
+        - {x: 65.5, y: -29.5}
+        - {x: 66.5, y: -30.5}
+        - {x: 66.5, y: -29.5}
+      - - {x: 81.5, y: -22.5}
+        - {x: 87.5, y: -22.5}
+        - {x: 85.5, y: -24.5}
+        - {x: 85.5, y: -25.5}
+      - - {x: 91.5, y: 6.5}
+        - {x: 87.5, y: 5.5}
+        - {x: 87.5, y: -5.5}
+        - {x: 90.5, y: -8.5}
+        - {x: 98.5, y: -8.5}
+        - {x: 99.5, y: -5.5}
+        - {x: 99.5, y: 5.5}
+        - {x: 98.5, y: 6.5}
+      - - {x: 26.5, y: 33.5}
+        - {x: 24.5, y: 34.5}
+        - {x: 23.5, y: 33.5}
+        - {x: 7.5, y: 32.5}
+        - {x: 9.5, y: 31.5}
+        - {x: 12.5, y: 34.5}
+        - {x: 23.5, y: 51.5}
+        - {x: 34.5, y: 34.5}
+        - {x: 37.5, y: 31.5}
+        - {x: 38.5, y: 31.5}
+        - {x: 38.5, y: 32.5}
+        - {x: 37.5, y: 33.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_52
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 456
+        width: 86
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 68}
+        - {x: -12, y: 59}
+        - {x: -13, y: 56}
+        - {x: -13, y: 54}
+        - {x: -13, y: 60}
+        - {x: -16, y: 68}
+        - {x: -43, y: 68}
+        - {x: -43, y: 26}
+        - {x: -39, y: 15}
+        - {x: -26, y: 11}
+        - {x: -23, y: 10}
+        - {x: -21, y: 10}
+        - {x: -25, y: 10}
+        - {x: -28, y: 9}
+        - {x: -38, y: -2}
+        - {x: -19, y: -68}
+        - {x: 20, y: -68}
+        - {x: 43, y: -50}
+        - {x: 43, y: 68}
+      - - {x: 24, y: -41}
+        - {x: 25, y: -36}
+        - {x: 25, y: -41}
+        - {x: 24, y: -42}
+        - {x: 25, y: -42}
+      - - {x: -8, y: -32}
+        - {x: -10, y: -29}
+        - {x: -17, y: -9}
+        - {x: -21, y: -5}
+        - {x: -16, y: -1}
+        - {x: -11, y: -3}
+        - {x: -7, y: -33}
+        - {x: -10, y: -36}
+        - {x: -9, y: -37}
+        - {x: -8, y: -36}
+      - - {x: -20, y: 28}
+        - {x: -23, y: 31}
+        - {x: -24, y: 30}
+        - {x: -23, y: 29}
+        - {x: -20, y: 32}
+        - {x: -18, y: 37}
+        - {x: -18, y: 38}
+        - {x: -21, y: 41}
+        - {x: -22, y: 41}
+        - {x: -23, y: 40}
+        - {x: -22, y: 42}
+        - {x: -25, y: 45}
+        - {x: -27, y: 45}
+        - {x: -31, y: 49}
+        - {x: -28, y: 52}
+        - {x: -29, y: 54}
+        - {x: -30, y: 52}
+        - {x: -27, y: 49}
+        - {x: -26, y: 49}
+        - {x: -26, y: 44}
+        - {x: -23, y: 41}
+        - {x: -19, y: 41}
+        - {x: -16, y: 42}
+        - {x: -11, y: 45}
+        - {x: 9, y: 45}
+        - {x: 17, y: 53}
+        - {x: 14, y: 48}
+        - {x: 9, y: 45}
+        - {x: 10, y: 35}
+      - - {x: -16, y: 39}
+        - {x: -21, y: 33}
+        - {x: -21, y: 26}
+        - {x: -17, y: 24}
+        - {x: -11, y: 24}
+        - {x: -5, y: 27}
+        - {x: -5, y: 34}
+        - {x: -11, y: 39}
+      - - {x: 6, y: 38}
+        - {x: -1, y: 38}
+        - {x: -5, y: 33}
+        - {x: -5, y: 26}
+        - {x: 1, y: 24}
+        - {x: 6, y: 24}
+        - {x: 8, y: 30}
+        - {x: 8, y: 34}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_53
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 436
+        width: 153
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52.5, y: 76}
+        - {x: -59.5, y: 76}
+        - {x: -76.5, y: 69}
+        - {x: -76.5, y: -46}
+        - {x: -44.5, y: -76}
+        - {x: 68.5, y: -76}
+        - {x: 76.5, y: -74}
+        - {x: 76.5, y: 4}
+        - {x: 72.5, y: 18}
+      - - {x: -10.5, y: -60}
+        - {x: -7.5, y: -57}
+        - {x: -8.5, y: -56}
+        - {x: -9.5, y: -57}
+        - {x: -6.5, y: -60}
+        - {x: -6.5, y: -59}
+        - {x: -7.5, y: -60}
+        - {x: -6.5, y: -61}
+        - {x: -7.5, y: -60}
+      - - {x: -13.5, y: -1}
+        - {x: -16.5, y: -3}
+        - {x: -22.5, y: -8}
+        - {x: -21.5, y: -11}
+        - {x: -20.5, y: -1}
+        - {x: 1.5, y: 8}
+        - {x: 21.5, y: 0}
+        - {x: 24.5, y: -3}
+        - {x: 26.5, y: -3}
+        - {x: 25.5, y: -26}
+        - {x: 25.5, y: -30}
+        - {x: 25.5, y: -12}
+        - {x: 23.5, y: -4}
+        - {x: 20.5, y: -1}
+        - {x: 16.5, y: -1}
+        - {x: 12.5, y: -3}
+      - - {x: -28.5, y: -44}
+        - {x: -26.5, y: -46}
+        - {x: -28.5, y: -46}
+        - {x: -27.5, y: -45}
+      - - {x: -43.5, y: -37}
+        - {x: -45.5, y: -37}
+        - {x: -48.5, y: -35}
+        - {x: -52.5, y: -32}
+        - {x: -55.5, y: -29}
+        - {x: -57.5, y: -29}
+        - {x: -59.5, y: -27}
+        - {x: -64.5, y: -23}
+        - {x: -64.5, y: -22}
+        - {x: -68.5, y: -16}
+        - {x: -63.5, y: -9}
+        - {x: -67.5, y: -15}
+        - {x: -67.5, y: -17}
+        - {x: -66.5, y: -18}
+        - {x: -66.5, y: -20}
+        - {x: -63.5, y: -23}
+        - {x: -62.5, y: -23}
+        - {x: -51.5, y: -34}
+        - {x: -46.5, y: -36}
+        - {x: -43.5, y: -39}
+        - {x: -38.5, y: -40}
+        - {x: -38.5, y: -39}
+      - - {x: 38.5, y: -40}
+        - {x: 48.5, y: -32}
+        - {x: 56.5, y: -24}
+        - {x: 60.5, y: -19}
+        - {x: 62.5, y: -17}
+        - {x: 66.5, y: -8}
+        - {x: 66.5, y: -5}
+        - {x: 63.5, y: -2}
+        - {x: 60.5, y: -2}
+        - {x: 53.5, y: -8}
+        - {x: 61.5, y: 0}
+        - {x: 65.5, y: -1}
+        - {x: 66.5, y: -7}
+        - {x: 65.5, y: -8}
+        - {x: 65.5, y: -12}
+        - {x: 57.5, y: -24}
+        - {x: 49.5, y: -32}
+        - {x: 43.5, y: -37}
+        - {x: 39.5, y: -39}
+        - {x: 37.5, y: -39}
+        - {x: 37.5, y: -40}
+      - - {x: -28.5, y: -24}
+        - {x: -29.5, y: -23}
+        - {x: -30.5, y: -27}
+        - {x: -29.5, y: -28}
+      - - {x: -20.5, y: -24}
+        - {x: -20.5, y: -20}
+        - {x: -21.5, y: -19}
+        - {x: -20.5, y: -25}
+        - {x: -19.5, y: -26}
+        - {x: -19.5, y: -25}
+      - - {x: -13.5, y: 24}
+        - {x: -10.5, y: 22}
+        - {x: -6.5, y: 22}
+        - {x: -5.5, y: 23}
+        - {x: -1.5, y: 24}
+        - {x: 3.5, y: 29}
+        - {x: 3.5, y: 31}
+        - {x: 0.5, y: 34}
+        - {x: 13.5, y: 24}
+        - {x: -5.5, y: 22}
+        - {x: -6.5, y: 23}
+      - - {x: -24.5, y: 28}
+        - {x: -27.5, y: 31}
+        - {x: -31.5, y: 31}
+        - {x: -33.5, y: 30}
+        - {x: -36.5, y: 33}
+        - {x: -35.5, y: 33}
+        - {x: -32.5, y: 36}
+        - {x: -32.5, y: 40}
+        - {x: -33.5, y: 41}
+        - {x: -34.5, y: 40}
+        - {x: -31.5, y: 37}
+        - {x: -22.5, y: 31}
+        - {x: -23.5, y: 27}
+        - {x: -24.5, y: 26}
+      - - {x: -29.5, y: 56}
+        - {x: -29.5, y: 51}
+        - {x: -25.5, y: 47}
+        - {x: -21.5, y: 47}
+        - {x: -18.5, y: 48}
+        - {x: -15.5, y: 52}
+        - {x: -15.5, y: 60}
+        - {x: -19.5, y: 64}
+        - {x: -20.5, y: 64}
+        - {x: -23.5, y: 67}
+        - {x: -23.5, y: 66}
+        - {x: -18.5, y: 66}
+        - {x: -18.5, y: 64}
+        - {x: -15.5, y: 61}
+        - {x: -15.5, y: 58}
+        - {x: -16.5, y: 57}
+        - {x: -16.5, y: 50}
+        - {x: -18.5, y: 48}
+        - {x: -18.5, y: 47}
+        - {x: -25.5, y: 47}
+        - {x: -25.5, y: 48}
+      - - {x: 22.5, y: 56}
+        - {x: 22.5, y: 65}
+        - {x: 36.5, y: 58}
+        - {x: 39.5, y: 65}
+        - {x: 25.5, y: 71}
+        - {x: 21.5, y: 65}
+        - {x: 19.5, y: 59}
+        - {x: 25.5, y: 50}
+        - {x: 29.5, y: 51}
+        - {x: 29.5, y: 52}
+        - {x: 25.5, y: 53}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_54
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 448
+        width: 115
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57.5, y: -11.5}
+        - {x: -9.5, y: 58.5}
+        - {x: -53.5, y: 58.5}
+        - {x: -57.5, y: 46.5}
+        - {x: -57.5, y: 3.5}
+        - {x: -11.5, y: -57.5}
+        - {x: -6.5, y: -53.5}
+        - {x: 0.5, y: -46.5}
+        - {x: 1.5, y: -42.5}
+        - {x: 1.5, y: -46.5}
+        - {x: -2.5, y: -50.5}
+        - {x: -3.5, y: -58.5}
+        - {x: 19.5, y: -58.5}
+        - {x: 56.5, y: -39.5}
+        - {x: 57.5, y: -38.5}
+      - - {x: 29.5, y: -11.5}
+        - {x: 27.5, y: -6.5}
+        - {x: 23.5, y: -3.5}
+        - {x: 20.5, y: 0.5}
+        - {x: 11.5, y: 8.5}
+        - {x: 10.5, y: 13.5}
+        - {x: 7.5, y: 16.5}
+        - {x: 3.5, y: 16.5}
+        - {x: 0.5, y: 13.5}
+        - {x: -7.5, y: 1.5}
+        - {x: -7.5, y: -2.5}
+        - {x: -4.5, y: -5.5}
+        - {x: -6.5, y: -1.5}
+        - {x: -8.5, y: -0.5}
+        - {x: -9.5, y: 3.5}
+        - {x: -13.5, y: 7.5}
+        - {x: -15.5, y: 7.5}
+        - {x: -18.5, y: 4.5}
+        - {x: -17.5, y: 3.5}
+        - {x: -17.5, y: 5.5}
+        - {x: -20.5, y: 11.5}
+        - {x: -23.5, y: 14.5}
+        - {x: -25.5, y: 14.5}
+        - {x: -29.5, y: 10.5}
+        - {x: -29.5, y: 5.5}
+        - {x: -28.5, y: 4.5}
+        - {x: -28.5, y: 2.5}
+        - {x: -26.5, y: -0.5}
+        - {x: -25.5, y: -3.5}
+        - {x: -22.5, y: -7.5}
+        - {x: -21.5, y: -6.5}
+        - {x: -28.5, y: 0.5}
+        - {x: -28.5, y: 14.5}
+        - {x: -25.5, y: 17.5}
+        - {x: -25.5, y: 25.5}
+        - {x: -28.5, y: 28.5}
+        - {x: -33.5, y: 28.5}
+        - {x: -32.5, y: 30.5}
+        - {x: -28.5, y: 29.5}
+        - {x: -28.5, y: 28.5}
+        - {x: -23.5, y: 23.5}
+        - {x: -22.5, y: 23.5}
+        - {x: 5.5, y: 17.5}
+        - {x: 8.5, y: 16.5}
+        - {x: 8.5, y: 13.5}
+        - {x: 11.5, y: 10.5}
+        - {x: 19.5, y: 0.5}
+        - {x: 27.5, y: -5.5}
+        - {x: 27.5, y: -9.5}
+        - {x: 29.5, y: -12.5}
+        - {x: 30.5, y: -15.5}
+        - {x: 33.5, y: -18.5}
+        - {x: 36.5, y: -22.5}
+        - {x: 36.5, y: -23.5}
+        - {x: 37.5, y: -23.5}
+        - {x: 34.5, y: -20.5}
+        - {x: 31.5, y: -19.5}
+        - {x: 26.5, y: -18.5}
+      - - {x: -17.5, y: -12.5}
+        - {x: -12.5, y: -17.5}
+        - {x: -7.5, y: -18.5}
+        - {x: -8.5, y: -17.5}
+      - - {x: 6.5, y: -2.5}
+        - {x: 3.5, y: 0.5}
+        - {x: 2.5, y: -0.5}
+        - {x: 3.5, y: -1.5}
+        - {x: 6.5, y: -1.5}
+        - {x: 12.5, y: -10.5}
+        - {x: 15.5, y: -13.5}
+        - {x: 18.5, y: -12.5}
+        - {x: 15.5, y: -11.5}
+        - {x: 13.5, y: -12.5}
+        - {x: 13.5, y: -11.5}
+      - - {x: -46.5, y: 14.5}
+        - {x: -43.5, y: 15.5}
+        - {x: -43.5, y: 18.5}
+        - {x: -46.5, y: 19.5}
+        - {x: -48.5, y: 17.5}
+      - - {x: -18.5, y: 15.5}
+        - {x: -15.5, y: 16.5}
+        - {x: -15.5, y: 19.5}
+        - {x: -18.5, y: 20.5}
+        - {x: -20.5, y: 18.5}
+      - - {x: -10.5, y: 54.5}
+        - {x: -13.5, y: 51.5}
+        - {x: -12.5, y: 48.5}
+        - {x: -7.5, y: 48.5}
+        - {x: -5.5, y: 50.5}
+        - {x: -5.5, y: 52.5}
+        - {x: -7.5, y: 54.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_55
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 480
+        width: 77
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 42}
+        - {x: -32.5, y: 40}
+        - {x: -38.5, y: 9}
+        - {x: -38.5, y: -42}
+        - {x: 32.5, y: -42}
+        - {x: 38.5, y: -40}
+        - {x: 38.5, y: 39}
+        - {x: 18.5, y: 42}
+      - - {x: -25.5, y: -31}
+        - {x: -30.5, y: -22}
+        - {x: -27.5, y: -5}
+        - {x: -10.5, y: -26}
+      - - {x: 16.5, y: -18}
+        - {x: 13.5, y: -16}
+        - {x: 15.5, y: -18}
+        - {x: 26.5, y: -21}
+      - - {x: -11.5, y: 7}
+        - {x: -10.5, y: 6}
+        - {x: -8.5, y: 6}
+        - {x: -5.5, y: 7}
+      - - {x: 29.5, y: -2}
+        - {x: 26.5, y: 1}
+        - {x: 15.5, y: 14}
+        - {x: 27.5, y: 2}
+        - {x: 27.5, y: -2}
+        - {x: 28.5, y: -4}
+        - {x: 29.5, y: -4}
+      - - {x: -15.5, y: 15}
+        - {x: -15.5, y: 17}
+        - {x: -13.5, y: 13}
+        - {x: -12.5, y: 12}
+        - {x: -12.5, y: 13}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_56
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 348
+        width: 199
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84.5, y: -15}
+        - {x: -4.5, y: 135}
+        - {x: -6.5, y: 138}
+        - {x: -59.5, y: 138}
+        - {x: -99.5, y: 111}
+        - {x: -99.5, y: 1}
+        - {x: -49.5, y: -138}
+        - {x: 50.5, y: -138}
+        - {x: 99.5, y: -53}
+        - {x: 99.5, y: -30}
+        - {x: 97.5, y: -25}
+      - - {x: 38.5, y: -118}
+        - {x: 38.5, y: -116}
+        - {x: 34.5, y: -98}
+        - {x: 26.5, y: -90}
+        - {x: 16.5, y: -90}
+        - {x: 16.5, y: -78}
+        - {x: 14.5, y: -76}
+        - {x: 14.5, y: -74}
+        - {x: 13.5, y: -74}
+        - {x: 15.5, y: -76}
+        - {x: 18.5, y: -78}
+        - {x: 23.5, y: -78}
+        - {x: 30.5, y: -72}
+        - {x: 31.5, y: -69}
+        - {x: 34.5, y: -65}
+        - {x: 34.5, y: -63}
+        - {x: 35.5, y: -57}
+        - {x: 40.5, y: -52}
+        - {x: 40.5, y: -51}
+        - {x: 46.5, y: -46}
+        - {x: 45.5, y: -42}
+        - {x: 44.5, y: -46}
+        - {x: 44.5, y: -51}
+        - {x: 43.5, y: -51}
+        - {x: 37.5, y: -55}
+        - {x: 35.5, y: -55}
+        - {x: 32.5, y: -58}
+        - {x: 32.5, y: -62}
+        - {x: 33.5, y: -65}
+        - {x: 31.5, y: -69}
+        - {x: 31.5, y: -72}
+        - {x: 29.5, y: -73}
+        - {x: 22.5, y: -80}
+        - {x: 22.5, y: -85}
+        - {x: 24.5, y: -88}
+        - {x: 24.5, y: -90}
+        - {x: 27.5, y: -93}
+        - {x: 34.5, y: -93}
+        - {x: 41.5, y: -89}
+        - {x: 40.5, y: -89}
+        - {x: 39.5, y: -107}
+        - {x: 38.5, y: -108}
+        - {x: 39.5, y: -122}
+        - {x: 40.5, y: -121}
+      - - {x: -28.5, y: -97}
+        - {x: -34.5, y: -81}
+        - {x: -36.5, y: -79}
+        - {x: -36.5, y: -80}
+        - {x: -34.5, y: -78}
+        - {x: -35.5, y: -78}
+        - {x: -28.5, y: -85}
+        - {x: -22.5, y: -86}
+        - {x: -17.5, y: -81}
+        - {x: -15.5, y: -80}
+        - {x: -16.5, y: -81}
+        - {x: -16.5, y: -85}
+        - {x: -10.5, y: -91}
+        - {x: -9.5, y: -90}
+        - {x: -12.5, y: -87}
+        - {x: -16.5, y: -87}
+        - {x: -20.5, y: -89}
+      - - {x: -1.5, y: -86}
+        - {x: -4.5, y: -83}
+        - {x: -6.5, y: -84}
+        - {x: -0.5, y: -85}
+        - {x: 2.5, y: -83}
+        - {x: 0.5, y: -86}
+      - - {x: 39.5, y: -77}
+        - {x: 42.5, y: -70}
+        - {x: 42.5, y: -62}
+        - {x: 36.5, y: -78}
+        - {x: 35.5, y: -82}
+        - {x: 34.5, y: -82}
+        - {x: 33.5, y: -83}
+      - - {x: -20.5, y: -56}
+        - {x: -21.5, y: -56}
+        - {x: -21.5, y: -59}
+        - {x: -19.5, y: -62}
+        - {x: -20.5, y: -67}
+      - - {x: -5.5, y: -70}
+        - {x: -7.5, y: -65}
+        - {x: -9.5, y: -63}
+        - {x: -9.5, y: -58}
+        - {x: -11.5, y: -53}
+        - {x: -13.5, y: -52}
+        - {x: -11.5, y: -58}
+        - {x: -4.5, y: -65}
+        - {x: -0.5, y: -65}
+        - {x: 2.5, y: -62}
+        - {x: 2.5, y: -61}
+        - {x: 6.5, y: -56}
+        - {x: 3.5, y: -61}
+        - {x: 2.5, y: -67}
+        - {x: 9.5, y: -73}
+        - {x: 10.5, y: -72}
+        - {x: 0.5, y: -71}
+        - {x: -0.5, y: -70}
+        - {x: -2.5, y: -70}
+        - {x: -5.5, y: -71}
+        - {x: -7.5, y: -75}
+        - {x: -5.5, y: -74}
+      - - {x: 12.5, y: -64}
+        - {x: 12.5, y: -65}
+        - {x: 16.5, y: -61}
+        - {x: 17.5, y: -61}
+        - {x: 23.5, y: -64}
+        - {x: 23.5, y: -63}
+        - {x: 20.5, y: -66}
+        - {x: 18.5, y: -66}
+      - - {x: -49.5, y: -37}
+        - {x: -48.5, y: -47}
+        - {x: -44.5, y: -49}
+        - {x: -49.5, y: -55}
+      - - {x: -7.5, y: -41}
+        - {x: -3.5, y: -43}
+        - {x: 0.5, y: -48}
+        - {x: -2.5, y: -51}
+      - - {x: -35.5, y: -49}
+        - {x: -32.5, y: -53}
+        - {x: -29.5, y: -52}
+        - {x: -34.5, y: -51}
+      - - {x: 23.5, y: -43}
+        - {x: 34.5, y: -36}
+        - {x: 36.5, y: -43}
+        - {x: 27.5, y: -48}
+      - - {x: -22.5, y: -45}
+        - {x: -24.5, y: -46}
+        - {x: -20.5, y: -45}
+        - {x: -17.5, y: -42}
+        - {x: -18.5, y: -41}
+        - {x: -18.5, y: -47}
+        - {x: -19.5, y: -46}
+      - - {x: 4.5, y: -33}
+        - {x: 3.5, y: -32}
+        - {x: 4.5, y: -33}
+        - {x: 8.5, y: -38}
+      - - {x: -31.5, y: -29}
+        - {x: -32.5, y: -26}
+        - {x: -26.5, y: -18}
+        - {x: -30.5, y: -37}
+      - - {x: -17.5, y: -32}
+        - {x: -16.5, y: -33}
+        - {x: -16.5, y: -36}
+      - - {x: 7.5, y: -23}
+        - {x: -3.5, y: -20}
+        - {x: 10.5, y: -21}
+        - {x: 15.5, y: -27}
+      - - {x: 25.5, y: -24}
+        - {x: 31.5, y: -27}
+        - {x: 26.5, y: -27}
+      - - {x: -44.5, y: -23}
+        - {x: -44.5, y: -21}
+        - {x: -41.5, y: -18}
+        - {x: -41.5, y: -14}
+        - {x: -42.5, y: -13}
+        - {x: -36.5, y: -13}
+        - {x: -32.5, y: -9}
+        - {x: -32.5, y: -6}
+        - {x: -31.5, y: -5}
+        - {x: -31.5, y: 3}
+        - {x: -33.5, y: 10}
+        - {x: -33.5, y: 18}
+        - {x: -36.5, y: 21}
+        - {x: -35.5, y: 18}
+        - {x: -32.5, y: 15}
+        - {x: -31.5, y: 5}
+        - {x: -28.5, y: 1}
+        - {x: -27.5, y: 1}
+        - {x: -27.5, y: -6}
+        - {x: -25.5, y: -7}
+        - {x: -27.5, y: -4}
+        - {x: -29.5, y: -4}
+        - {x: -34.5, y: -8}
+        - {x: -99.5, y: 95}
+        - {x: -42.5, y: -27}
+        - {x: -41.5, y: -26}
+      - - {x: -41.5, y: -3}
+        - {x: -42.5, y: 0}
+        - {x: -43.5, y: -2}
+        - {x: -41.5, y: -4}
+        - {x: -42.5, y: -4}
+      - - {x: -40.5, y: 43}
+        - {x: -40.5, y: 40}
+      - - {x: -33.5, y: 66}
+        - {x: -36.5, y: 69}
+        - {x: -36.5, y: 71}
+        - {x: -34.5, y: 56}
+        - {x: -33.5, y: 57}
+      - - {x: -90.5, y: 75}
+        - {x: -93.5, y: 76}
+        - {x: -92.5, y: 74}
+        - {x: -89.5, y: 74}
+        - {x: -69.5, y: 94}
+        - {x: -69.5, y: 96}
+        - {x: -67.5, y: 98}
+        - {x: -68.5, y: 98}
+        - {x: -68.5, y: 96}
+        - {x: -66.5, y: 91}
+        - {x: -55.5, y: 95}
+        - {x: -47.5, y: 111}
+        - {x: -45.5, y: 114}
+        - {x: -46.5, y: 116}
+        - {x: -42.5, y: 112}
+        - {x: -41.5, y: 112}
+        - {x: -36.5, y: 115}
+        - {x: -39.5, y: 116}
+        - {x: -42.5, y: 113}
+        - {x: -44.5, y: 113}
+        - {x: -47.5, y: 110}
+        - {x: -47.5, y: 106}
+        - {x: -51.5, y: 98}
+        - {x: -53.5, y: 91}
+        - {x: -85.5, y: 73}
+      - - {x: -28.5, y: 83}
+        - {x: -28.5, y: 84}
+        - {x: -31.5, y: 81}
+      - - {x: -28.5, y: 91}
+        - {x: -25.5, y: 94}
+        - {x: -24.5, y: 96}
+        - {x: -25.5, y: 97}
+        - {x: -32.5, y: 91}
+      - - {x: -33.5, y: 104}
+        - {x: -35.5, y: 102}
+        - {x: -34.5, y: 100}
+        - {x: -33.5, y: 101}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_57
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 368
+        width: 190
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 118}
+        - {x: -45, y: 118}
+        - {x: -95, y: 73}
+        - {x: -95, y: 49}
+        - {x: -77, y: 29}
+        - {x: -68, y: -104}
+        - {x: -50, y: -118}
+        - {x: 52, y: -118}
+        - {x: 95, y: -87}
+        - {x: 95, y: 34}
+        - {x: 6, y: 112}
+      - - {x: 17, y: -102}
+        - {x: 14, y: -99}
+        - {x: 10, y: -98}
+        - {x: 9, y: -100}
+        - {x: 13, y: -101}
+        - {x: 17, y: -101}
+        - {x: 21, y: -105}
+        - {x: 25, y: -105}
+        - {x: 32, y: -99}
+        - {x: 32, y: -94}
+        - {x: 14, y: -54}
+        - {x: 39, y: -38}
+        - {x: 20, y: -22}
+        - {x: -5, y: -36}
+        - {x: -8, y: -45}
+        - {x: -8, y: -71}
+        - {x: -16, y: -58}
+        - {x: -19, y: -55}
+        - {x: -19, y: -56}
+        - {x: -18, y: -55}
+        - {x: -11, y: -52}
+        - {x: -12, y: -22}
+        - {x: -19, y: -14}
+        - {x: -23, y: -16}
+        - {x: -31, y: -21}
+        - {x: -31, y: -30}
+        - {x: -30, y: -45}
+        - {x: -30, y: -90}
+        - {x: -27, y: -93}
+        - {x: -26, y: -92}
+        - {x: -27, y: -91}
+        - {x: -30, y: -94}
+        - {x: -41, y: -83}
+        - {x: -43, y: -84}
+        - {x: -39, y: -84}
+        - {x: -34, y: -88}
+        - {x: -31, y: -88}
+        - {x: -28, y: -86}
+        - {x: -27, y: -82}
+        - {x: -31, y: -77}
+        - {x: -32, y: -61}
+        - {x: -31, y: -7}
+        - {x: -21, y: 43}
+        - {x: -27, y: 49}
+        - {x: -82, y: 53}
+        - {x: -84, y: 53}
+        - {x: -84, y: 52}
+        - {x: -79, y: 57}
+        - {x: -60, y: 70}
+        - {x: -17, y: 52}
+        - {x: 1, y: 61}
+        - {x: 4, y: 65}
+        - {x: 4, y: 66}
+        - {x: 8, y: 70}
+        - {x: 7, y: 71}
+        - {x: 6, y: 64}
+        - {x: 5, y: 64}
+        - {x: -5, y: 47}
+        - {x: -7, y: 28}
+        - {x: 46, y: -44}
+        - {x: 50, y: -62}
+        - {x: 52, y: -67}
+        - {x: 55, y: -69}
+        - {x: 50, y: -64}
+        - {x: 50, y: -63}
+        - {x: 44, y: -54}
+        - {x: 40, y: -53}
+        - {x: 35, y: -56}
+        - {x: 36, y: -71}
+        - {x: 34, y: -106}
+        - {x: 21, y: -107}
+      - - {x: 64, y: -62}
+        - {x: 65, y: -58}
+        - {x: 66, y: -41}
+        - {x: 66, y: -36}
+        - {x: 68, y: -26}
+        - {x: 80, y: -7}
+        - {x: 81, y: -4}
+        - {x: 84, y: -1}
+        - {x: 88, y: 0}
+        - {x: 85, y: 1}
+        - {x: 82, y: -2}
+        - {x: 82, y: -6}
+        - {x: 70, y: -26}
+        - {x: 66, y: -38}
+        - {x: 66, y: -46}
+        - {x: 65, y: -59}
+        - {x: 62, y: -61}
+        - {x: 61, y: -64}
+        - {x: 61, y: -65}
+      - - {x: -24, y: 78}
+        - {x: -20, y: 99}
+        - {x: -15, y: 97}
+        - {x: -5, y: 74}
+      - - {x: -54, y: 83}
+        - {x: -55, y: 81}
+        - {x: -55, y: 72}
+        - {x: -52, y: 69}
+        - {x: -48, y: 69}
+        - {x: -43, y: 71}
+        - {x: -43, y: 81}
+        - {x: -47, y: 83}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_58
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 400
+        width: 206
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 63}
+        - {x: -94, y: 63}
+        - {x: -103, y: 54}
+        - {x: -103, y: -23}
+        - {x: -81, y: -37}
+        - {x: -44, y: -32}
+        - {x: -41, y: -31}
+        - {x: -45, y: -41}
+        - {x: -9, y: -47}
+        - {x: -1, y: -43}
+        - {x: 12, y: -43}
+        - {x: 14, y: -44}
+        - {x: 19, y: -43}
+        - {x: 12, y: -44}
+        - {x: 11, y: -43}
+        - {x: 7, y: -43}
+        - {x: -1, y: -47}
+        - {x: -13, y: -55}
+        - {x: -17, y: -60}
+        - {x: -19, y: -73}
+        - {x: 103, y: -73}
+        - {x: 103, y: 31}
+        - {x: 79, y: 56}
+      - - {x: -8, y: -63}
+        - {x: -5, y: -64}
+        - {x: -2, y: -61}
+        - {x: -2, y: -60}
+        - {x: 3, y: -60}
+        - {x: 6, y: -57}
+        - {x: 11, y: -56}
+        - {x: 63, y: -52}
+        - {x: 76, y: -43}
+        - {x: 90, y: -29}
+        - {x: 90, y: -25}
+        - {x: 87, y: -8}
+        - {x: 78, y: 8}
+        - {x: 68, y: 8}
+        - {x: 54, y: -18}
+        - {x: 36, y: -28}
+        - {x: 25, y: -30}
+        - {x: 24, y: -31}
+        - {x: 19, y: -31}
+        - {x: 19, y: -32}
+        - {x: 22, y: -29}
+        - {x: 22, y: -25}
+        - {x: 31, y: -28}
+        - {x: 35, y: -28}
+        - {x: 39, y: -26}
+        - {x: 42, y: -23}
+        - {x: 43, y: -21}
+        - {x: 35, y: -12}
+        - {x: 43, y: 18}
+        - {x: 39, y: 26}
+        - {x: 3, y: 22}
+        - {x: -17, y: 6}
+        - {x: -21, y: 6}
+        - {x: -22, y: 5}
+        - {x: -18, y: 7}
+        - {x: -13, y: 10}
+        - {x: 1, y: 28}
+        - {x: 65, y: 32}
+        - {x: 72, y: 18}
+        - {x: 78, y: 10}
+        - {x: 88, y: -6}
+        - {x: 93, y: -23}
+        - {x: 90, y: -29}
+        - {x: 70, y: -49}
+        - {x: 63, y: -53}
+        - {x: 55, y: -54}
+        - {x: 10, y: -56}
+        - {x: 10, y: -58}
+        - {x: 3, y: -58}
+        - {x: 0, y: -60}
+        - {x: -1, y: -62}
+        - {x: -7, y: -62}
+      - - {x: 29, y: -41}
+        - {x: 36, y: -41}
+        - {x: 40, y: -40}
+        - {x: 52, y: -41}
+        - {x: 56, y: -37}
+        - {x: 63, y: -32}
+        - {x: 74, y: -21}
+        - {x: 76, y: -14}
+        - {x: 76, y: -12}
+        - {x: 76, y: -13}
+        - {x: 75, y: -24}
+        - {x: 62, y: -33}
+        - {x: 54, y: -41}
+        - {x: 34, y: -41}
+        - {x: 33, y: -40}
+        - {x: 31, y: -40}
+        - {x: 24, y: -42}
+        - {x: 25, y: -43}
+      - - {x: -17, y: -27}
+        - {x: -17, y: -25}
+        - {x: -19, y: -22}
+        - {x: -23, y: -21}
+        - {x: -24, y: -22}
+        - {x: -19, y: -23}
+        - {x: -16, y: -23}
+        - {x: -12, y: -19}
+        - {x: -11, y: -14}
+        - {x: -13, y: -10}
+        - {x: -9, y: -12}
+        - {x: -14, y: -27}
+        - {x: -19, y: -30}
+      - - {x: -89, y: -10}
+        - {x: -90, y: -10}
+        - {x: -90, y: -9}
+        - {x: -88, y: -3}
+        - {x: -86, y: -4}
+        - {x: -89, y: -7}
+        - {x: -89, y: -10}
+        - {x: -86, y: -13}
+        - {x: -80, y: -14}
+      - - {x: 6, y: -13}
+        - {x: 12, y: -13}
+        - {x: 15, y: -16}
+        - {x: 16, y: -15}
+        - {x: 12, y: -15}
+        - {x: 11, y: -14}
+        - {x: 7, y: -14}
+        - {x: 5, y: -16}
+        - {x: 6, y: -16}
+      - - {x: -49, y: 0}
+        - {x: -47, y: 3}
+        - {x: -47, y: 5}
+        - {x: -50, y: 8}
+        - {x: -51, y: 8}
+        - {x: -51, y: 7}
+        - {x: -50, y: 6}
+        - {x: -47, y: 6}
+        - {x: -42, y: 0}
+        - {x: -45, y: -1}
+        - {x: -49, y: -3}
+        - {x: -48, y: -2}
+      - - {x: -70, y: 4}
+        - {x: -69, y: 4}
+        - {x: -66, y: 7}
+        - {x: -67, y: 7}
+        - {x: -70, y: 4}
+        - {x: -70, y: 1}
+      - - {x: -70, y: 47}
+        - {x: -72, y: 50}
+        - {x: -74, y: 50}
+        - {x: -72, y: 49}
+        - {x: -69, y: 51}
+        - {x: -67, y: 49}
+        - {x: -50, y: 34}
+        - {x: -31, y: 26}
+        - {x: -28, y: 26}
+        - {x: -24, y: 30}
+        - {x: -25, y: 32}
+        - {x: -25, y: 29}
+        - {x: -26, y: 18}
+        - {x: -31, y: 18}
+        - {x: -34, y: 17}
+        - {x: -33, y: 16}
+        - {x: -30, y: 19}
+        - {x: -30, y: 23}
+        - {x: -33, y: 26}
+        - {x: -61, y: 30}
+      - - {x: -22, y: 50}
+        - {x: -20, y: 48}
+        - {x: -17, y: 49}
+        - {x: -17, y: 53}
+        - {x: -19, y: 55}
+        - {x: -22, y: 54}
+      - - {x: -86, y: 71}
+        - {x: -86, y: 73}
+        - {x: -91, y: 73}
+        - {x: -89, y: 70}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_59
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 126
+        width: 268
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 75}
+        - {x: -134, y: 72}
+        - {x: -134, y: 17}
+        - {x: -76, y: -75}
+        - {x: 54, y: -75}
+        - {x: 134, y: -32}
+        - {x: 134, y: 47}
+        - {x: 117, y: 75}
+      - - {x: -46, y: -64}
+        - {x: -55, y: -46}
+        - {x: -55, y: -37}
+        - {x: -57, y: -36}
+        - {x: -50, y: -40}
+        - {x: -43, y: -42}
+        - {x: -45, y: -57}
+        - {x: -45, y: -63}
+        - {x: -47, y: -65}
+        - {x: -46, y: -66}
+      - - {x: 17, y: -61}
+        - {x: 13, y: -49}
+        - {x: 22, y: -43}
+        - {x: 19, y: -52}
+        - {x: 18, y: -62}
+        - {x: 16, y: -65}
+        - {x: 17, y: -65}
+      - - {x: 38, y: -44}
+        - {x: 36, y: -44}
+        - {x: 36, y: -48}
+      - - {x: -17, y: -24}
+        - {x: 54, y: 18}
+        - {x: 68, y: 27}
+        - {x: 73, y: 35}
+        - {x: 77, y: 51}
+        - {x: 77, y: 55}
+        - {x: 81, y: 56}
+        - {x: 79, y: 51}
+        - {x: 79, y: 46}
+        - {x: 81, y: 37}
+        - {x: 91, y: 35}
+      - - {x: 49, y: 41}
+        - {x: 54, y: 52}
+        - {x: 61, y: 43}
+        - {x: 45, y: 29}
+      - - {x: -111, y: 39}
+        - {x: -112, y: 45}
+        - {x: -112, y: 38}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Animals_60
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 40
+        width: 215
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -91.5, y: 132}
+        - {x: -107.5, y: 100}
+        - {x: -107.5, y: 13}
+        - {x: -13.5, y: -132}
+        - {x: 3.5, y: -132}
+        - {x: 10.5, y: -120}
+        - {x: 28.5, y: -114}
+        - {x: 32.5, y: -107}
+        - {x: 30.5, y: -59}
+        - {x: 33.5, y: -115}
+        - {x: 19.5, y: -117}
+        - {x: 15.5, y: -121}
+        - {x: 14.5, y: -124}
+        - {x: 14.5, y: -132}
+        - {x: 55.5, y: -132}
+        - {x: 107.5, y: -20}
+        - {x: 107.5, y: 62}
+        - {x: 2.5, y: 132}
+      - - {x: 84.5, y: 13}
+        - {x: 85.5, y: 14}
+        - {x: 84.5, y: 15}
+        - {x: 81.5, y: 12}
+      - - {x: 61.5, y: 17}
+        - {x: 32.5, y: 42}
+        - {x: 26.5, y: 42}
+        - {x: 18.5, y: 39}
+        - {x: 9.5, y: 42}
+        - {x: -13.5, y: 42}
+        - {x: -13.5, y: 12}
+        - {x: -0.5, y: -10}
+        - {x: 39.5, y: -10}
+        - {x: 53.5, y: -3}
+        - {x: 59.5, y: 3}
+        - {x: 61.5, y: 8}
+      - - {x: -96.5, y: 80}
+        - {x: -96.5, y: 87}
+        - {x: -91.5, y: 89}
+        - {x: -84.5, y: 96}
+        - {x: -84.5, y: 99}
+        - {x: -82.5, y: 101}
+        - {x: -82.5, y: 100}
+        - {x: -79.5, y: 97}
+        - {x: -88.5, y: 92}
+        - {x: -94.5, y: 85}
+        - {x: -95.5, y: 83}
+        - {x: -98.5, y: 80}
+        - {x: -99.5, y: 76}
+      - - {x: -40.5, y: 100}
+        - {x: -46.5, y: 112}
+        - {x: -52.5, y: 112}
+        - {x: -61.5, y: 102}
+        - {x: -72.5, y: 108}
+        - {x: -72.5, y: 113}
+        - {x: -73.5, y: 113}
+        - {x: -72.5, y: 110}
+        - {x: -68.5, y: 107}
+        - {x: -63.5, y: 105}
+        - {x: -56.5, y: 117}
+        - {x: -36.5, y: 109}
+        - {x: -39.5, y: 89}
+        - {x: -39.5, y: 86}
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
