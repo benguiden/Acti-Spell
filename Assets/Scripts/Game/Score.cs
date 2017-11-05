@@ -29,6 +29,8 @@ public class Score : MonoBehaviour {
 	[Tooltip("The different word multipliers with their word count amount.")]
 	public WordMultiplier[] wordMultipliers;
 
+	public Doodles doodles;
+
 	public static Score main;
 
 	[HideInInspector]
@@ -104,6 +106,8 @@ public class Score : MonoBehaviour {
 		if (wrappedScore >= uiFullScore [level]) {
 			if (level < uiFullScore.Length - 1) {
 				level++;
+				if (doodles != null)
+					doodles.IncreaseIndex ();
 				print ("Level: " + level);
 				nextLevelReady = true;
 			}

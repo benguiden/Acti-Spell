@@ -8,7 +8,7 @@ public class Doodles : MonoBehaviour
 	#region Variables & Object
 
 	[Header ("Themes")]
-	public string currentTheme;
+	public int themeIndex;
 	public Theme[] themes;
 
 	[Space]
@@ -63,17 +63,17 @@ public class Doodles : MonoBehaviour
 
 	public Sprite GetSprite (bool isColour)
 	{
+		isColour = true;
+		if (Random.value < 0.5f)
+			isColour = false;
 		if (themes != null) {
-			foreach (Theme theme in themes) {
-				if (currentTheme.ToLower () == theme.name.ToLower ()) {
-					if (isColour) {
-						int sprIndex = Random.Range (0, theme.spritesColour.Length);
-						return theme.spritesColour [sprIndex];
-					} else {
-						int sprIndex = Random.Range (0, theme.sprites.Length);
-						return theme.sprites [sprIndex];
-					}
-				}
+			Theme theme = themes [themeIndex];
+			if (isColour) {
+				int sprIndex = Random.Range (0, theme.spritesColour.Length);
+				return theme.spritesColour [sprIndex];
+			} else {
+				int sprIndex = Random.Range (0, theme.sprites.Length);
+				return theme.sprites [sprIndex];
 			}
 		}
 		return null;
@@ -83,6 +83,12 @@ public class Doodles : MonoBehaviour
 		GameObject doodle = new GameObject ("Doodle");
 		doodle.transform.parent = this.transform;
 		doodle.AddComponent<Doodle> ().parent = this;
+	}
+
+	public void IncreaseIndex(){
+		themeIndex++;
+		if (themeIndex >= themes.Length)
+			themeIndex = 0;
 	}
 
 }
