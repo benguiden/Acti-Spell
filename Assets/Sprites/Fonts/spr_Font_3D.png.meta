@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5f86d53034bec2d4eb57a6a13a5a94a9
-timeCreated: 1508857854
+timeCreated: 1509892286
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -128,12 +128,12 @@ TextureImporter:
       name: spr_Font_3D_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 428
+        x: 11
+        y: 423
         width: 71
-        height: 79
+        height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,12 +142,12 @@ TextureImporter:
       name: spr_Font_3D_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 432
+        x: 106
+        y: 424
         width: 67
         height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: spr_Font_3D_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 432
-        width: 67
+        x: 199
+        y: 424
+        width: 66
         height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: spr_Font_3D_3
       rect:
         serializedVersion: 2
-        x: 283
-        y: 431
-        width: 66
+        x: 290
+        y: 423
+        width: 65
         height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: spr_Font_3D_4
       rect:
         serializedVersion: 2
-        x: 368
-        y: 433
-        width: 60
+        x: 374
+        y: 425
+        width: 59
         height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,11 +199,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12
-        y: 346
+        y: 345
         width: 72
         height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: spr_Font_3D_6
       rect:
         serializedVersion: 2
-        x: 104
+        x: 103
         y: 344
-        width: 70
-        height: 75
+        width: 71
+        height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -227,11 +227,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 344
-        width: 72
+        y: 343
+        width: 71
         height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,10 +242,10 @@ TextureImporter:
         serializedVersion: 2
         x: 284
         y: 344
-        width: 76
-        height: 76
+        width: 74
+        height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,11 +255,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 371
-        y: 344
+        y: 343
         width: 68
         height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: spr_Font_3D_10
       rect:
         serializedVersion: 2
-        x: 2
+        x: 12
         y: 260
         width: 71
-        height: 79
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -282,12 +282,12 @@ TextureImporter:
       name: spr_Font_3D_11
       rect:
         serializedVersion: 2
-        x: 92
-        y: 262
-        width: 72
+        x: 100
+        y: 261
+        width: 74
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,12 +296,12 @@ TextureImporter:
       name: spr_Font_3D_12
       rect:
         serializedVersion: 2
-        x: 184
-        y: 261
-        width: 76
+        x: 192
+        y: 260
+        width: 77
         height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -310,12 +310,12 @@ TextureImporter:
       name: spr_Font_3D_13
       rect:
         serializedVersion: 2
-        x: 277
+        x: 287
         y: 256
-        width: 75
-        height: 78
+        width: 74
+        height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -324,12 +324,12 @@ TextureImporter:
       name: spr_Font_3D_14
       rect:
         serializedVersion: 2
-        x: 361
-        y: 259
-        width: 71
+        x: 371
+        y: 258
+        width: 69
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -338,12 +338,12 @@ TextureImporter:
       name: spr_Font_3D_15
       rect:
         serializedVersion: 2
-        x: 4
-        y: 174
-        width: 72
-        height: 78
+        x: 12
+        y: 168
+        width: 70
+        height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -352,12 +352,12 @@ TextureImporter:
       name: spr_Font_3D_16
       rect:
         serializedVersion: 2
-        x: 94
-        y: 174
+        x: 102
+        y: 168
         width: 74
         height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -366,12 +366,12 @@ TextureImporter:
       name: spr_Font_3D_17
       rect:
         serializedVersion: 2
-        x: 187
-        y: 175
+        x: 195
+        y: 169
         width: 73
         height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -380,12 +380,12 @@ TextureImporter:
       name: spr_Font_3D_18
       rect:
         serializedVersion: 2
-        x: 274
-        y: 174
+        x: 282
+        y: 168
         width: 70
-        height: 78
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -394,12 +394,12 @@ TextureImporter:
       name: spr_Font_3D_19
       rect:
         serializedVersion: 2
-        x: 360
-        y: 172
-        width: 77
+        x: 368
+        y: 166
+        width: 76
         height: 78
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -408,12 +408,12 @@ TextureImporter:
       name: spr_Font_3D_20
       rect:
         serializedVersion: 2
-        x: 3
-        y: 88
-        width: 73
+        x: 4
+        y: 84
+        width: 76
         height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -422,12 +422,12 @@ TextureImporter:
       name: spr_Font_3D_21
       rect:
         serializedVersion: 2
-        x: 93
-        y: 87
+        x: 97
+        y: 83
         width: 73
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -436,12 +436,12 @@ TextureImporter:
       name: spr_Font_3D_22
       rect:
         serializedVersion: 2
-        x: 188
-        y: 88
+        x: 192
+        y: 84
         width: 76
         height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -450,12 +450,12 @@ TextureImporter:
       name: spr_Font_3D_23
       rect:
         serializedVersion: 2
-        x: 280
-        y: 90
+        x: 284
+        y: 86
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -464,12 +464,12 @@ TextureImporter:
       name: spr_Font_3D_24
       rect:
         serializedVersion: 2
-        x: 360
-        y: 91
+        x: 364
+        y: 87
         width: 80
         height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -478,12 +478,12 @@ TextureImporter:
       name: spr_Font_3D_25
       rect:
         serializedVersion: 2
-        x: 7
-        y: 6
+        x: 8
+        y: 4
         width: 69
-        height: 75
+        height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
