@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour {
 	private bool started = false;
 	private Vector2 lastVelocity;
 	private float lastDeltaTime;
+	private bool levelLoaded = false;
 
 	//Componenets
 	private SpriteRenderer childRen;
@@ -80,6 +81,7 @@ public class PlayerController : MonoBehaviour {
 		anim = gameObject.GetComponent<Animator> ();
 		SetJumpHeight (jumpHeight);
 		childRen = this.GetComponentInChildren<SpriteRenderer> ();
+		StartCoroutine (StartDelay (0.5f));
 		/*if (childRen == null)
 			Debug.LogError ("Error: No Sprite Renderer componenet in child Game Object of '" + this.gameObject.name + "' with Player Controller componenet.");
 		else
@@ -90,19 +92,28 @@ public class PlayerController : MonoBehaviour {
 		SetJumpHeight (jumpHeight);
 	}
 
+	private IEnumerator StartDelay(float time){
+		while ((time > 0f) || (Input.GetKey(KeyCode.UpArrow))) {
+			time -= Time.deltaTime;
+			yield return null;
+		}
+		levelLoaded = true;
+	}
+
 	private void Update(){
-		SetBounds ();
-		Move ();
-		Wrap ();
+		if (levelLoaded) {
+			SetBounds ();
+			Move ();
+			Wrap ();
 
-		if (velocity.y <= 0f)
-			CheckCollisions ();
+			if (velocity.y <= 0f)
+				CheckCollisions ();
 
-		CheckBubbleCollisions ();
+			CheckBubbleCollisions ();
 
-		lastVelocity = velocity;
-		lastDeltaTime = Time.deltaTime;
-
+			lastVelocity = velocity;
+			lastDeltaTime = Time.deltaTime;
+		}
 	}
 	#endregion
 

@@ -37,7 +37,7 @@ public class Doodles : MonoBehaviour
 		public Sprite[] spritesColour;
 	}
 
-	private float highestY;
+	private float highestY = 0f;
 
 	#endregion
 
@@ -46,7 +46,6 @@ public class Doodles : MonoBehaviour
 	private void Start ()
 	{
 		reference = Camera.main.transform;
-		highestY = 0f;
 		SpawnDoodle();
 	}
 

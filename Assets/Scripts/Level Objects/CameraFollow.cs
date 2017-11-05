@@ -28,10 +28,9 @@ public class CameraFollow: MonoBehaviour {
 
 	private float lastLowestTargetY;
 
-	private bool follow;
+	private bool follow = true;
 
 	void Start(){
-		follow = true;
 		targetY = this.transform.position.y;
 		if (target != null)
 			yOffset = this.transform.position.y - target.position.y;

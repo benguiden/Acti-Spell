@@ -2663,7 +2663,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1354967613}
-  m_Text: House
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.15
   m_LineSpacing: 1
@@ -3301,7 +3301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reference: {fileID: 535506418}
-  spawnWidth: 12
+  spawnWidth: 11
   prefab: {fileID: 1380494394212732, guid: f635db2084783ad4097b5be687176cb2, type: 2}
   spawnOffset: 10
   despawnOffset: -8

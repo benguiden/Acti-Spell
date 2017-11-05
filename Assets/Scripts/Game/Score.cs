@@ -34,19 +34,19 @@ public class Score : MonoBehaviour {
 	public static Score main;
 
 	[HideInInspector]
-	public int level;
+	public int level = 0;
 
 	[HideInInspector]
 	public bool nextLevelReady;
 	#endregion
 
 	#region Private Variables
-	private float score;
+	private float score = 0f;
 	private float highestPoint;
 	private float uiOriginalYPos;
-	private int wordMultiplierIndex;
-	private int correctWordCount;
-	private int totalCorrectSpelling;
+	private int wordMultiplierIndex = 0;
+	private int correctWordCount = 0;
+	private int totalCorrectSpelling = 0;
 	#endregion
 
 	[System.Serializable]
@@ -63,12 +63,7 @@ public class Score : MonoBehaviour {
 
 	private void Start(){
 		highestPoint = reference.position.y;
-		score = 0f;
 		uiOriginalYPos = uiTransform.localPosition.y;
-		wordMultiplierIndex = 0;
-		correctWordCount = 0;
-		level = 0;
-		totalCorrectSpelling = 0;
 
 		if (wordMultipliers.Length <= 0){
 			Debug.LogError("Error: No Word Multipliers set up in Score componenet.");

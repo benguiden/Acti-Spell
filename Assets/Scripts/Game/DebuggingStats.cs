@@ -12,7 +12,7 @@ public class DebuggingStats : MonoBehaviour {
 	private float lowestFPS, averageFPSSum, averageFPSCount, highestFPS;
 
 	#if UNITY_EDITOR
-	private void Start(){
+	private void Awake(){
 		lowestFPS = float.MaxValue;
 		highestFPS = float.MinValue;
 	}

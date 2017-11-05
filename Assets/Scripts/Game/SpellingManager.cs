@@ -41,12 +41,12 @@ public class SpellingManager : MonoBehaviour {
 	private void Awake(){
 		InitalizeLibrary ();
 		main = this;
+		currentSpelling = "";
+		state = SpellingState.SpawningWord;
 	}
 
 	private void Start(){
 		audioSource = gameObject.GetComponent<AudioSource> ();
-		currentSpelling = "";
-		state = SpellingState.SpawningWord;
 		NewWordGroup ();
 	}
 
