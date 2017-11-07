@@ -171,7 +171,10 @@ public class PlayerController : MonoBehaviour {
 			velocity.y += jumpBoost * Time.deltaTime;
 		}
 
-		this.transform.Translate ((Vector3)velocity * Time.deltaTime); // * timeSpeed
+		if (Time.deltaTime < 0.1f)
+			this.transform.Translate ((Vector3)velocity * Time.deltaTime); // * timeSpeed
+		else if (Time.deltaTime < 0.2f)
+			this.transform.Translate ((Vector3)velocity * 0.1f); // * timeSpeed
 
 	}
 
