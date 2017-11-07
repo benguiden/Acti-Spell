@@ -898,22 +898,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114425001362999230, guid: 03963592158e9264db6695e5654137d7,
-        type: 2}
-      propertyPath: dust
-      value: 
-      objectReference: {fileID: 1876504001917846, guid: a52763a75881e9e45bf4c0559f749003,
-        type: 2}
-    - target: {fileID: 114425001362999230, guid: 03963592158e9264db6695e5654137d7,
-        type: 2}
-      propertyPath: boundsOffset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114425001362999230, guid: 03963592158e9264db6695e5654137d7,
-        type: 2}
-      propertyPath: bounds.y
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03963592158e9264db6695e5654137d7, type: 2}
   m_IsPrefabParent: 0
@@ -1242,8 +1226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1488963649}
-  smoothness: 0.85
-  failOffset: -8
+  smoothness: 0.97
+  failOffset: -10
   playerController: {fileID: 1900554596}
   endGameObject: {fileID: 423526300}
   endGameCurve:
@@ -1289,6 +1273,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   endGameCurveTime: 0.35
+  fallingClip: {fileID: 8300000, guid: 1125ecf7ad76cf841acd4a77f47e2d47, type: 3}
 --- !u!114 &535506420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1482,7 +1467,7 @@ GameObject:
   - component: {fileID: 742980380}
   m_Layer: 0
   m_Name: Music Source
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

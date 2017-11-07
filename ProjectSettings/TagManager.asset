@@ -7,6 +7,7 @@ TagManager:
   - MainLevelController
   - Platform
   - Bubble
+  - Music
   layers:
   - Default
   - TransparentFX

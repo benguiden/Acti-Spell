@@ -151,8 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d31dc708feacc45aec3da3443c1861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounds: {x: 0.7, y: 0.1}
-  boundsOffset: {x: 0, y: -0.05}
+  bounds: {x: 0.7, y: 0.2}
+  boundsOffset: {x: 0, y: 0}
   bubbleBounds: {x: 0.6, y: 1.75}
   bubbleBoundsOffset: {x: 0, y: 0.875}
   horizontalSpeed: 7
@@ -163,12 +163,13 @@ MonoBehaviour:
   jumpSpd: 13.333333
   jumpBoost: 0
   velocity: {x: 0, y: 0}
+  dust: {fileID: 1876504001917846, guid: a52763a75881e9e45bf4c0559f749003, type: 2}
+  landed: 0
   bubblePop: {fileID: 8300000, guid: a2386d0ff780d734fa7e152c50056dc7, type: 3}
   stomp: {fileID: 8300000, guid: ec8bd6ad422347f41a351028a94a85af, type: 3}
   flipSound: {fileID: 8300000, guid: a1ea601bc40f01049aaff0175cf56334, type: 3}
   jumpSound: {fileID: 8300000, guid: f71ceae7097d8494db58f18d771b3ed8, type: 3}
   turning: 0
-  bubbleAnim: {fileID: 0}
 --- !u!212 &212699063321640650
 SpriteRenderer:
   m_ObjectHideFlags: 1
