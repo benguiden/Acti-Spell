@@ -155,11 +155,14 @@ public class PlayerController : MonoBehaviour {
 		if ((Input.GetKey (KeyCode.UpArrow)) && (grounded)) {
 			started = true;
 			velocity.y = Mathf.Abs (jumpSpd);
-			anim.SetBool ("jumping", true);
+			anim.SetInteger ("Jumping", 1);
 			sound.pitch = (Random.Range (0.8f, 1.3f));
 			sound.PlayOneShot (jumpSound);
 			landed = true;
 		}
+
+		if ((!grounded) && (velocity.y < 0f))
+			anim.SetInteger ("Jumping", -1);
 
 		grounded = false;
 
@@ -214,7 +217,7 @@ public class PlayerController : MonoBehaviour {
 						Destroy (speck, 1f);
 						landed = false;
 					}
-					anim.SetBool ("jumping", false);
+					anim.SetInteger ("Jumping", 0);
 					jumpBoost = gravity * (jumpTime * 2);
 				}
 			} else {
