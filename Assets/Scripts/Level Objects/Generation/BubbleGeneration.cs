@@ -77,11 +77,11 @@ public class BubbleGeneration : MonoBehaviour {
 
 		//Update Spawning Properties
 		lastLevelY = nextLevelY;
-		int spawnAmmount = Random.Range ((int)Mathf.Round (level.amountPerLevel.x), (int)Mathf.Round (level.amountPerLevel.y) + 1);
+		int spawnAmount = Random.Range ((int)Mathf.Round (level.amountPerLevel.x), (int)Mathf.Round (level.amountPerLevel.y) + 1);
 		List<Vector2> bubblePositions = new List<Vector2> ();
 
 		//Spawn New Bubbles
-		for (int i = 0; i < spawnAmmount; i++) {
+		for (int i = 0; i < spawnAmount; i++) {
 			float yOffset = Random.Range (0.25f, 1f);
 			//Decide Spawn Position
 			float bubbleXPosition;
@@ -94,8 +94,9 @@ public class BubbleGeneration : MonoBehaviour {
 				bubbleXPosition = Mathf.Clamp (bubbleXPosition, -(spawnWidth / 2f) + radius, (spawnWidth / 2f) - radius);
 			}
 
-			SpawnBubble (ref bubbleXPosition, lastLevelY + (spawnOffset / 2f) + yOffset, bubblePositions.ToArray ());
-			bubblePositions.Add (new Vector2 (bubbleXPosition, lastLevelY + yOffset + (spawnOffset / 2f)));
+			if (SpawnBubble (ref bubbleXPosition, lastLevelY + (spawnOffset / 2f) + yOffset, bubblePositions.ToArray ())) {
+				bubblePositions.Add (new Vector2 (bubbleXPosition, lastLevelY + yOffset + (spawnOffset / 2f)));
+			}
 		}
 
 		//Set Next Level
@@ -103,22 +104,35 @@ public class BubbleGeneration : MonoBehaviour {
 
 	}
 
-	private void SpawnBubble(ref float xPosition, float yPosition, Vector2[] bubblePositions){
+	private bool SpawnBubble(ref float xPosition, float yPosition, Vector2[] bubblePositions){
 		GameObject bubble = (GameObject)Instantiate (prefab, this.transform);
+		bubble.GetComponent<Bubble> ().Initalize ();
 
 		//Spacing
 		for (int i = 0; i < bubblePositions.Length; i++) {
 			float disBetween = Mathf.Abs (xPosition - bubblePositions [i].x);
 			if (disBetween < (radius * 2.5f)) {
-				if (xPosition < bubblePositions [i].x)
+				if (xPosition < bubblePositions [i].x){
 					xPosition -= (radius * 2.5f) + disBetween;
-				else
+					if (xPosition < -spawnWidth / 2f) {
+						Destroy (bubble);
+						return false;
+					}
+				}
+				else {
 					xPosition += (radius * 2.5f) + disBetween;
+					if (xPosition > spawnWidth / 2f) {
+						Destroy (bubble);
+						return false;
+					}
+				}
 			}
 		}
 
 		//Set Position
 		bubble.transform.position = new Vector3(xPosition, yPosition, zPosition);
+
+		return true;
 	}
 
 	private void RemoveBubbles(){

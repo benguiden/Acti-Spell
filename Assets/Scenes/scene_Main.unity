@@ -1471,7 +1471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &742980377
 Transform:
   m_ObjectHideFlags: 0
@@ -3085,6 +3085,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reference: {fileID: 535506418}
   spawnWidth: 12
+  lowestPosition: 1.8
+  lowestY: 0
   prefab: {fileID: 1953124423789576, guid: 874f8b401b0ef284bad5a0812861418e, type: 2}
   spawnOffset: 8
   despawnOffset: -9
@@ -3197,6 +3199,11 @@ Prefab:
         type: 2}
       propertyPath: bobTime
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114805437221714860, guid: 874f8b401b0ef284bad5a0812861418e,
+        type: 2}
+      propertyPath: isGround
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -3387,7 +3394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1656590750
 Transform:
   m_ObjectHideFlags: 0

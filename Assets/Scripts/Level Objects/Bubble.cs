@@ -13,7 +13,7 @@ public class Bubble : MonoBehaviour {
 	[HideInInspector]
 	public int bubbleIndex;
 
-	private void Start(){
+	public void Initalize(){
 		if (this.gameObject.tag == "Bubble") {
 			bubbleIndex = LevelController.main.GetBubbleCount ();
 			LevelController.main.AddBubbleToList (this);
@@ -24,6 +24,10 @@ public class Bubble : MonoBehaviour {
 		if (GetText ())
 			textMesh.text = letter.ToString ();
 
+	}
+
+	private void Update(){
+		textMesh.text = bubbleIndex.ToString();
 	}
 
 	private void OnDestroy(){

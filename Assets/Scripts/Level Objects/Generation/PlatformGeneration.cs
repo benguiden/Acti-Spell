@@ -8,7 +8,9 @@ public class PlatformGeneration : MonoBehaviour {
 
 	public float spawnWidth;
 
-	private float lowestY;
+	public float lowestPosition;
+
+	public float lowestY;
 
 	#region Platform Variables
 	public Object prefab;
@@ -63,7 +65,7 @@ public class PlatformGeneration : MonoBehaviour {
 	private void RemovePreviousPlatforms(){
 		for (int i = LevelController.main.GetPlatformCount () - 1; i >= 0; i--) {
 			float yPos = LevelController.main.GetPlatform (i).transform.position.y;
-			if (yPos <= reference.position.y + despawnOffset + level.yRange + ySpacing) {
+			if ((yPos <= reference.position.y + despawnOffset + level.yRange + ySpacing) || ((yPos <= lowestPosition) && (!LevelController.main.GetPlatform (i).isGround))) {
 				Destroy (LevelController.main.GetPlatform (i).gameObject);
 			}
 		}

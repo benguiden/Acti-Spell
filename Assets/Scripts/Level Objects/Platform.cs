@@ -12,6 +12,8 @@ public class Platform : MonoBehaviour {
 
 	public float bobTime;
 
+	public bool isGround = false;
+
 	[HideInInspector]
 	public int platformIndex;
 
