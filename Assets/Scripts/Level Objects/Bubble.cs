@@ -26,10 +26,6 @@ public class Bubble : MonoBehaviour {
 
 	}
 
-	private void Update(){
-		textMesh.text = bubbleIndex.ToString();
-	}
-
 	private void OnDestroy(){
 		if (this.gameObject.tag == "Bubble") {
 			LevelController.main.RemoveBubbleFromList (bubbleIndex);

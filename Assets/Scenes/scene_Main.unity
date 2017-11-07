@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1488963649}
   smoothness: 0.97
-  failOffset: -10
+  failOffset: -12
   playerController: {fileID: 1900554596}
   endGameObject: {fileID: 423526300}
   endGameCurve:
