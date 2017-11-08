@@ -415,8 +415,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 44074196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 355.5, y: 200, z: 0}
-  m_LocalScale: {x: 0.740625, y: 0.740625, z: 0.740625}
+  m_LocalPosition: {x: 262.5, y: 123.5, z: 0}
+  m_LocalScale: {x: 0.45740741, y: 0.45740741, z: 0.45740741}
   m_Children:
   - {fileID: 1207483587}
   - {fileID: 699780169}
@@ -1355,7 +1355,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699780168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 331.99997, y: 234.04218, z: 0}
+  m_LocalPosition: {x: 425.88666, y: 234, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1345046080}
@@ -1471,7 +1471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &742980377
 Transform:
   m_ObjectHideFlags: 0
@@ -1494,7 +1494,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 25383fc51550ad748b93babfae04ae58, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 29da93fc8d2ba094b8faa4fbb54f8cb6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
@@ -1574,11 +1574,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b5b38f18ade848d4eb29c855298b211d, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 9e48736c6123c464e8c64413f1c440e1, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1654,11 +1654,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6624736cd80061f47a54377ec71d1893, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: e52f81bf7ec034549aa9f1b05d13ff0b, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1734,11 +1734,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 286e33d4f54d96344a1a0176f62b3686, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 12907387b65c7ae4eb9f508b522fb943, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1813,14 +1813,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 742980376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2cbc07580c493a4988938a50c2f14e2, type: 3}
+  m_Script: {fileID: 11500000, guid: a3370db4549c7a94f87357a12e04c609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   musicParts:
-  - {fileID: 8300000, guid: 25383fc51550ad748b93babfae04ae58, type: 3}
-  - {fileID: 8300000, guid: 286e33d4f54d96344a1a0176f62b3686, type: 3}
-  - {fileID: 8300000, guid: 6624736cd80061f47a54377ec71d1893, type: 3}
-  - {fileID: 8300000, guid: b5b38f18ade848d4eb29c855298b211d, type: 3}
+  - {fileID: 8300000, guid: 29da93fc8d2ba094b8faa4fbb54f8cb6, type: 3}
+  - {fileID: 8300000, guid: 12907387b65c7ae4eb9f508b522fb943, type: 3}
+  - {fileID: 8300000, guid: e52f81bf7ec034549aa9f1b05d13ff0b, type: 3}
+  - {fileID: 8300000, guid: 9e48736c6123c464e8c64413f1c440e1, type: 3}
 --- !u!4 &798280245 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4457336786417654, guid: 874f8b401b0ef284bad5a0812861418e,
@@ -2317,7 +2317,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1207483586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 262.99997, y: 237.04218, z: 0}
+  m_LocalPosition: {x: 356.88666, y: 237, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1106773518}
@@ -2439,7 +2439,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1215610511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 331.99997, y: 234.04218, z: 0}
+  m_LocalPosition: {x: 425.88666, y: 234, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 871587207}
