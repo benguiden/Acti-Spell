@@ -12,6 +12,8 @@ public class PlatformGeneration : MonoBehaviour {
 
 	public float lowestY;
 
+	public float zPos;
+
 	#region Platform Variables
 	public Object prefab;
 
@@ -43,7 +45,7 @@ public class PlatformGeneration : MonoBehaviour {
 
 	private void Start(){
 		lowestY = reference.position.y;
-		lastLevel = lowestY;
+		lastLevel = lowestPosition + spawnOffset;
 		nextLevel = lastLevel + Random.Range (level.levelSpacing.x, level.levelSpacing.y) - spawnOffset;
 	}
 
@@ -52,7 +54,7 @@ public class PlatformGeneration : MonoBehaviour {
 		if (reference.position.y > lowestY)
 			lowestY = reference.position.y;
 
-		while (lowestY >= nextLevel - spawnOffset) {
+		while (lowestY >= nextLevel - spawnOffset){
 			GeneratePlatformLevel ();
 		}
 
@@ -65,7 +67,7 @@ public class PlatformGeneration : MonoBehaviour {
 	private void RemovePreviousPlatforms(){
 		for (int i = LevelController.main.GetPlatformCount () - 1; i >= 0; i--) {
 			float yPos = LevelController.main.GetPlatform (i).transform.position.y;
-			if ((yPos <= reference.position.y + despawnOffset + level.yRange + ySpacing) || ((yPos <= lowestPosition) && (!LevelController.main.GetPlatform (i).isGround))) {
+			if (yPos <= reference.position.y + despawnOffset + level.yRange + ySpacing) {
 				Destroy (LevelController.main.GetPlatform (i).gameObject);
 			}
 		}
@@ -128,9 +130,9 @@ public class PlatformGeneration : MonoBehaviour {
 		float leftSide = platform.transform.position.x - (xSpacing / 2f) + (spawnWidth / 2f);
 		float rightSide = platform.transform.position.x - (xSpacing / 2f) - (spawnWidth / 2f);
 		if (leftSide < 0f) {
-			((GameObject)Instantiate (prefab, this.transform)).transform.position = new Vector3 ((spawnWidth / 2f) + (xSpacing / 2f) + leftSide, spawnPosition.y, 0f);
+			((GameObject)Instantiate (prefab, this.transform)).transform.position = new Vector3 ((spawnWidth / 2f) + (xSpacing / 2f) + leftSide, spawnPosition.y, zPos);
 		} else if (rightSide > -xSpacing) {
-			((GameObject)Instantiate (prefab, this.transform)).transform.position = new Vector3 (-(spawnWidth / 2f) + (xSpacing / 2f) + rightSide, spawnPosition.y, 0f);
+			((GameObject)Instantiate (prefab, this.transform)).transform.position = new Vector3 (-(spawnWidth / 2f) + (xSpacing / 2f) + rightSide, spawnPosition.y, zPos);
 		}
 	}
 	#endregion
