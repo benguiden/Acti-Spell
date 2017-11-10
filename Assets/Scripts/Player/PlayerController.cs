@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour {
 	private SpriteRenderer childRen;
 	private Platform lastPlatform;
 	//private GameObject child;
+	private Coroutine blinkCoroutine;
 
 	#endregion
 
@@ -204,6 +205,23 @@ public class PlayerController : MonoBehaviour {
 
 	public void Respawn(){
 		this.transform.position = lastPlatform.transform.position;
+		if (blinkCoroutine != null)
+			StopCoroutine (blinkCoroutine);
+		blinkCoroutine = StartCoroutine (Blink ());
+	}
+
+	private IEnumerator Blink(){
+		childRen.enabled = false;
+		yield return new WaitForSeconds (0.125f);
+		childRen.enabled = true;
+		yield return new WaitForSeconds (0.125f);
+		childRen.enabled = false;
+		yield return new WaitForSeconds (0.125f);
+		childRen.enabled = true;
+		yield return new WaitForSeconds (0.125f);
+		childRen.enabled = false;
+		yield return new WaitForSeconds (0.125f);
+		childRen.enabled = true;
 	}
 	#endregion
 
