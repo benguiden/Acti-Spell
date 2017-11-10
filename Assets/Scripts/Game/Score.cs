@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
 
 	#region Public Variables
 	[Tooltip("If true, this instance of the class will become the static 'main' object, which other classes can reference.")]
 	public bool isMain;
+
+	public int lives = 3;
+
+	public Text livesText;
 
 	[Tooltip("The transfrom reference that score will increase to.")]
 	public Transform reference;

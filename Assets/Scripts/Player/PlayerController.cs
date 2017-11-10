@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour {
 
 	//Componenets
 	private SpriteRenderer childRen;
+	private Platform lastPlatform;
 	//private GameObject child;
 
 	#endregion
@@ -200,6 +201,10 @@ public class PlayerController : MonoBehaviour {
 	public bool IsGrounded(){
 		return grounded;
 	}
+
+	public void Respawn(){
+		this.transform.position = lastPlatform.transform.position;
+	}
 	#endregion
 
 	#region Collisions
@@ -215,6 +220,7 @@ public class PlayerController : MonoBehaviour {
 					if (groundedLast == false)
 						platforms [i].Bob ();
 					grounded = true;
+					lastPlatform = platforms [i];
 					if (landed) {
 						GameObject speck = ((GameObject)Instantiate (dust, platforms [i].transform, false));
 						Destroy (speck, 1f);

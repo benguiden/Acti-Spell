@@ -48,10 +48,17 @@ public class CameraFollow: MonoBehaviour {
 
 			//Check Fail
 			if (target.position.y < highestY + failOffset) {
-				follow = false;
-				target.gameObject.SetActive (false);
-				target = null;
-				StartCoroutine (EndGameUI ());
+				Score.main.lives--;
+				if (Score.main.lives == 0) {
+					Score.main.livesText.text =	"";
+					follow = false;
+					target.gameObject.SetActive (false);
+					target = null;
+					StartCoroutine (EndGameUI ());
+				} else {
+					Score.main.livesText.text =	Score.main.lives.ToString ();
+					playerController.Respawn ();
+				}
 			}
 		}
 
