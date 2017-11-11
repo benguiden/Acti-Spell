@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour {
 
+	private List<Object> destroyList = new List<Object> ();
+
 	private static LevelController _main;
 
 	public static LevelController main{
@@ -77,10 +79,55 @@ public class LevelController : MonoBehaviour {
 
 	public void RemoveBubbles(){
 		foreach (Bubble bubble in bubbles) {
-			Animator bubAnim = bubble.GetComponent<Animator> ();
-			bubAnim.SetTrigger ("collected");
-			Destroy (bubble.gameObject, 0.5f);
+			if (!bubble.gameObject.activeSelf) {
+				Debug.LogWarning("Bubble is disabled.");
+				Debug.Break ();
+			}
+			if (bubble.enabled) {
+				Animator bubAnim = bubble.GetComponent<Animator> ();
+				bubAnim.SetTrigger ("collected");
+				bubble.enabled = false;
+				DestroyNow (bubble.gameObject, 0.5f);
+			}
 		}
+	}
+	#endregion
+
+	#region Destroying
+	private void LateUpdate(){
+		if (destroyList.Count > 0){
+			Object toDestroy = destroyList [0];
+			if (destroyList [0] != null) {
+				Destroy (toDestroy);
+			}
+			destroyList.RemoveAt (0);
+		}
+	}
+
+	public void DestroyLater(Object obj){
+		StartCoroutine (IEDestroyLater (obj, 0f));
+	}
+
+	public void DestroyLater(Object obj, float delay){
+		StartCoroutine (IEDestroyLater (obj, delay));
+	}
+
+	public void DestroyNow(Object obj){
+		StartCoroutine (IEDestroyNow (obj, 0f));
+	}
+
+	public void DestroyNow(Object obj, float delay){
+		StartCoroutine (IEDestroyNow (obj, delay));
+	}
+
+	private IEnumerator IEDestroyLater(Object obj, float delay){
+		yield return new WaitForSeconds (delay);
+		destroyList.Add (obj);
+	}
+
+	private IEnumerator IEDestroyNow(Object obj, float delay){
+		yield return new WaitForSeconds (delay);
+		destroyList.Insert (0, obj);
 	}
 	#endregion
 

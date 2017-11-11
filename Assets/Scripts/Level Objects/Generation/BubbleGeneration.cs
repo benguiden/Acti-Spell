@@ -13,6 +13,7 @@ public class BubbleGeneration : MonoBehaviour {
 	private float lowestY;
 	private float lastLevelY;
 	private float nextLevelY;
+	private bool state = true;
 	#endregion
 
 	#region Spawning
@@ -57,13 +58,20 @@ public class BubbleGeneration : MonoBehaviour {
 		if (reference.position.y > lowestY)
 			lowestY = reference.position.y;
 
-		//Generate Bubbles
-		if ((SpellingManager.main.state == SpellingManager.SpellingState.Spelling) || (SpellingManager.main.state == SpellingManager.SpellingState.DespawningWord)) {
-			if (lowestY >= nextLevelY - spawnOffset) {
-				GenerateBubbles ();
+		if (state) {
+			//Generate Bubbles
+			if ((SpellingManager.main.state == SpellingManager.SpellingState.Spelling) || (SpellingManager.main.state == SpellingManager.SpellingState.DespawningWord)) {
+				if (lowestY >= nextLevelY - spawnOffset) {
+					GenerateBubbles ();
+				}
+			} else {
+				nextLevelY = reference.transform.position.y + spawnOffset;
 			}
+			state = false;
 		} else {
-			nextLevelY = reference.transform.position.y + spawnOffset;
+			//Remove Previous Bubbles
+			RemoveBubbles ();
+			state = true;
 		}
 
 	}
@@ -72,8 +80,6 @@ public class BubbleGeneration : MonoBehaviour {
 
 	#region Bubble Generation
 	private void GenerateBubbles(){
-		//remove Previous Bubbles
-		RemoveBubbles ();
 
 		//Update Spawning Properties
 		lastLevelY = nextLevelY;
@@ -139,7 +145,10 @@ public class BubbleGeneration : MonoBehaviour {
 		for (int i = LevelController.main.GetBubbleCount () - 1; i >= 0; i--) {
 			float yPosition = LevelController.main.GetBubble (i).transform.position.y;
 			if (yPosition <= reference.position.y + despawnOffset + (radius * 2f)) {
-				Destroy (LevelController.main.GetBubble (i).gameObject);
+				if (LevelController.main.GetBubble (i).gameObject.activeSelf) {
+					LevelController.main.GetBubble (i).gameObject.SetActive (false);
+					LevelController.main.DestroyLater (LevelController.main.GetBubble (i).gameObject);
+				}
 			}
 		}
 	}

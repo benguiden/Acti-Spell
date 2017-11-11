@@ -30,6 +30,8 @@ public class PlatformGeneration : MonoBehaviour {
 	private float lastLevel;
 
 	private float nextLevel;
+
+	private bool state = true;
 	#endregion
 
 	public BubbleGeneration bubbleGenScript;
@@ -39,7 +41,7 @@ public class PlatformGeneration : MonoBehaviour {
 	private void OnDrawGizmosSelected(){
 		//Draw Spawn Width
 		Gizmos.color = Color.magenta;
-		Gizmos.DrawWireCube (this.transform.position, new Vector3 (spawnWidth, nextLevel, 0.1f));
+		Gizmos.DrawWireCube (new Vector3(0f, reference.position.y + despawnOffset + level.yRange + ySpacing, 0f), new Vector3 (spawnWidth, 0.1f, 0.1f));
 	}
 	#endif
 
@@ -54,12 +56,16 @@ public class PlatformGeneration : MonoBehaviour {
 		if (reference.position.y > lowestY)
 			lowestY = reference.position.y;
 
-		while (lowestY >= nextLevel - spawnOffset){
-			GeneratePlatformLevel ();
+		if (state == true) {
+			while (lowestY >= nextLevel - spawnOffset) {
+				GeneratePlatformLevel ();
+			}
+			state = false;
+		} else {
+			//Remove Platforms
+			RemovePreviousPlatforms ();
+			state = true;
 		}
-
-		//Remove Platforms
-		RemovePreviousPlatforms();
 	}
 	#endregion
 
@@ -68,7 +74,10 @@ public class PlatformGeneration : MonoBehaviour {
 		for (int i = LevelController.main.GetPlatformCount () - 1; i >= 0; i--) {
 			float yPos = LevelController.main.GetPlatform (i).transform.position.y;
 			if (yPos <= reference.position.y + despawnOffset + level.yRange + ySpacing) {
-				Destroy (LevelController.main.GetPlatform (i).gameObject);
+				if (LevelController.main.GetPlatform (i).gameObject.activeSelf) {
+					LevelController.main.GetPlatform (i).gameObject.SetActive (false);
+					LevelController.main.DestroyLater (LevelController.main.GetPlatform (i).gameObject);
+				}
 			}
 		}
 	}

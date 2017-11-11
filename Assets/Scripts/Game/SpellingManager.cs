@@ -62,7 +62,10 @@ public class SpellingManager : MonoBehaviour {
 
 		case SpellingState.DespawningWord:
 			if (spawnedWord.transform.position.y < wordSpawnReference.position.y - (wordSpawnOffset * 2)) {
-				Destroy (spawnedWord);
+				if (spawnedWord.activeSelf) {
+					spawnedWord.SetActive (false);
+					LevelController.main.DestroyLater (spawnedWord);
+				}
 				state = SpellingState.Spelling;
 			}
 			break;
@@ -127,8 +130,12 @@ public class SpellingManager : MonoBehaviour {
 	}
 
 	private void SpawnNewWord(){
-		if (spawnedWord != null)
-			Destroy (spawnedWord);
+		if (spawnedWord != null) {
+			if (spawnedWord.activeSelf) {
+				spawnedWord.SetActive (false);
+				LevelController.main.DestroyLater (spawnedWord);
+			}
+		}
 		spawnedWord = (GameObject)Instantiate (wordPrefab, this.transform);
 		spawnedWord.name = "New Word";
 		Vector3 newPos = spawnedWord.transform.position;

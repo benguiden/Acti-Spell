@@ -65,8 +65,10 @@ public class Doodle : MonoBehaviour {
 		newPos.y = parent.reference.position.y + (distance / k);
 		graphic.transform.position = newPos;
 
-		if (distance <= parent.despawnOffset)
-			Destroy (this.gameObject);
+		if ((distance <= parent.despawnOffset) && (gameObject.activeSelf)) {
+			gameObject.SetActive (false);
+			LevelController.main.DestroyLater (this.gameObject);
+		}
 
 	}
 
