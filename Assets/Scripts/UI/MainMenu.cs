@@ -26,8 +26,7 @@ public class MainMenu : MonoBehaviour {
 
 	public void startGame() {
 		audioSource.PlayOneShot (EnterClick);
-		//StartCoroutine (LoadSceneAsync (1));
-		SceneManager.LoadScene (1);
+		StartCoroutine (LoadSceneAsync (1));
 	}
 
 	private IEnumerator LoadSceneAsync(int sceneIndex){
