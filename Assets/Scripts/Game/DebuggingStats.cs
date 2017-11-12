@@ -20,7 +20,6 @@ public class DebuggingStats : MonoBehaviour {
 
 	private int mostBubbles = 0;
 
-	#if UNITY_EDITOR
 	private void Awake(){
 		lowestFPS = float.MaxValue;
 		highestFPS = float.MinValue;
@@ -44,10 +43,10 @@ public class DebuggingStats : MonoBehaviour {
 			mostBubbles = LevelController.main.GetBubbleCount ();
 	}
 
+	#if UNITY_EDITOR
 	private void OnApplicationQuit(){
 		LogToConsole ();
 	}
-	#endif
 
 	private void LogToConsole(){
 		if (FPSCounter) {
@@ -59,6 +58,7 @@ public class DebuggingStats : MonoBehaviour {
 		}
 		Debug.LogWarning ("Max Platform Count: " + mostPlatforms.ToString () + "\tMax Bubble Count: " + mostBubbles.ToString ());
 	}
+	#endif
 
 	public void LogToScreen(){
 		logText.text = "";

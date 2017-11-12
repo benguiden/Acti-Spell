@@ -8,6 +8,8 @@ public class SpellingManager : MonoBehaviour {
 
 	public TextMesh displayText;
 
+	public AnimationCurve fontSizeCurve;
+
 	#region Word To Spell Variables
 	public Object wordPrefab;
 	public Transform wordSpawnReference;
@@ -126,6 +128,10 @@ public class SpellingManager : MonoBehaviour {
 		} else {
 			currentWordLetters = currentWord.ToCharArray ();
 		}
+
+		//Set Font Size
+		displayText.fontSize = (int)fontSizeCurve.Evaluate((float)currentWordLetters.Length);
+
 		return currentWord;
 	}
 
@@ -164,21 +170,19 @@ public class SpellingManager : MonoBehaviour {
 		displayText.text = currentSpelling;
 		if (letter != currentWordLetters [currentLetterIndex]) {
 			//Wrong word
-			Debug.Log("Incorrect!");
 			PlayerController.Pitch = 0.1f;
 			if (Score.main.nextLevelReady) {
 				NewWordGroup ();
 				Score.main.nextLevelReady = false;
 			}
 
-			CrossOut.main.CrossWordOut (currentWord);
+			CrossOut.main.CrossWordOut (currentWord, displayText.fontSize);
 			LevelController.main.RemoveBubbles ();
 			Score.main.RestartWordMultiplier ();
 		} else {
 			currentLetterIndex++;
 			if (currentWordLetters.Length == currentLetterIndex) {
 				//Right word
-				Debug.Log("Correct!");
 				audioSource.PlayOneShot (correct);
 				((GameObject)Instantiate (correctSpellingPrefab, Camera.main.transform)).transform.localPosition = new Vector3 (-7f, -5f, 10f);
 				((GameObject)Instantiate (correctSpellingPrefab2, Camera.main.transform)).transform.localPosition = new Vector3 (1f, -5f, 10f);

@@ -22,11 +22,11 @@ public class CrossOut : MonoBehaviour {
 
 
 	#region Public Method
-	public void CrossWordOut(string correctWord){
-		StartCoroutine (IECrossWordOut (correctWord));
+	public void CrossWordOut(string correctWord, int fontSize){
+		StartCoroutine (IECrossWordOut (correctWord, fontSize));
 	}
 
-	private IEnumerator IECrossWordOut(string correctWord){
+	private IEnumerator IECrossWordOut(string correctWord, int fontSize){
 		Transform line = ((GameObject)Instantiate (crossOutPrefab, this.transform)).transform;
 		float time = crossoutTime;
 		while (time > 0f) {
@@ -37,6 +37,7 @@ public class CrossOut : MonoBehaviour {
 			yield return null;
 		}
 		TextMesh correctText = ((GameObject)Instantiate (correctSpellingPrefab, this.transform)).GetComponent<TextMesh> ();
+		correctText.fontSize = fontSize;
 		int letterIndex = 0;
 		char[] correctLetters = correctWord.ToCharArray ();
 		while (letterIndex < correctLetters.Length) {
@@ -48,6 +49,7 @@ public class CrossOut : MonoBehaviour {
 			}
 			letterIndex++;
 		}
+		yield return new WaitForSeconds (1f);
 		SpellingManager.main.state = SpellingManager.SpellingState.SpawningWord;
 		Destroy (line.gameObject);
 		Destroy (correctText.gameObject);

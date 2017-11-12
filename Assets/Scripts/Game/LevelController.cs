@@ -79,10 +79,6 @@ public class LevelController : MonoBehaviour {
 
 	public void RemoveBubbles(){
 		foreach (Bubble bubble in bubbles) {
-			if (!bubble.gameObject.activeSelf) {
-				Debug.LogWarning("Bubble is disabled.");
-				Debug.Break ();
-			}
 			if (bubble.enabled) {
 				Animator bubAnim = bubble.GetComponent<Animator> ();
 				bubAnim.SetTrigger ("collected");
