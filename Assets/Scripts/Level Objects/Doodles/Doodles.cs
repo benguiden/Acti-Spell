@@ -63,7 +63,7 @@ public class Doodles : MonoBehaviour
 	public Sprite GetSprite (bool isColour)
 	{
 		isColour = true;
-		if (Random.value < 0.5f)
+		if (Random.value < 0.25f)
 			isColour = false;
 		if (themes != null) {
 			Theme theme = themes [themeIndex];
