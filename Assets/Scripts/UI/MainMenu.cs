@@ -42,12 +42,19 @@ public class MainMenu : MonoBehaviour {
 		SceneManager.LoadScene (0);
 	}
 
-	public void credits() {
+	public void howToPlay() {
 		audioSource.PlayOneShot (EnterClick);
 			startButton.SetActive (false);
 			backButton.SetActive (true);
 			quitButton.SetActive (false);
 			creditsButton.SetActive (false);
+	}
+	public void credits() {
+		audioSource.PlayOneShot (EnterClick);
+		startButton.SetActive (false);
+		backButton.SetActive (true);
+		quitButton.SetActive (false);
+		creditsButton.SetActive (false);
 	}
 
 	public void back() {

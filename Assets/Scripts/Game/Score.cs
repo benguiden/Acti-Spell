@@ -111,6 +111,15 @@ public class Score : MonoBehaviour {
 				print ("Level: " + level);
 				nextLevelReady = true;
 			}
+			/*
+			else if (level == uiFullScore.Length -1) {
+				level = 0;
+				if (doodles != null)
+					doodles.IncreaseIndex ();
+				print ("Level: " + level);
+				nextLevelReady = true;
+			}
+			*/
 		}
 		newPosition.y = uiOriginalYPos + ((uiFullScoreOffset * ((float)wrappedScore / uiFullScore [level])) % uiFullScoreOffset);
 		uiTransform.localPosition = newPosition;
