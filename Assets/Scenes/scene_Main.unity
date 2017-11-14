@@ -902,6 +902,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212699063321640650, guid: 03963592158e9264db6695e5654137d7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e6d41b62b8215b54cb24d9c4dea5de4a,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03963592158e9264db6695e5654137d7, type: 2}
   m_IsPrefabParent: 0
@@ -2124,7 +2130,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Version 11.12.04
+  m_Text: Version 11.14.01
 --- !u!222 &858158342
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2317,6 +2323,7 @@ MonoBehaviour:
   creditsButton: {fileID: 0}
   backButton: {fileID: 0}
   quitButton: {fileID: 0}
+  screenFade: {fileID: 0}
   EnterClick: {fileID: 8300000, guid: 88110e392a48015439edacf66602d087, type: 3}
   BackClick: {fileID: 8300000, guid: 08b640391e6378043a718df997582e01, type: 3}
   Mute: {fileID: 8300000, guid: 9ba813c875bd4924688ea1d539cef070, type: 3}
@@ -3035,9 +3042,7 @@ MonoBehaviour:
   wordSpawnOffset: 11
   wordInitalY: 0
   correct: {fileID: 8300000, guid: 4ca6950566761074f96925bd31549b2a, type: 3}
-  correctSpellingPrefab: {fileID: 1996222110178138, guid: 5e356f18d672b480baaf5fe4a690293f,
-    type: 2}
-  correctSpellingPrefab2: {fileID: 1996222110178138, guid: 5e356f18d672b480baaf5fe4a690293f,
+  correctSpellingPrefab: {fileID: 1260863491705268, guid: 288dc3bc1b23341488c5ee7cf5cd4e48,
     type: 2}
   currentSpelling: 
   libraryFile: {fileID: 4900000, guid: 5c01a7cc42959794d9074935640ef456, type: 3}

@@ -19,7 +19,6 @@ public class SpellingManager : MonoBehaviour {
 	private AudioSource audioSource;
 	public AudioClip correct;
 	public Object correctSpellingPrefab;
-	public Object correctSpellingPrefab2;
 	#endregion
 
 	public string currentSpelling;
@@ -184,9 +183,7 @@ public class SpellingManager : MonoBehaviour {
 			if (currentWordLetters.Length == currentLetterIndex) {
 				//Right word
 				audioSource.PlayOneShot (correct);
-				((GameObject)Instantiate (correctSpellingPrefab, Camera.main.transform)).transform.localPosition = new Vector3 (-7f, -5f, 10f);
-				((GameObject)Instantiate (correctSpellingPrefab2, Camera.main.transform)).transform.localPosition = new Vector3 (1f, -5f, 10f);
-
+				Instantiate (correctSpellingPrefab, Camera.main.transform);
 				if (Score.main.nextLevelReady) {
 					NewWordGroup ();
 					Score.main.nextLevelReady = false;
