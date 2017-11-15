@@ -25,8 +25,8 @@ public class Score : MonoBehaviour {
 	[Tooltip("The Tranform of the ui element that transforms in reference to the score.")]
 	public Transform uiTransform;
 
-	[Tooltip("The amount that the ui translates by on the Y-Axis at the full score.")]
-	public float uiFullScoreOffset;
+	[Tooltip("The distance between each CM marking on the ruler.")]
+	public float rulerCMDistance;
 
 	[Tooltip("The score at which the ui will be at it's highest position.")]
 	public float[] uiFullScore;
@@ -38,7 +38,7 @@ public class Score : MonoBehaviour {
 
 	public static Score main;
 
-	[HideInInspector]
+	//[HideInInspector]
 	public int level = 0;
 
 	[HideInInspector]
@@ -103,6 +103,7 @@ public class Score : MonoBehaviour {
 			wrappedScore -= uiFullScore [i];
 		}
 
+		//Check Level
 		if (wrappedScore >= uiFullScore [level]) {
 			if (level < uiFullScore.Length - 1) {
 				level++;
@@ -111,17 +112,22 @@ public class Score : MonoBehaviour {
 				print ("Level: " + level);
 				nextLevelReady = true;
 			}
-			/*
-			else if (level == uiFullScore.Length -1) {
-				level = 0;
-				if (doodles != null)
-					doodles.IncreaseIndex ();
-				print ("Level: " + level);
-				nextLevelReady = true;
-			}
-			*/
 		}
-		newPosition.y = uiOriginalYPos + ((uiFullScoreOffset * ((float)wrappedScore / uiFullScore [level])) % uiFullScoreOffset);
+
+		//Set UI Position
+		float uiOffset = 0f;
+		wrappedScore = highestPoint;
+		for (int i = 0; i <= level; i++) {
+			if (wrappedScore > uiFullScore [i]) {
+				uiOffset += rulerCMDistance;
+				wrappedScore -= uiFullScore [i];
+			} else {
+				uiOffset += (wrappedScore / uiFullScore [i]) * rulerCMDistance;
+				i = level + 1;
+			}
+		}
+		Debug.Log (uiOffset);
+		newPosition.y = uiOriginalYPos + uiOffset;
 		uiTransform.localPosition = newPosition;
 	}
 
