@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private IEnumerator StartDelay(float time){
-		while ((time > 0f) || (Input.GetKey(KeyCode.UpArrow))) {
+		while ((time > 0f) || (Input.GetAxisRaw("Jump") > 0.1f)) {
 			time -= Time.deltaTime;
 			yield return null;
 		}
@@ -125,7 +125,7 @@ public class PlayerController : MonoBehaviour {
 		///////Jump buffer after falling////////
 
 		//Move Left & Right
-		if ((Input.GetKey (KeyCode.RightArrow)) && !(Input.GetKey (KeyCode.LeftArrow))) {
+		if (Input.GetAxisRaw ("Horizontal") > 0.1f) {
 			velocity.x = horizontalSpeed;
 			if (grounded) {
 				anim.SetBool ("Walk", true);
@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour {
 				sound.PlayOneShot (flipSound);
 				turning = false;
 			}
-		} else if (!(Input.GetKey (KeyCode.RightArrow)) && (Input.GetKey (KeyCode.LeftArrow))) {
+		} else if (Input.GetAxisRaw ("Horizontal") < -0.1f) {
 			velocity.x = -horizontalSpeed;
 			if (grounded) {
 				anim.SetBool ("Walk", true);
@@ -154,7 +154,7 @@ public class PlayerController : MonoBehaviour {
 			velocity.y -= Mathf.Abs (gravity * Time.deltaTime);
 
 		//Jump
-		if ((Input.GetKey (KeyCode.UpArrow)) && (grounded)) {
+		if ((Input.GetAxisRaw ("Jump") > 0.1f) && (grounded)) {
 			started = true;
 			velocity.y = Mathf.Abs (jumpSpd);
 			anim.SetInteger ("Jumping", 1);
@@ -168,7 +168,7 @@ public class PlayerController : MonoBehaviour {
 
 		grounded = false;
 
-		if ((Input.GetKey (KeyCode.UpArrow)) && (velocity.y > 0)) {
+		if ((Input.GetAxisRaw ("Jump") > 0.1f) && (velocity.y > 0)) {
 			jumpBoost -= Time.deltaTime;
 			velocity.y += jumpBoost * Time.deltaTime;
 		}
