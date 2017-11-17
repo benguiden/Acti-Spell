@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour {
 	public GameObject creditsButton;
 	public GameObject backButton;
 	public GameObject quitButton;
+	public Image screenFade;
 
 	AudioSource audioSource;
 	public AudioClip EnterClick;
@@ -31,8 +32,10 @@ public class MainMenu : MonoBehaviour {
 
 	private IEnumerator LoadSceneAsync(int sceneIndex){
 		AsyncOperation operation = SceneManager.LoadSceneAsync (sceneIndex);
+		Color fadeCol = screenFade.color;
 		while (!operation.isDone) {
-			Debug.Log (operation.progress / 0.9f);
+			fadeCol.a = operation.progress / 0.9f;
+			screenFade.color = fadeCol;
 			yield return null;
 		}
 	}
