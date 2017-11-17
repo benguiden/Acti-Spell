@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a582843345858264d976d44abadaa51d
-timeCreated: 1510520812
+timeCreated: 1510681130
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
+  alignment: 7
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
@@ -116,12 +116,12 @@ TextureImporter:
       name: DustAnimSpritesheet_0
       rect:
         serializedVersion: 2
-        x: 108
-        y: 31
-        width: 8
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 17
+        y: 27
+        width: 21
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,12 +130,12 @@ TextureImporter:
       name: DustAnimSpritesheet_1
       rect:
         serializedVersion: 2
-        x: 115
-        y: 45
-        width: 25
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 59
+        y: 21
+        width: 29
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,82 +144,12 @@ TextureImporter:
       name: DustAnimSpritesheet_2
       rect:
         serializedVersion: 2
-        x: 19
-        y: 32
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: DustAnimSpritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 34
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: DustAnimSpritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 36
-        width: 12
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: DustAnimSpritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 35
-        width: 20
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: DustAnimSpritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 24
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: DustAnimSpritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 13
-        width: 13
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 106
+        y: 11
+        width: 50
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

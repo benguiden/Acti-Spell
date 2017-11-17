@@ -87,7 +87,7 @@ public class Score : MonoBehaviour {
 	#endregion
 
 	private void SetScoreText(){
-		scoreText.text = ((int)Mathf.Round (score)).ToString () + " X" + wordMultipliers [wordMultiplierIndex].multiplier.ToString ();
+		scoreText.text = ((int)Mathf.Round (score)).ToString () + System.Environment.NewLine + "X" + wordMultipliers [wordMultiplierIndex].multiplier.ToString ();
 	}
 
 	private void IncreaseScore(){

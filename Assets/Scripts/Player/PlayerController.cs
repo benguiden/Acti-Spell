@@ -240,8 +240,15 @@ public class PlayerController : MonoBehaviour {
 					grounded = true;
 					lastPlatform = platforms [i];
 					if (landed) {
-						GameObject speck = ((GameObject)Instantiate (dust, platforms [i].transform, false));
-						Destroy (speck, 1f);
+					//	GameObject speck = ((GameObject)Instantiate (dust, platforms [i].transform, false));
+					//	Destroy (speck, 1f);
+						Vector3 offset = new Vector3 (-0.75f, 0.2f, 0f);
+						Vector3 invertedOffset = new Vector3 (0.75f, 0.2f, 0f);
+						GameObject newDust = ((GameObject)Instantiate (dust, (platforms [i].transform.position + offset), platforms [i].transform.rotation));
+						GameObject newDust2 = ((GameObject)Instantiate (dust, (platforms [i].transform.position + invertedOffset), platforms [i].transform.rotation));
+						newDust2.gameObject.GetComponent<SpriteRenderer> ().flipX = true;
+						Destroy (newDust, 0.5f);
+						Destroy (newDust2, 0.5f);
 						landed = false;
 					}
 					anim.SetInteger ("Jumping", 0);
