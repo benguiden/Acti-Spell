@@ -12,6 +12,9 @@ public class Score : MonoBehaviour {
 	public int lives = 3;
 
 	public Text livesText;
+	public GameObject heartOne;
+	public GameObject heartTwo;
+	public GameObject heartThree;
 
 	[Tooltip("The transfrom reference that score will increase to.")]
 	public Transform reference;
@@ -83,6 +86,15 @@ public class Score : MonoBehaviour {
 			SetScoreText ();
 			SetUIPosition ();
 		}
+		if (lives < 3) {
+			heartOne.SetActive (false);
+		}
+		if(lives < 2) {
+			heartTwo.SetActive(false);
+		}
+		if (lives < 1) {
+			heartThree.SetActive(false);
+		}
 	}
 	#endregion
 
@@ -109,7 +121,6 @@ public class Score : MonoBehaviour {
 				level++;
 				if (doodles != null)
 					doodles.IncreaseIndex ();
-				print ("Level: " + level);
 				nextLevelReady = true;
 			}
 		}
