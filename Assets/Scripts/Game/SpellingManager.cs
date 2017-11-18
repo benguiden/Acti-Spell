@@ -130,9 +130,6 @@ public class SpellingManager : MonoBehaviour {
 			currentWordLetters = currentWord.ToCharArray ();
 		}
 
-		//Set Font Size
-		displayText.fontSize = (int)fontSizeCurve.Evaluate((float)currentWordLetters.Length);
-
 		return currentWord;
 	}
 
@@ -149,7 +146,6 @@ public class SpellingManager : MonoBehaviour {
 		newPos.y = wordSpawnReference.position.y + wordSpawnOffset;
 		spawnedWord.transform.position = newPos;
 		spawnedWord.GetComponentInChildren<Font3D> ().SetText (NewWord ());
-		displayText.text = "";
 		state = SpellingState.DespawningWord;
 	}
 
@@ -192,12 +188,32 @@ public class SpellingManager : MonoBehaviour {
 					Score.main.nextLevelReady = false;
 				}
 					
+				StartCoroutine (CorrectSpellingTimer ());
 				LevelController.main.RemoveBubbles ();
 				state = SpellingState.SpawningWord;
 				Score.main.CheckWordCount (true);
 			}
 				
 		}
+	}
+
+	private IEnumerator CorrectSpellingTimer(){
+		yield return new WaitForSeconds (0.5f);
+		float deleteLetterTime = 0.5f / (float)displayText.text.Length;
+		int index = displayText.text.Length;
+		float time = 0f;
+		while (index > 0) {
+			if (time <= 0f) {
+				index--;
+				time += deleteLetterTime;
+				displayText.text = displayText.text.Remove (displayText.text.Length - 1);
+			}
+
+			time -= Time.deltaTime;
+			yield return null;
+		}
+		displayText.text = "";
+		displayText.fontSize = (int)fontSizeCurve.Evaluate((float)currentWordLetters.Length);
 	}
 
 }
