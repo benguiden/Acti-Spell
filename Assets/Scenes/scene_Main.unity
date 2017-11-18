@@ -2019,6 +2019,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 12907387b65c7ae4eb9f508b522fb943, type: 3}
   - {fileID: 8300000, guid: e52f81bf7ec034549aa9f1b05d13ff0b, type: 3}
   - {fileID: 8300000, guid: 9e48736c6123c464e8c64413f1c440e1, type: 3}
+  fadeTime: 5
 --- !u!1 &748029522
 GameObject:
   m_ObjectHideFlags: 0
