@@ -38,7 +38,11 @@ public class Score : MonoBehaviour {
 
 	public static Score main;
 
-	//[HideInInspector]
+	public int levelCap = 11;
+
+	//private bool Random
+
+	[HideInInspector]
 	public int level = 0;
 
 	[HideInInspector]
@@ -105,12 +109,14 @@ public class Score : MonoBehaviour {
 
 		//Check Level
 		if (wrappedScore >= uiFullScore [level]) {
-			if (level < uiFullScore.Length - 1) {
+			if ((level < uiFullScore.Length - 1) && (level < levelCap - 1)) {
 				level++;
 				if (doodles != null)
 					doodles.IncreaseIndex ();
 				print ("Level: " + level);
 				nextLevelReady = true;
+			} else if (level == levelCap - 1) {
+				Debug.Log ("Capped");
 			}
 		}
 
@@ -126,7 +132,6 @@ public class Score : MonoBehaviour {
 				i = level + 1;
 			}
 		}
-		Debug.Log (uiOffset);
 		newPosition.y = uiOriginalYPos + uiOffset;
 		uiTransform.localPosition = newPosition;
 	}
