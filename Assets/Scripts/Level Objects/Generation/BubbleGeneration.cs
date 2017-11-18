@@ -24,6 +24,9 @@ public class BubbleGeneration : MonoBehaviour {
 	public float radius;
 	public float zPosition;
 	public Level level;
+
+	[HideInInspector]
+	public bool isSpawning = false;
 	#endregion
 
 	[HideInInspector]
@@ -47,6 +50,7 @@ public class BubbleGeneration : MonoBehaviour {
 	#endif
 
 	private void Start(){
+		isSpawning = false;
 		lowestY = reference.position.y;
 		lastLevelY = reference.position.y + spawnOffset;
 		nextLevelY = lastLevelY + Random.Range (level.levelSpacing.x, level.levelSpacing.y);
@@ -87,21 +91,23 @@ public class BubbleGeneration : MonoBehaviour {
 		List<Vector2> bubblePositions = new List<Vector2> ();
 
 		//Spawn New Bubbles
-		for (int i = 0; i < spawnAmount; i++) {
-			float yOffset = Random.Range (0.25f, 0.5f);
-			//Decide Spawn Position
-			float bubbleXPosition;
-			if (platformSpots.Length < 1) {
-				bubbleXPosition = Random.Range (-(spawnWidth / 2f) + radius, (spawnWidth / 2f) - radius);
-			} else {
-				int platform = Random.Range (0, platformSpots.Length);
-				bubbleXPosition = platformSpots [platform];
-				bubbleXPosition += Random.Range (-1f, 1f);
-				bubbleXPosition = Mathf.Clamp (bubbleXPosition, -(spawnWidth / 2f) + radius, (spawnWidth / 2f) - radius);
-			}
+		if (isSpawning) {
+			for (int i = 0; i < spawnAmount; i++) {
+				float yOffset = Random.Range (0.25f, 0.5f);
+				//Decide Spawn Position
+				float bubbleXPosition;
+				if (platformSpots.Length < 1) {
+					bubbleXPosition = Random.Range (-(spawnWidth / 2f) + radius, (spawnWidth / 2f) - radius);
+				} else {
+					int platform = Random.Range (0, platformSpots.Length);
+					bubbleXPosition = platformSpots [platform];
+					bubbleXPosition += Random.Range (-1f, 1f);
+					bubbleXPosition = Mathf.Clamp (bubbleXPosition, -(spawnWidth / 2f) + radius, (spawnWidth / 2f) - radius);
+				}
 
-			if (SpawnBubble (ref bubbleXPosition, lastLevelY + (spawnOffset / 2f) + yOffset, bubblePositions.ToArray ())) {
-				bubblePositions.Add (new Vector2 (bubbleXPosition, lastLevelY + yOffset + (spawnOffset / 2f)));
+				if (SpawnBubble (ref bubbleXPosition, lastLevelY + (spawnOffset / 2f) + yOffset, bubblePositions.ToArray ())) {
+					bubblePositions.Add (new Vector2 (bubbleXPosition, lastLevelY + yOffset + (spawnOffset / 2f)));
+				}
 			}
 		}
 

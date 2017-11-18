@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 143338794}
   - component: {fileID: 143338795}
   m_Layer: 0
-  m_Name: Heart (1)
+  m_Name: Heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -533,8 +533,8 @@ Transform:
   m_LocalPosition: {x: 5.73, y: 3.0699997, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1410300284}
-  m_RootOrder: 4
+  m_Father: {fileID: 1708662070}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &143338795
 SpriteRenderer:
@@ -2030,7 +2030,7 @@ GameObject:
   - component: {fileID: 748029523}
   - component: {fileID: 748029524}
   m_Layer: 0
-  m_Name: Heart (2)
+  m_Name: Heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2046,8 +2046,8 @@ Transform:
   m_LocalPosition: {x: 6.86, y: 3.0699997, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1410300284}
-  m_RootOrder: 5
+  m_Father: {fileID: 1708662070}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &748029524
 SpriteRenderer:
@@ -2473,11 +2473,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1010415753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.65, y: 3.07, z: 50}
+  m_LocalPosition: {x: 4.65, y: 3.0699997, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1410300284}
-  m_RootOrder: 3
+  m_Father: {fileID: 1708662070}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1010415755
 SpriteRenderer:
@@ -3331,20 +3331,20 @@ MonoBehaviour:
     - serializedVersion: 2
       time: 3
       value: 65
-      inSlope: -6.9621434
-      outSlope: -6.9621434
+      inSlope: -10.162715
+      outSlope: -10.162715
       tangentMode: 0
     - serializedVersion: 2
-      time: 8
-      value: 33
-      inSlope: -4.91498
-      outSlope: -4.91498
+      time: 8.977325
+      value: 25.164728
+      inSlope: -2.331467
+      outSlope: -2.331467
       tangentMode: 0
     - serializedVersion: 2
       time: 15
       value: 18
-      inSlope: -1.197571
-      outSlope: -1.197571
+      inSlope: -0.6062274
+      outSlope: -0.6062274
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -3358,6 +3358,7 @@ MonoBehaviour:
     type: 2}
   currentSpelling: 
   libraryFile: {fileID: 4900000, guid: 5c01a7cc42959794d9074935640ef456, type: 3}
+  bubbleGen: {fileID: 1581423369}
   state: 0
 --- !u!4 &1367906086
 Transform:
@@ -3565,9 +3566,7 @@ Transform:
   - {fileID: 815847784}
   - {fileID: 808975487}
   - {fileID: 1656590750}
-  - {fileID: 1010415754}
-  - {fileID: 143338794}
-  - {fileID: 748029523}
+  - {fileID: 1708662070}
   m_Father: {fileID: 535506418}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3911,6 +3910,7 @@ MonoBehaviour:
   level:
     amountPerLevel: {x: 1, y: 2}
     levelSpacing: {x: 3, y: 4}
+  isSpawning: 1
   platformSpots: []
 --- !u!1 &1632156230
 GameObject:
@@ -4132,6 +4132,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1708662069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1708662070}
+  m_Layer: 0
+  m_Name: Hearts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1708662070
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1708662069}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1010415754}
+  - {fileID: 143338794}
+  - {fileID: 748029523}
+  m_Father: {fileID: 1410300284}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1721865572
 GameObject:
