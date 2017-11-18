@@ -3903,13 +3903,13 @@ MonoBehaviour:
   reference: {fileID: 535506418}
   spawnWidth: 11
   prefab: {fileID: 1380494394212732, guid: f635db2084783ad4097b5be687176cb2, type: 2}
-  spawnOffset: 10
+  spawnOffset: 5
   despawnOffset: -8
   radius: 0.5
   zPosition: -1.5
   level:
     amountPerLevel: {x: 1, y: 2}
-    levelSpacing: {x: 3, y: 4.5}
+    levelSpacing: {x: 3, y: 4}
   platformSpots: []
 --- !u!1 &1632156230
 GameObject:
@@ -4626,7 +4626,7 @@ MonoBehaviour:
   offsetAmount: 0.52
   spawnWidth: 6
   reference: {fileID: 535506418}
-  spawnOffset: 14
+  spawnOffset: 16
   despawnOffset: -16
   levelSpacing: 4.5
   parallaxAmount: 1.9230769

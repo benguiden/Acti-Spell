@@ -88,7 +88,7 @@ public class BubbleGeneration : MonoBehaviour {
 
 		//Spawn New Bubbles
 		for (int i = 0; i < spawnAmount; i++) {
-			float yOffset = Random.Range (0.25f, 1f);
+			float yOffset = Random.Range (0.25f, 0.5f);
 			//Decide Spawn Position
 			float bubbleXPosition;
 			if (platformSpots.Length < 1) {
