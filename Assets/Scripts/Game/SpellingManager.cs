@@ -29,6 +29,8 @@ public class SpellingManager : MonoBehaviour {
 	private List<string> currentWordGroup;
 	private int[] rowLength;
 
+	public BubbleGeneration bubbleGen;
+
 	private string currentWord;
 	private int currentWordIndex;
 	private char[] currentWordLetters;
@@ -36,7 +38,7 @@ public class SpellingManager : MonoBehaviour {
 	[HideInInspector]
 	public SpellingState state = SpellingState.SpawningWord;
 
-	public enum SpellingState{Spelling,SpawningWord,DespawningWord}
+	public enum SpellingState{Spelling,SpawningWord,DespawningWord,WaitingToDespawn}
 
 	#region Mono Methods
 	private void Awake(){
@@ -62,16 +64,31 @@ public class SpellingManager : MonoBehaviour {
 			break;
 
 		case SpellingState.DespawningWord:
-			if (spawnedWord.transform.position.y < wordSpawnReference.position.y - (wordSpawnOffset * 2)) {
+			if (spawnedWord.transform.position.y < wordSpawnReference.position.y - (wordSpawnOffset)) {
 				if (spawnedWord.activeSelf) {
 					spawnedWord.SetActive (false);
 					LevelController.main.DestroyLater (spawnedWord);
 				}
 				state = SpellingState.Spelling;
+
+			} else if ((spawnedWord.transform.position.y < wordSpawnReference.position.y) /*&& (!bubbleGen.isSpawning)*/) {
+				bubbleGen.isSpawning = true;
 			}
 			break;
 
-		//Rememebr to set wordInitalY;
+		case SpellingState.WaitingToDespawn:
+			bubbleGen.isSpawning = false;
+			if (spawnedWord == null)
+				state = SpellingState.SpawningWord;
+			else if (spawnedWord.transform.position.y < wordSpawnReference.position.y - (wordSpawnOffset)) {
+				if (spawnedWord.activeSelf) {
+					spawnedWord.SetActive (false);
+					LevelController.main.DestroyLater (spawnedWord);
+				}
+				state = SpellingState.SpawningWord;
+			}
+			break;
+
 		case SpellingState.Spelling:
 			break;
 		}
@@ -109,6 +126,8 @@ public class SpellingManager : MonoBehaviour {
 
 	private void NewWordGroup(){
 		int level = Score.main.level;
+		if (Score.main.isCapped)
+			level = Random.Range (0, Score.main.level + 1);
 		currentWordGroup = new List<string> ();
 		for (int i = 0; i < rowLength [level]; i++) {
 			currentWordGroup.Add (library [level, i]);
@@ -121,15 +140,12 @@ public class SpellingManager : MonoBehaviour {
 		PlayerController.Pitch = 0.3f;
 		currentWordIndex = Random.Range (0, currentWordGroup.Count);
 		currentWord = currentWordGroup [currentWordIndex];
-		if (currentWordIndex == 0) {
+		if ((currentWordIndex == 0) && (Score.main.level > 0)) {
 			string newWord = currentWord.Remove (0, 1);
 			currentWordLetters = newWord.ToCharArray ();
 		} else {
 			currentWordLetters = currentWord.ToCharArray ();
 		}
-
-		//Set Font Size
-		displayText.fontSize = (int)fontSizeCurve.Evaluate((float)currentWordLetters.Length);
 
 		return currentWord;
 	}
@@ -147,7 +163,6 @@ public class SpellingManager : MonoBehaviour {
 		newPos.y = wordSpawnReference.position.y + wordSpawnOffset;
 		spawnedWord.transform.position = newPos;
 		spawnedWord.GetComponentInChildren<Font3D> ().SetText (NewWord ());
-		displayText.text = "";
 		state = SpellingState.DespawningWord;
 	}
 
@@ -170,11 +185,14 @@ public class SpellingManager : MonoBehaviour {
 		if (letter != currentWordLetters [currentLetterIndex]) {
 			//Wrong word
 			PlayerController.Pitch = 0.1f;
-			if (Score.main.nextLevelReady) {
+			if ((Score.main.nextLevelReady) && (!Score.main.isCapped)) {
 				NewWordGroup ();
 				Score.main.nextLevelReady = false;
-			}
+			}else if (Score.main.isCapped)
+				NewWordGroup ();
 
+			bubbleGen.isSpawning = false;
+			state = SpellingState.WaitingToDespawn;
 			CrossOut.main.CrossWordOut (currentWord, displayText.fontSize);
 			LevelController.main.RemoveBubbles ();
 			Score.main.RestartWordMultiplier ();
@@ -188,13 +206,34 @@ public class SpellingManager : MonoBehaviour {
 					NewWordGroup ();
 					Score.main.nextLevelReady = false;
 				}
-					
+				bubbleGen.isSpawning = false;
+				StartCoroutine (CorrectSpellingTimer ());
 				LevelController.main.RemoveBubbles ();
-				state = SpellingState.SpawningWord;
+				state = SpellingState.WaitingToDespawn;
 				Score.main.CheckWordCount (true);
 			}
 				
 		}
+	}
+
+	private IEnumerator CorrectSpellingTimer(){
+		yield return new WaitForSeconds (0.5f);
+		float deleteLetterTime = 0.5f / (float)displayText.text.Length;
+		int index = displayText.text.Length;
+		float time = 0f;
+		while (index > 0) {
+			if (time <= 0f) {
+				index--;
+				time += deleteLetterTime;
+				displayText.text = displayText.text.Remove (displayText.text.Length - 1);
+			}
+
+			time -= Time.deltaTime;
+			yield return null;
+		}
+
+		displayText.text = "";
+		displayText.fontSize = (int)fontSizeCurve.Evaluate((float)currentWordLetters.Length);
 	}
 
 }

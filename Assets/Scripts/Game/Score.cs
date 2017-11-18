@@ -24,6 +24,7 @@ public class Score : MonoBehaviour {
 
 	[Tooltip("The Text Mesh that the score will be displayed with.")]
 	public TextMesh scoreText;
+	public TextMesh scoreMultiplierText;
 
 	[Tooltip("The Tranform of the ui element that transforms in reference to the score.")]
 	public Transform uiTransform;
@@ -41,7 +42,12 @@ public class Score : MonoBehaviour {
 
 	public static Score main;
 
-	//[HideInInspector]
+	public int levelCap = 8;
+
+	[HideInInspector]
+	public bool isCapped = false;
+
+	[HideInInspector]
 	public int level = 0;
 
 	[HideInInspector]
@@ -99,7 +105,8 @@ public class Score : MonoBehaviour {
 	#endregion
 
 	private void SetScoreText(){
-		scoreText.text = ((int)Mathf.Round (score)).ToString () + System.Environment.NewLine + "X" + wordMultipliers [wordMultiplierIndex].multiplier.ToString ();
+		scoreText.text = ((int)Mathf.Round (score)).ToString ();
+		scoreMultiplierText.text = "x" + wordMultipliers [wordMultiplierIndex].multiplier.ToString ();
 	}
 
 	private void IncreaseScore(){
@@ -116,13 +123,16 @@ public class Score : MonoBehaviour {
 		}
 
 		//Check Level
-		if (wrappedScore >= uiFullScore [level]) {
-			if (level < uiFullScore.Length - 1) {
+		if ((wrappedScore >= uiFullScore [level]) && (!isCapped)) {
+			if ((level < uiFullScore.Length - 1) && (level < levelCap)) {
 				level++;
-				if (doodles != null)
-					doodles.IncreaseIndex ();
 				nextLevelReady = true;
+			} else if ((level >= levelCap)) {
+				Debug.Log ("Level Capped!");
+				isCapped = true;
 			}
+			if (doodles != null)
+				doodles.IncreaseIndex ();
 		}
 
 		//Set UI Position
@@ -137,7 +147,6 @@ public class Score : MonoBehaviour {
 				i = level + 1;
 			}
 		}
-		Debug.Log (uiOffset);
 		newPosition.y = uiOriginalYPos + uiOffset;
 		uiTransform.localPosition = newPosition;
 	}
