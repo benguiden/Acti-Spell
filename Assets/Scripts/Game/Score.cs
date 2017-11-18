@@ -24,6 +24,7 @@ public class Score : MonoBehaviour {
 
 	[Tooltip("The Text Mesh that the score will be displayed with.")]
 	public TextMesh scoreText;
+	public TextMesh scoreMultiplierText;
 
 	[Tooltip("The Tranform of the ui element that transforms in reference to the score.")]
 	public Transform uiTransform;
@@ -104,7 +105,8 @@ public class Score : MonoBehaviour {
 	#endregion
 
 	private void SetScoreText(){
-		scoreText.text = ((int)Mathf.Round (score)).ToString () + System.Environment.NewLine + "X" + wordMultipliers [wordMultiplierIndex].multiplier.ToString ();
+		scoreText.text = ((int)Mathf.Round (score)).ToString ();
+		scoreMultiplierText.text = "x" + wordMultipliers [wordMultiplierIndex].multiplier.ToString ();
 	}
 
 	private void IncreaseScore(){

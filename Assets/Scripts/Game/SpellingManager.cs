@@ -140,7 +140,7 @@ public class SpellingManager : MonoBehaviour {
 		PlayerController.Pitch = 0.3f;
 		currentWordIndex = Random.Range (0, currentWordGroup.Count);
 		currentWord = currentWordGroup [currentWordIndex];
-		if (currentWordIndex == 0) {
+		if ((currentWordIndex == 0) && (Score.main.level > 0)) {
 			string newWord = currentWord.Remove (0, 1);
 			currentWordLetters = newWord.ToCharArray ();
 		} else {
