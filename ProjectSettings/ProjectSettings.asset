@@ -126,9 +126,27 @@ PlayerSettings:
   bundleVersion: 1.0
   preloadedAssets:
   - {fileID: 2800000, guid: 5f86d53034bec2d4eb57a6a13a5a94a9, type: 3}
+  - {fileID: 2800000, guid: 0e7d86d31d37de44a8e95b8c719cdaf7, type: 3}
+  - {fileID: 2800000, guid: a582843345858264d976d44abadaa51d, type: 3}
+  - {fileID: 2800000, guid: 42e91a6f5f60ffe4ab5c570c3069c54d, type: 3}
   - {fileID: 2800000, guid: 0e476d7276129ff44bffbde2b7cca079, type: 3}
-  - {fileID: 2800000, guid: ea2b70a1fc1c4fe488694f7568e34702, type: 3}
+  - {fileID: 2800000, guid: 2b76de9dec114f748b13cdc5a77de200, type: 3}
+  - {fileID: 2800000, guid: 7ac8a39b144199e46b92975b66cc9a0c, type: 3}
+  - {fileID: 2800000, guid: 9c84d987623d75545affcd67d53eedcf, type: 3}
+  - {fileID: 2800000, guid: e6d41b62b8215b54cb24d9c4dea5de4a, type: 3}
+  - {fileID: 2800000, guid: a26dc50c12449484f91574eaa95a9f6e, type: 3}
+  - {fileID: 2800000, guid: 4f0ace77a49c6fc48972fc7321e5c591, type: 3}
+  - {fileID: 2800000, guid: 3981982ed119d6442a265638e8e9d482, type: 3}
   - {fileID: 2800000, guid: b23c4dd254c8cc64684a54dfc801595e, type: 3}
+  - {fileID: 2800000, guid: bb8f9c89ee4a7274db7e325b9aa45d05, type: 3}
+  - {fileID: 2800000, guid: 5a6fc4484201f9d4f9866a3854e97000, type: 3}
+  - {fileID: 2800000, guid: 3f2f387339206f047833bf6f3127e880, type: 3}
+  - {fileID: 2800000, guid: ca3e10f15fa3e724abbd6251af843473, type: 3}
+  - {fileID: 2800000, guid: 5231f3e386b3e354bbe572672ba98932, type: 3}
+  - {fileID: 2800000, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+  - {fileID: 2800000, guid: ea2b70a1fc1c4fe488694f7568e34702, type: 3}
+  - {fileID: 2800000, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
+  - {fileID: 1996222110178138, guid: 5e356f18d672b480baaf5fe4a690293f, type: 2}
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
   xboxOneDisableKinectGpuReservation: 0
