@@ -62,6 +62,8 @@ public class Doodles : MonoBehaviour
 
 	public Sprite GetSprite (bool isColour)
 	{
+		if (Score.main.isCapped)
+			themeIndex = Random.Range (0, themes.Length);
 		isColour = true;
 		if (Random.value < 0.25f)
 			isColour = false;

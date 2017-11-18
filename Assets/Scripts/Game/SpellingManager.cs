@@ -109,6 +109,8 @@ public class SpellingManager : MonoBehaviour {
 
 	private void NewWordGroup(){
 		int level = Score.main.level;
+		if (Score.main.isCapped)
+			level = Random.Range (0, Score.main.level + 1);
 		currentWordGroup = new List<string> ();
 		for (int i = 0; i < rowLength [level]; i++) {
 			currentWordGroup.Add (library [level, i]);
@@ -170,10 +172,11 @@ public class SpellingManager : MonoBehaviour {
 		if (letter != currentWordLetters [currentLetterIndex]) {
 			//Wrong word
 			PlayerController.Pitch = 0.1f;
-			if (Score.main.nextLevelReady) {
+			if ((Score.main.nextLevelReady) && (!Score.main.isCapped)) {
 				NewWordGroup ();
 				Score.main.nextLevelReady = false;
-			}
+			}else if (Score.main.isCapped)
+				NewWordGroup ();
 
 			CrossOut.main.CrossWordOut (currentWord, displayText.fontSize);
 			LevelController.main.RemoveBubbles ();
