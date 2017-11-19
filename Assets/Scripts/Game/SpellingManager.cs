@@ -217,8 +217,8 @@ public class SpellingManager : MonoBehaviour {
 	}
 
 	private IEnumerator CorrectSpellingTimer(){
-		yield return new WaitForSeconds (0.5f);
-		float deleteLetterTime = 0.5f / (float)displayText.text.Length;
+		yield return new WaitForSeconds (0.8f);
+		float deleteLetterTime = 0.8f / (float)displayText.text.Length;
 		int index = displayText.text.Length;
 		float time = 0f;
 		while (index > 0) {
