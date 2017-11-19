@@ -35,6 +35,8 @@ public class SpellingManager : MonoBehaviour {
 	private int currentWordIndex;
 	private char[] currentWordLetters;
 
+	private bool lastLetter = false;
+
 	[HideInInspector]
 	public SpellingState state = SpellingState.SpawningWord;
 
@@ -167,14 +169,19 @@ public class SpellingManager : MonoBehaviour {
 	}
 
 	public char GrabRandomLetter(){
-		if (Random.Range (0, 3) == 0) {
+		int correctPosibility = 0;
+		if (lastLetter)
+			correctPosibility = -1;
+		if (Random.Range (0, 3) == correctPosibility) {
 			int letterIndex = currentLetterIndex;
-			if (Random.Range (0, 3) == 0)
+			lastLetter = true;
+			if (Random.Range (0, 3) == 0) {
 				letterIndex = Random.Range (0, currentWordLetters.Length);
+				lastLetter = false;
+			}
 			return currentWordLetters [letterIndex];
 		} else {
-			if (Random.Range (0, 3) == 0)
-				return currentWordLetters [currentLetterIndex];
+			lastLetter = false;
 			return (char)(Random.Range (65, 91));
 		}
 	}
