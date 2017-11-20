@@ -64,28 +64,20 @@ public class AudioManager : MonoBehaviour {
 			isHeard [3] = false;
 		}
 	}
-
-	/*
-	void addTrack(){
-		part2.clip = musicParts [1];
-		if (!part2.isPlaying) {
-			part2.Play ();
-		}
-	}
-	*/
+		
 
 	private IEnumerator RaiseVolume(int track){
 		
 		float time = 0f;
 		while (time < fadeTime) {
 
-			music [track].volume = 0.8f * time / fadeTime;
+			music [track].volume = 0.7f * time / fadeTime;
 
 			time += Time.deltaTime;
 			yield return null;
 		}
 
-		music [track].volume = 0.8f;
+		music [track].volume = 0.7f;
 	}
 
 }

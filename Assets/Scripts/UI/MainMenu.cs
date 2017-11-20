@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour {
 	public GameObject creditsButton;
 	public GameObject backButton;
 	public GameObject quitButton;
+	public GameObject creditScreen;
 	public Image screenFade;
 
 	AudioSource audioSource;
@@ -56,6 +57,7 @@ public class MainMenu : MonoBehaviour {
 		audioSource.PlayOneShot (EnterClick);
 		startButton.SetActive (false);
 		backButton.SetActive (true);
+		creditScreen.SetActive (true);
 		quitButton.SetActive (false);
 		creditsButton.SetActive (false);
 	}
@@ -64,6 +66,7 @@ public class MainMenu : MonoBehaviour {
 		audioSource.PlayOneShot (BackClick);
 			startButton.SetActive (true);
 			creditsButton.SetActive (true);
+			creditScreen.SetActive (false);
 			quitButton.SetActive (true);
 			backButton.SetActive (false);
 	}
