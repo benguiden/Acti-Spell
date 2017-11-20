@@ -106,7 +106,7 @@ public class Score : MonoBehaviour {
 
 	private void SetScoreText(){
 		scoreText.text = ((int)Mathf.Round (score)).ToString ();
-		scoreMultiplierText.text = "x" + wordMultipliers [wordMultiplierIndex].multiplier.ToString ();
+		scoreMultiplierText.text = "correct" + System.Environment.NewLine + "word combo " + wordMultiplierIndex;
 	}
 
 	private void IncreaseScore(){
