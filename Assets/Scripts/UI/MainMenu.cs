@@ -11,19 +11,16 @@ public class MainMenu : MonoBehaviour {
 	public GameObject quitButton;
 	public GameObject creditScreen;
 	public Image screenFade;
+	public GameObject howToPlay;
 
 	AudioSource audioSource;
 	public AudioClip EnterClick;
 	public AudioClip BackClick;
 	public AudioClip Mute;
+
 	// Use this for initialization
 	void Start () {
 		audioSource = gameObject.GetComponent<AudioSource> ();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	public void startGame() {
@@ -46,12 +43,13 @@ public class MainMenu : MonoBehaviour {
 		SceneManager.LoadScene (0);
 	}
 
-	public void howToPlay() {
+	public void HowToPlay() {
 		audioSource.PlayOneShot (EnterClick);
-			startButton.SetActive (false);
-			backButton.SetActive (true);
-			quitButton.SetActive (false);
-			creditsButton.SetActive (false);
+		startButton.SetActive (false);
+		backButton.SetActive (true);
+		quitButton.SetActive (false);
+		creditsButton.SetActive (false);
+		howToPlay.SetActive (true);
 	}
 	public void credits() {
 		audioSource.PlayOneShot (EnterClick);
@@ -64,16 +62,12 @@ public class MainMenu : MonoBehaviour {
 
 	public void back() {
 		audioSource.PlayOneShot (BackClick);
-			startButton.SetActive (true);
-			creditsButton.SetActive (true);
-			creditScreen.SetActive (false);
-			quitButton.SetActive (true);
-			backButton.SetActive (false);
-	}
-
-	public void quit() {
-		Application.Quit();
-		print ("Quit");
+		startButton.SetActive (true);
+		creditsButton.SetActive (true);
+		creditScreen.SetActive (false);
+		quitButton.SetActive (true);
+		backButton.SetActive (false);
+		howToPlay.SetActive (false);
 	}
 
 }
