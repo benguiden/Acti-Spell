@@ -11,7 +11,6 @@ public class Score : MonoBehaviour {
 
 	public int lives = 3;
 
-	public Text livesText;
 	public GameObject heartOne;
 	public GameObject heartTwo;
 	public GameObject heartThree;
