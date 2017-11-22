@@ -22,8 +22,6 @@ public class CameraFollow: MonoBehaviour {
 
 	public AudioClip fallingClip;
 
-	public AudioClip endGameMusic;
-
 	private float yOffset;
 
 	private float targetY;
@@ -109,11 +107,6 @@ public class CameraFollow: MonoBehaviour {
 			yield return null;
 		}
 		endGameObject.transform.localScale = new Vector3 (1f, 1f, 1f);
-		GameObject mainMusic = GameObject.FindWithTag("Music");
-		if (mainMusic != null) {
-			AudioSource music = mainMusic.GetComponent<AudioSource> ();
-			music.clip = endGameMusic;
-			music.Play ();
-		}
+		AudioManager.endGame = true;
 	}
 }
