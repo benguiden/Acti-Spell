@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour {
 	public AudioClip stomp;
 	public AudioClip flipSound;
 	public AudioClip jumpSound;
+	public AudioClip reset;
 	AudioSource sound;
 	public bool turning = false;
 
@@ -204,6 +205,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	public void Respawn(){
+		sound.PlayOneShot (reset);
 		this.transform.position = lastPlatform.transform.position;
 		if (blinkCoroutine != null)
 			StopCoroutine (blinkCoroutine);
