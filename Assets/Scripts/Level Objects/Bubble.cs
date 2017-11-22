@@ -8,6 +8,12 @@ public class Bubble : MonoBehaviour {
 
 	public float radius = 0.5f;
 
+	public float jiggleAmount = 0.075f;
+	public float jiggleSpeed = 0.1f;
+	public float rotateAmount = 5f;
+	public float rotatespeed = 10;
+	Vector3 pos;
+
 	private TextMesh textMesh;
 
 	[HideInInspector]
@@ -23,6 +29,17 @@ public class Bubble : MonoBehaviour {
 		letter = SpellingManager.main.GrabRandomLetter ();
 		if (GetText ())
 			textMesh.text = letter.ToString ();
+
+	}
+	void Start(){
+		pos = this.gameObject.transform.position;
+	}
+	void Update() {
+		
+		Vector3 newPos = pos;
+		newPos.x += Mathf.PingPong (Time.time * jiggleSpeed, jiggleAmount);
+		transform.localEulerAngles = new Vector3(0, 0, -Mathf.PingPong(Time.time * rotatespeed, rotateAmount)); 
+		transform.position = newPos;
 
 	}
 

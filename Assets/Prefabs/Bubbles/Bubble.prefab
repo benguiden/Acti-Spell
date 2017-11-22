@@ -158,6 +158,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letter: 85
   radius: 0.15
+  jiggleAmount: 0.075
+  jiggleSpeed: 0.1
+  rotateAmount: 5
+  rotatespeed: 10
   bubbleIndex: 0
 --- !u!212 &212788253765561554
 SpriteRenderer:
