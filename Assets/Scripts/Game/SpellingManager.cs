@@ -31,11 +31,16 @@ public class SpellingManager : MonoBehaviour {
 
 	public BubbleGeneration bubbleGen;
 
+	public float[] lettersWidth;
+	public float fontSizeK;
+
 	private string currentWord;
 	private int currentWordIndex;
 	private char[] currentWordLetters;
 
 	private bool lastLetter = false;
+
+	private int newFontSize = 0;
 
 	[HideInInspector]
 	public SpellingState state = SpellingState.SpawningWord;
@@ -149,6 +154,8 @@ public class SpellingManager : MonoBehaviour {
 			currentWordLetters = currentWord.ToCharArray ();
 		}
 
+		CalculateFontSize (currentWord);
+
 		return currentWord;
 	}
 
@@ -240,7 +247,23 @@ public class SpellingManager : MonoBehaviour {
 		}
 
 		displayText.text = "";
-		displayText.fontSize = (int)fontSizeCurve.Evaluate((float)currentWordLetters.Length);
+		ApplyNewFontSize ();
+	}
+
+	private void CalculateFontSize(string word){
+		if (word.Length > 0) {
+			word = word.ToUpper ();
+			char[] characters = word.ToCharArray ();
+			float wordWidth = 0f;
+			for (int i = 0; i < characters.Length; i++) {
+				wordWidth += lettersWidth [((int)characters [i]) - 65];
+			}
+			newFontSize = (int)(fontSizeCurve.Evaluate ((float)characters.Length) * (fontSizeK * (float)characters.Length / wordWidth));
+		}
+	}
+
+	public void ApplyNewFontSize(){
+		displayText.fontSize = newFontSize;
 	}
 
 }

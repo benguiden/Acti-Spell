@@ -51,6 +51,7 @@ public class CrossOut : MonoBehaviour {
 		}
 		yield return new WaitForSeconds (1f);
 		SpellingManager.main.displayText.text = "";
+		SpellingManager.main.ApplyNewFontSize ();
 		Destroy (line.gameObject);
 		Destroy (correctText.gameObject);
 	}

@@ -415,8 +415,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 44074196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 362.5, y: 211, z: 0}
-  m_LocalScale: {x: 0.7552083, y: 0.7552083, z: 0.7552083}
+  m_LocalPosition: {x: 240, y: 135, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1207483587}
   - {fileID: 699780169}
@@ -1557,7 +1557,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699780168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 332, y: 243.3931, z: 0}
+  m_LocalPosition: {x: 332, y: 234, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1345046080}
@@ -2914,7 +2914,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1207483586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 263, y: 246.3931, z: 0}
+  m_LocalPosition: {x: 263, y: 237, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1106773518}
@@ -3036,7 +3036,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1215610511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 332, y: 243.3931, z: 0}
+  m_LocalPosition: {x: 332, y: 234, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 871587207}
@@ -3513,6 +3513,34 @@ MonoBehaviour:
   currentSpelling: 
   libraryFile: {fileID: 4900000, guid: 5c01a7cc42959794d9074935640ef456, type: 3}
   bubbleGen: {fileID: 1581423369}
+  lettersWidth:
+  - 2.5
+  - 2.2
+  - 2
+  - 2.4
+  - 2
+  - 1.9
+  - 2.3
+  - 2.3
+  - 1
+  - 1.6
+  - 2.3
+  - 2.1
+  - 3.3
+  - 2.2
+  - 2.1
+  - 2.1
+  - 2.3
+  - 2.1
+  - 1.6
+  - 2.2
+  - 2.1
+  - 2.2
+  - 3.5
+  - 2.3
+  - 2.3
+  - 2
+  fontSizeK: 2.2
   state: 0
 --- !u!4 &1367906086
 Transform:

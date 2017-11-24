@@ -92,13 +92,13 @@ public class Score : MonoBehaviour {
 			SetUIPosition ();
 		}
 		if (lives < 3) {
-			heartOne.SetActive (false);
+			heartThree.SetActive (false);
 		}
 		if(lives < 2) {
 			heartTwo.SetActive(false);
 		}
 		if (lives < 1) {
-			heartThree.SetActive(false);
+			heartOne.SetActive(false);
 		}
 	}
 	#endregion
