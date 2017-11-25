@@ -151,6 +151,8 @@ PlayerSettings:
   - {fileID: 1996222110178138, guid: 5e356f18d672b480baaf5fe4a690293f, type: 2}
   - {fileID: 2800000, guid: 6d5b65ab384e60b42b4ab1e264e9977f, type: 3}
   - {fileID: 4900000, guid: 5c01a7cc42959794d9074935640ef456, type: 3}
+  - {fileID: 2800000, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+  - {fileID: 2800000, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
   xboxOneDisableKinectGpuReservation: 0
