@@ -1,0 +1,823 @@
+fileFormatVersion: 2
+guid: f90f37c244b244d4eb47e079818fb81c
+timeCreated: 1511621143
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spr_Doodles_Vikings_0
+    21300002: spr_Doodles_Vikings_1
+    21300004: spr_Doodles_Vikings_2
+    21300006: spr_Doodles_Vikings_3
+    21300008: spr_Doodles_Vikings_4
+    21300010: spr_Doodles_Vikings_5
+    21300012: spr_Doodles_Vikings_6
+    21300014: spr_Doodles_Vikings_7
+    21300016: spr_Doodles_Vikings_8
+    21300018: spr_Doodles_Vikings_9
+    21300020: spr_Doodles_Vikings_10
+    21300022: spr_Doodles_Vikings_11
+    21300024: spr_Doodles_Vikings_12
+    21300026: spr_Doodles_Vikings_13
+    21300028: spr_Doodles_Vikings_14
+    21300030: spr_Doodles_Vikings_15
+    21300032: spr_Doodles_Vikings_16
+    21300034: spr_Doodles_Vikings_17
+    21300036: spr_Doodles_Vikings_18
+    21300038: spr_Doodles_Vikings_19
+    21300040: spr_Doodles_Vikings_20
+    21300042: spr_Doodles_Vikings_21
+    21300044: spr_Doodles_Vikings_22
+    21300046: spr_Doodles_Vikings_23
+    21300048: spr_Doodles_Vikings_24
+    21300050: spr_Doodles_Vikings_25
+    21300052: spr_Doodles_Vikings_26
+    21300054: spr_Doodles_Vikings_27
+    21300056: spr_Doodles_Vikings_28
+    21300058: spr_Doodles_Vikings_29
+    21300060: spr_Doodles_Vikings_30
+    21300062: spr_Doodles_Vikings_31
+    21300064: spr_Doodles_Vikings_32
+    21300066: spr_Doodles_Vikings_33
+    21300068: spr_Doodles_Vikings_34
+    21300070: spr_Doodles_Vikings_35
+    21300072: spr_Doodles_Vikings_36
+    21300074: spr_Doodles_Vikings_37
+    21300076: spr_Doodles_Vikings_38
+    21300078: spr_Doodles_Vikings_39
+    21300080: spr_Doodles_Vikings_40
+    21300082: spr_Doodles_Vikings_41
+    21300084: spr_Doodles_Vikings_42
+    21300086: spr_Doodles_Vikings_43
+    21300088: spr_Doodles_Vikings_44
+    21300090: spr_Doodles_Vikings_45
+    21300092: spr_Doodles_Vikings_46
+    21300094: spr_Doodles_Vikings_47
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1767
+        width: 179
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_1
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1769
+        width: 199
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_2
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1761
+        width: 201
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1755
+        width: 196
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_4
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 1771
+        width: 198
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_5
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 1747
+        width: 125
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_6
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 1749
+        width: 141
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_7
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 1757
+        width: 147
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_8
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 1468
+        width: 107
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_9
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 1462
+        width: 80
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_10
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 1460
+        width: 108
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_11
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1470
+        width: 116
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_12
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1489
+        width: 213
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_13
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1505
+        width: 195
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_14
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1495
+        width: 161
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1492
+        width: 275
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1166
+        width: 132
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_17
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1158
+        width: 147
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_18
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1187
+        width: 158
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_19
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1209
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_20
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1198
+        width: 111
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_21
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 1187
+        width: 154
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_22
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1172
+        width: 234
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_23
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 1158
+        width: 204
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_24
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 923
+        width: 211
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_25
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 929
+        width: 196
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_26
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 921
+        width: 156
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_27
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 912
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_28
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 938
+        width: 243
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_29
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 914
+        width: 180
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_30
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 918
+        width: 180
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_31
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 914
+        width: 264
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_32
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 667
+        width: 166
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_33
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 671
+        width: 183
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_34
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 670
+        width: 113
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_35
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 647
+        width: 145
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_36
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 654
+        width: 110
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_37
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 642
+        width: 83
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_38
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 672
+        width: 103
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_39
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 687
+        width: 159
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_40
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 387
+        width: 136
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_41
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 377
+        width: 230
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_42
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 364
+        width: 195
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_43
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 348
+        width: 140
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_44
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 392
+        width: 272
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_45
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 70
+        width: 264
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_46
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 36
+        width: 112
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Vikings_47
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 87
+        width: 245
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

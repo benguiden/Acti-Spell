@@ -1,25 +1,29 @@
 fileFormatVersion: 2
-guid: 520ca5b89fa56b842a1c778f4d0a7997
-timeCreated: 1510756987
+guid: c75b237ce35796f43bf4627dbc4912d7
+timeCreated: 1511621513
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Space_SpriteSheet_Transparent_0
-    21300002: Space_SpriteSheet_Transparent_1
-    21300004: Space_SpriteSheet_Transparent_2
-    21300006: Space_SpriteSheet_Transparent_3
-    21300008: Space_SpriteSheet_Transparent_4
-    21300010: Space_SpriteSheet_Transparent_5
-    21300012: Space_SpriteSheet_Transparent_6
-    21300014: Space_SpriteSheet_Transparent_7
-    21300016: Space_SpriteSheet_Transparent_8
-    21300018: Space_SpriteSheet_Transparent_9
-    21300020: Space_SpriteSheet_Transparent_10
-    21300022: Space_SpriteSheet_Transparent_11
-    21300024: Space_SpriteSheet_Transparent_12
-    21300026: Space_SpriteSheet_Transparent_13
-    21300028: Space_SpriteSheet_Transparent_14
-    21300030: Space_SpriteSheet_Transparent_15
+    21300000: spr_Doodles_Magic_No_Colour_0
+    21300002: spr_Doodles_Magic_No_Colour_1
+    21300004: spr_Doodles_Magic_No_Colour_2
+    21300006: spr_Doodles_Magic_No_Colour_3
+    21300008: spr_Doodles_Magic_No_Colour_4
+    21300010: spr_Doodles_Magic_No_Colour_5
+    21300012: spr_Doodles_Magic_No_Colour_6
+    21300014: spr_Doodles_Magic_No_Colour_7
+    21300016: spr_Doodles_Magic_No_Colour_8
+    21300018: spr_Doodles_Magic_No_Colour_9
+    21300020: spr_Doodles_Magic_No_Colour_10
+    21300022: spr_Doodles_Magic_No_Colour_11
+    21300024: spr_Doodles_Magic_No_Colour_12
+    21300026: spr_Doodles_Magic_No_Colour_13
+    21300028: spr_Doodles_Magic_No_Colour_14
+    21300030: spr_Doodles_Magic_No_Colour_15
+    21300032: spr_Doodles_Magic_No_Colour_16
+    21300034: spr_Doodles_Magic_No_Colour_17
+    21300036: spr_Doodles_Magic_No_Colour_18
+    21300038: spr_Doodles_Magic_No_Colour_19
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -58,11 +62,11 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 110
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -76,7 +80,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,7 +89,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,7 +107,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_0
+      name: spr_Doodles_Magic_No_Colour_0
       rect:
         serializedVersion: 2
-        x: 121
-        y: 682
-        width: 77
-        height: 65
+        x: 27
+        y: 1439
+        width: 173
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,13 +130,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_1
+      name: spr_Doodles_Magic_No_Colour_1
       rect:
         serializedVersion: 2
-        x: 222
-        y: 679
-        width: 115
-        height: 75
+        x: 264
+        y: 1393
+        width: 164
+        height: 197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,13 +144,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_2
+      name: spr_Doodles_Magic_No_Colour_2
       rect:
         serializedVersion: 2
-        x: 368
-        y: 679
-        width: 73
-        height: 65
+        x: 534
+        y: 1398
+        width: 93
+        height: 183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,26 +158,12 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_3
+      name: spr_Doodles_Magic_No_Colour_3
       rect:
         serializedVersion: 2
-        x: 464
-        y: 669
-        width: 62
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_4
-      rect:
-        serializedVersion: 2
-        x: 237
-        y: 565
-        width: 85
+        x: 747
+        y: 1425
+        width: 96
         height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -182,13 +172,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_5
+      name: spr_Doodles_Magic_No_Colour_4
       rect:
         serializedVersion: 2
-        x: 117
-        y: 588
-        width: 86
-        height: 76
+        x: 933
+        y: 1422
+        width: 140
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,13 +186,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_6
+      name: spr_Doodles_Magic_No_Colour_5
       rect:
         serializedVersion: 2
-        x: 348
-        y: 585
-        width: 99
-        height: 71
+        x: 1251
+        y: 1398
+        width: 221
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,13 +200,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_7
+      name: spr_Doodles_Magic_No_Colour_6
       rect:
         serializedVersion: 2
-        x: 454
-        y: 598
-        width: 83
-        height: 63
+        x: 1263
+        y: 1095
+        width: 190
+        height: 280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,13 +214,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_8
+      name: spr_Doodles_Magic_No_Colour_7
       rect:
         serializedVersion: 2
-        x: 539
-        y: 682
-        width: 97
-        height: 61
+        x: 918
+        y: 1120
+        width: 153
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,13 +228,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_9
+      name: spr_Doodles_Magic_No_Colour_8
       rect:
         serializedVersion: 2
-        x: 649
-        y: 672
-        width: 125
-        height: 81
+        x: 753
+        y: 1166
+        width: 92
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,13 +242,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_10
+      name: spr_Doodles_Magic_No_Colour_9
       rect:
         serializedVersion: 2
-        x: 801
-        y: 671
-        width: 68
-        height: 87
+        x: 541
+        y: 1155
+        width: 78
+        height: 168
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,13 +256,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_11
+      name: spr_Doodles_Magic_No_Colour_10
       rect:
         serializedVersion: 2
-        x: 793
-        y: 578
-        width: 89
-        height: 79
+        x: 298
+        y: 1123
+        width: 92
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,13 +270,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_12
+      name: spr_Doodles_Magic_No_Colour_11
       rect:
         serializedVersion: 2
-        x: 640
-        y: 580
+        x: 54
+        y: 1121
         width: 143
-        height: 79
+        height: 252
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,13 +284,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_13
+      name: spr_Doodles_Magic_No_Colour_12
       rect:
         serializedVersion: 2
-        x: 548
-        y: 560
-        width: 69
-        height: 104
+        x: 8
+        y: 798
+        width: 206
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,13 +298,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_14
+      name: spr_Doodles_Magic_No_Colour_13
       rect:
         serializedVersion: 2
-        x: 124
-        y: 454
-        width: 90
-        height: 112
+        x: 268
+        y: 690
+        width: 198
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,13 +312,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Space_SpriteSheet_Transparent_15
+      name: spr_Doodles_Magic_No_Colour_14
       rect:
         serializedVersion: 2
-        x: 468
-        y: 313
-        width: 106
-        height: 128
+        x: 546
+        y: 844
+        width: 74
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Magic_No_Colour_15
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 864
+        width: 140
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Magic_No_Colour_16
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 687
+        width: 190
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Magic_No_Colour_17
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 707
+        width: 369
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Magic_No_Colour_18
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 148
+        width: 180
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spr_Doodles_Magic_No_Colour_19
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 181
+        width: 176
+        height: 438
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

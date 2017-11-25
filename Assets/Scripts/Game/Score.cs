@@ -128,6 +128,7 @@ public class Score : MonoBehaviour {
 				nextLevelReady = true;
 			} else if ((level >= levelCap)) {
 				Debug.Log ("Level Capped!");
+				uiTransform.gameObject.SetActive (false);
 				isCapped = true;
 			}
 			if (doodles != null)

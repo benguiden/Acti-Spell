@@ -767,17 +767,17 @@ MonoBehaviour:
   rulerCMDistance: 0.65
   uiFullScore:
   - 200
-  - 20
-  - 20
-  - 20
-  - 20
-  - 20
-  - 20
-  - 20
-  - 20
-  - 20
-  - 20
-  - 20
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200
+  - 200
   wordMultipliers:
   - multiplier: 1
     correctWordCount: 1
@@ -3957,8 +3957,8 @@ MonoBehaviour:
   xSpacing: 2
   ySpacing: 0.2
   level:
-    amount: {x: 2, y: 4.25}
-    levelSpacing: {x: 2, y: 4}
+    amount: {x: 1.75, y: 3.6}
+    levelSpacing: {x: 2, y: 3.75}
     yRange: 0.5
   bubbleGenScript: {fileID: 1581423369}
 --- !u!1001 &1548153756
@@ -4744,7 +4744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05320751167ced545ae4cf1dbd3143db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  themeIndex: 2
+  themeIndex: 0
   themes:
   - name: Food
     sprites:
@@ -4866,28 +4866,79 @@ MonoBehaviour:
     - {fileID: 21300104, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
     - {fileID: 21300106, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
     - {fileID: 21300108, guid: 71db99f6d9db5244abfeec510f18b87b, type: 3}
+  - name: Vikings
+    sprites:
+    - {fileID: 21300038, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300040, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300042, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300048, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300050, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300052, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300054, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300058, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300060, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300062, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300064, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300066, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300068, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300070, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300072, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300074, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300076, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300078, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300080, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300082, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300084, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300086, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300088, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300090, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300092, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300094, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    spritesColour:
+    - {fileID: 21300000, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300002, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300004, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300006, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300008, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300010, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300012, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300014, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300016, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300018, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300020, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300022, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300024, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300026, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300028, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300030, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300032, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300034, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300036, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300044, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300046, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
+    - {fileID: 21300062, guid: f90f37c244b244d4eb47e079818fb81c, type: 3}
   - name: Magic
     sprites:
-    - {fileID: 21300000, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300002, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300004, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300006, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300008, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300010, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300012, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300014, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300016, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300018, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300020, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300022, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300024, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300026, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300028, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300030, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300032, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300034, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300036, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
-    - {fileID: 21300038, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
+    - {fileID: 21300000, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300002, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300004, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300006, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300008, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300010, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300012, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300014, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300016, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300018, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300020, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300022, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300024, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300026, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300028, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300030, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300032, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300034, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300036, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
+    - {fileID: 21300038, guid: c75b237ce35796f43bf4627dbc4912d7, type: 3}
     spritesColour:
     - {fileID: 21300000, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
     - {fileID: 21300002, guid: 4edf057bd417fe240b0b83a4dc576a6a, type: 3}
