@@ -259,6 +259,7 @@ public class SpellingManager : MonoBehaviour {
 				wordWidth += lettersWidth [((int)characters [i]) - 65];
 			}
 			newFontSize = (int)(fontSizeCurve.Evaluate ((float)characters.Length) * (fontSizeK * (float)characters.Length / wordWidth));
+			newFontSize = Mathf.Clamp (newFontSize, 0, 75);
 		}
 	}
 
