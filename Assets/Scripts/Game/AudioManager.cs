@@ -42,30 +42,34 @@ public class AudioManager : MonoBehaviour {
 	void Update () {
 		if (!endGame) {
 			level = Score.main.level;
-			if (((level > 0 && level < 4) || (level > 4 && level < 8) || (level > 8)) && (!isHeard [1])) {
+			if (Score.main.level >= Score.main.levelCap)
+				level = 3;
+			level = level % 4;
+
+			if ((level > 0) && (!isHeard [1])) {
 				part2.clip = musicParts [1];
 				StartCoroutine (RaiseVolume (1));
 				isHeard [1] = true;
-			} else {
-				part2.volume = 0f;
+			} else if ((level <= 0) && (isHeard [1])) {
+				StartCoroutine (LowerVolume (1));
 				isHeard [1] = false;
 			}
 
-			if (((level > 1 && level < 4) || (level > 5 && level < 8) || (level > 9)) && (!isHeard [2])) {
+			if ((level > 1) && (!isHeard [2])) {
 				part3.clip = musicParts [2];
 				StartCoroutine (RaiseVolume (2));
 				isHeard [2] = true;
-			} else {
-				part3.volume = 0f;
+			} else if ((level <= 1) &&  (isHeard [2])) {
+				StartCoroutine (LowerVolume (2));
 				isHeard [2] = false;
 			}
 
-			if (((level > 2 && level < 4) || (level > 6 && level < 8) || (level > 10)) && (!isHeard [3])) {
+			if ((level > 2) && (!isHeard [3])) {
 				part4.clip = musicParts [3];
 				StartCoroutine (RaiseVolume (3));
 				isHeard [3] = true;
-			} else {
-				part4.volume = 0f;
+			} else if ((level <= 2) && (isHeard [3])) {
+				StartCoroutine (LowerVolume (3));
 				isHeard [3] = false;
 			}
 		}
@@ -101,6 +105,20 @@ public class AudioManager : MonoBehaviour {
 		}
 
 		music [track].volume = 0.7f;
+	}
+
+	private IEnumerator LowerVolume(int track){
+
+		float time = fadeTime;
+		while (time > 0f) {
+
+			music [track].volume = 0.7f * time / fadeTime;
+
+			time -= Time.deltaTime;
+			yield return null;
+		}
+
+		music [track].volume = 0f;
 	}
 
 }
