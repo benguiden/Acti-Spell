@@ -35,6 +35,14 @@ public class Doodles : MonoBehaviour
 		public string name;
 		public Sprite[] sprites;
 		public Sprite[] spritesColour;
+		public AnimatedDoodle[] animated;
+	}
+
+	[System.Serializable]
+	public struct AnimatedDoodle
+	{
+		public Sprite[] sprites;
+		public float fps;
 	}
 
 	private float highestY = 0f;
@@ -65,7 +73,7 @@ public class Doodles : MonoBehaviour
 		if (Score.main.isCapped)
 			themeIndex = Random.Range (0, themes.Length);
 		isColour = true;
-		if (Random.value < 0.25f)
+		if (Random.value <= 0.3f)
 			isColour = false;
 		if (themes != null) {
 			Theme theme = themes [themeIndex];
@@ -78,6 +86,20 @@ public class Doodles : MonoBehaviour
 			}
 		}
 		return null;
+	}
+
+	public AnimatedDoodle GetAnimated(){
+		if (Score.main.isCapped)
+			themeIndex = Random.Range (0, themes.Length);
+		Theme theme = themes [themeIndex];
+		if (theme.animated.Length == 0) {
+			Debug.LogError ("Error: No animated doodles in theme.");
+			Debug.Break ();
+			return theme.animated [0];
+		} else {
+			return theme.animated [Random.Range (0, theme.animated.Length)];
+		}
+			
 	}
 
 	public void SpawnDoodle(){
