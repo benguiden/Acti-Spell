@@ -36,6 +36,10 @@ public class PlatformGeneration : MonoBehaviour {
 
 	public BubbleGeneration bubbleGenScript;
 
+	public int colourIndex;
+
+	public Color[] colours;
+
 	#region Mono Methods
 	#if UNITY_EDITOR
 	private void OnDrawGizmosSelected(){
@@ -110,6 +114,7 @@ public class PlatformGeneration : MonoBehaviour {
 
 	private void SpawnPlatform(ref Vector2 spawnPosition, Vector2[] prePlatformPos){
 		GameObject platform = (GameObject)Instantiate (prefab, this.transform);
+		platform.GetComponent<SpriteRenderer> ().color = colours [colourIndex];
 		#region X Spacing
 		for (int i = 0; i < prePlatformPos.Length; i++) {
 			float disBetween = Mathf.Abs (spawnPosition.x - prePlatformPos [i].x);
@@ -138,11 +143,18 @@ public class PlatformGeneration : MonoBehaviour {
 		//Check Wrapping
 		float leftSide = platform.transform.position.x - (xSpacing / 2f) + (spawnWidth / 2f);
 		float rightSide = platform.transform.position.x - (xSpacing / 2f) - (spawnWidth / 2f);
+		Transform platformTrans = null;
 		if (leftSide < 0f) {
-			((GameObject)Instantiate (prefab, this.transform)).transform.position = new Vector3 ((spawnWidth / 2f) + (xSpacing / 2f) + leftSide, spawnPosition.y, zPos);
+			platformTrans = ((GameObject)Instantiate (prefab, this.transform)).transform;
+			platformTrans.position = new Vector3 ((spawnWidth / 2f) + (xSpacing / 2f) + leftSide, spawnPosition.y, zPos);
 		} else if (rightSide > -xSpacing) {
-			((GameObject)Instantiate (prefab, this.transform)).transform.position = new Vector3 (-(spawnWidth / 2f) + (xSpacing / 2f) + rightSide, spawnPosition.y, zPos);
+			platformTrans = ((GameObject)Instantiate (prefab, this.transform)).transform;
+			platformTrans.position = new Vector3 (-(spawnWidth / 2f) + (xSpacing / 2f) + rightSide, spawnPosition.y, zPos);
 		}
+		if (Score.main.isCapped)
+			colourIndex = Random.Range (0, colours.Length);
+		if (platformTrans != null)
+			platformTrans.GetComponent<SpriteRenderer> ().color = platform.GetComponent<SpriteRenderer> ().color;
 	}
 	#endregion
 
@@ -151,6 +163,12 @@ public class PlatformGeneration : MonoBehaviour {
 		public Vector2 amount;
 		public Vector2 levelSpacing;
 		public float yRange;
+	}
+
+	public void IncreaseIndex(){
+		colourIndex++;
+		if (colourIndex >= colours.Length)
+			colourIndex = 0;
 	}
 
 }

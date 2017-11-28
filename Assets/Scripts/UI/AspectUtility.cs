@@ -6,16 +6,11 @@ public class AspectUtility : MonoBehaviour {
 	public float desiredRatio = 1.77777778f;
 	public float scaleConstant = 5;
 
-	private Camera cam;
-
 	private int lastWidth = 0;
 	private int lastHeight = 0;
 
 	private void Awake(){
-		cam = this.GetComponent<Camera> ();
-
 		CheckRatio ();
-
 	}
 
 	private void Update(){
