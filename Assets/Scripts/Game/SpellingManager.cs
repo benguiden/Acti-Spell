@@ -142,6 +142,10 @@ public class SpellingManager : MonoBehaviour {
 	}
 
 	private string NewWord(){
+		if (currentWordGroup.Count < 1) {
+			NewWordGroup ();
+		}
+
 		currentSpelling = "";
 		currentLetterIndex = 0;
 		PlayerController.Pitch = 0.3f;
@@ -225,6 +229,7 @@ public class SpellingManager : MonoBehaviour {
 				LevelController.main.RemoveBubbles ();
 				state = SpellingState.WaitingToDespawn;
 				Score.main.CheckWordCount (true);
+				currentWordGroup.RemoveAt (currentWordIndex);
 			}
 				
 		}
