@@ -39,6 +39,8 @@ public class Score : MonoBehaviour {
 
 	public Doodles doodles;
 
+	public PlatformGeneration platformGen;
+
 	public static Score main;
 
 	public int levelCap = 8;
@@ -133,6 +135,8 @@ public class Score : MonoBehaviour {
 			}
 			if (doodles != null)
 				doodles.IncreaseIndex ();
+			if (platformGen != null)
+				platformGen.IncreaseIndex ();
 		}
 
 		//Set UI Position

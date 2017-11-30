@@ -9,9 +9,9 @@ public class Bubble : MonoBehaviour {
 	public float radius = 0.5f;
 
 	public float jiggleAmount = 0.075f;
-	public float jiggleSpeed = 0.1f;
-	public float rotateAmount = 5f;
-	public float rotatespeed = 10;
+	public float jiggleSpeed = 0.05f;
+	public float rotateAmount = 3f;
+	public float rotatespeed = 8f;
 	Vector3 pos;
 
 	private TextMesh textMesh;
@@ -33,12 +33,17 @@ public class Bubble : MonoBehaviour {
 	}
 	void Start(){
 		pos = this.gameObject.transform.position;
+
+		jiggleAmount = 0.075f + Random.Range(0f, 0.025f);
+		jiggleSpeed = 0.05f + Random.Range(0f, 0.075f);
+		rotateAmount = 3f + Random.Range(0f, 4f);
+		rotatespeed = 8f+ Random.Range(0f, 4f);
 	}
 	void Update() {
 		
 		Vector3 newPos = pos;
 		newPos.x += Mathf.PingPong (Time.time * jiggleSpeed, jiggleAmount);
-		transform.localEulerAngles = new Vector3(0, 0, -Mathf.PingPong(Time.time * rotatespeed, rotateAmount)); 
+		transform.localEulerAngles = new Vector3 (0, 0, rotateAmount - Mathf.PingPong (Time.time * rotatespeed, rotateAmount * 2f));
 		transform.position = newPos;
 
 	}

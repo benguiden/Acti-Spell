@@ -24,6 +24,8 @@ public class Platform : MonoBehaviour {
 
 	private Coroutine bobCo;
 
+	private float bobResetTime = 0f;
+
 	private void Start(){
 		if (this.gameObject.tag == "Platform") {
 			platformIndex = LevelController.main.GetPlatformCount ();
@@ -35,11 +37,14 @@ public class Platform : MonoBehaviour {
 		//isBobbing = false;
 	}
 
-	/*private void Update(){
-		if (isBobbing) {
-			if (this.transform.localPosition.y > )
+	private void Update(){
+		if (bobResetTime > 0f) {
+			bobResetTime -= Time.deltaTime;
+		} else if (bobResetTime < 0f) {
+			bobResetTime = 0f;
 		}
-	}*/
+			
+	}
 
 	private void OnDestroy(){
 		if (LevelController.main.GetPlatform (platformIndex) != this) {
@@ -76,13 +81,16 @@ public class Platform : MonoBehaviour {
 	}
 
 	public void Bob(){
-		if (bobCo != null) {
-			StopCoroutine (StartBob ());
+		if (bobResetTime <= 0f) {
+			if (bobCo != null) {
+				StopCoroutine (StartBob ());
+			}
+			bobCo = StartCoroutine (StartBob ());
 		}
-		bobCo = StartCoroutine (StartBob ());
 	}
 
 	private IEnumerator StartBob(){
+		bobResetTime = bobTime * 2.5f;
 		float time = 0f;
 		Vector3 pos = this.transform.localPosition;
 		while (time < bobTime) {

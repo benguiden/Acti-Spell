@@ -15,6 +15,12 @@ public class Doodle : MonoBehaviour {
 
 	private float k;
 
+	private bool isAnimated = false;
+	private Sprite[] animatedList;
+	private float animateFPS = 15f;
+	private float animatedIndex = 0f;
+	private SpriteRenderer sprRen;
+
 	private void Start(){
 		//Set Parent
 		if (parent == null) {
@@ -26,9 +32,20 @@ public class Doodle : MonoBehaviour {
 		//Make Graphic
 		graphic = new GameObject("Graphic");
 		graphic.transform.parent = this.transform;
+		sprRen = graphic.AddComponent<SpriteRenderer> ();
 
-		//Random Sprite
-		graphic.AddComponent<SpriteRenderer> ().sprite = parent.GetSprite (true);
+		if (Random.value <= 0.15f) {
+			//Animated Sprite
+			Doodles.AnimatedDoodle animatedDoodlesData = parent.GetAnimated();
+			animatedList = animatedDoodlesData.sprites;
+			animateFPS = animatedDoodlesData.fps;
+			animatedIndex = (float)Random.Range (0, animatedList.Length);
+			sprRen.sprite = animatedList [(int)animatedIndex];
+			isAnimated = true;
+		} else {
+			//Random Sprite
+			sprRen.sprite = parent.GetSprite (true);
+		}
 
 		//Random Scale
 		float newScale = Random.Range(parent.scale.x, parent.scale.y);
@@ -68,6 +85,16 @@ public class Doodle : MonoBehaviour {
 		if ((distance <= parent.despawnOffset) && (gameObject.activeSelf)) {
 			gameObject.SetActive (false);
 			LevelController.main.DestroyLater (this.gameObject);
+		}
+
+		//Animated
+		if (isAnimated) {
+			animatedIndex += Time.deltaTime * animateFPS;
+			animatedIndex = animatedIndex % animatedList.Length;
+			int sprIndex = (int)Mathf.Floor (animatedIndex);
+			if (animatedList [sprIndex] != sprRen.sprite) {
+				sprRen.sprite = animatedList [sprIndex];
+			}
 		}
 
 	}

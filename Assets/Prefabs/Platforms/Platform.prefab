@@ -79,6 +79,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   bobTime: 0.2
+  isGround: 0
   platformIndex: 0
 --- !u!212 &212402841244734998
 SpriteRenderer:
@@ -114,8 +115,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9c84d987623d75545affcd67d53eedcf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: d704a113a9e95b94c964f84bd7be3eab, type: 3}
+  m_Color: {r: 0.5803922, g: 0.7607843, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
