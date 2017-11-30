@@ -30,12 +30,13 @@ public class AudioManager : MonoBehaviour {
 		level = Score.main.level;
 		part1.clip = musicParts[0];
 		part1.volume = 0.8f;
-		part2.volume = 0f;
+		part2.volume = 0.8f;
 		part3.volume = 0f;
 		part4.volume = 0f;
 
 		isHeard = new bool[music.Length];
 		isHeard [0] = true;
+		isHeard [1] = true;
 	}
 	
 	// Update is called once per frame
@@ -46,31 +47,35 @@ public class AudioManager : MonoBehaviour {
 				level = 3;
 			level = level % 4;
 
-			if ((level > 0) && (!isHeard [1])) {
-				part2.clip = musicParts [1];
-				StartCoroutine (RaiseVolume (1));
-				isHeard [1] = true;
-			} else if ((level <= 0) && (isHeard [1])) {
-				StartCoroutine (LowerVolume (1));
-				isHeard [1] = false;
-			}
-
-			if ((level > 1) && (!isHeard [2])) {
+			if ((((level > 0) && (level <= 2)) && (!isHeard [2])) || ((Score.main.isCapped == true) && (!isHeard[2]))) {
 				part3.clip = musicParts [2];
 				StartCoroutine (RaiseVolume (2));
 				isHeard [2] = true;
-			} else if ((level <= 1) &&  (isHeard [2])) {
+			} else if ((level <= 0) &&  (isHeard [2])) {
 				StartCoroutine (LowerVolume (2));
 				isHeard [2] = false;
 			}
 
-			if ((level > 2) && (!isHeard [3])) {
+			if ((((level > 1) && (level <= 2)) && (!isHeard [3])) || ((Score.main.isCapped == true) && (!isHeard[3]))) {
 				part4.clip = musicParts [3];
 				StartCoroutine (RaiseVolume (3));
 				isHeard [3] = true;
-			} else if ((level <= 2) && (isHeard [3])) {
+			} else if ((level <= 1) && (isHeard [3])) {
 				StartCoroutine (LowerVolume (3));
 				isHeard [3] = false;
+			}
+
+			if ((level > 2) && (isHeard [1]) && (!Score.main.isCapped)) {
+				part2.clip = musicParts [1];
+				StartCoroutine (LowerVolume (1));
+				isHeard [1] = false;
+				StartCoroutine (LowerVolume (3));
+				isHeard [3] = false;
+				StartCoroutine (LowerVolume (2));
+				isHeard [2] = false;
+			} else if (((level <= 0) && (!isHeard [1])) || ((Score.main.isCapped == true) && (!isHeard[1]))) {
+				StartCoroutine (RaiseVolume (1));
+				isHeard [1] = true;
 			}
 		}
 		else if (endGame) {
