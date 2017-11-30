@@ -46,7 +46,7 @@ public class AudioManager : MonoBehaviour {
 				level = 3;
 			level = level % 4;
 
-			if ((level >= 0) && (!isHeard [1])) {
+			if ((level > 0) && (!isHeard [1])) {
 				part2.clip = musicParts [1];
 				StartCoroutine (RaiseVolume (1));
 				isHeard [1] = true;
@@ -55,7 +55,7 @@ public class AudioManager : MonoBehaviour {
 				isHeard [1] = false;
 			}
 
-			if ((level > 0) && (!isHeard [2])) {
+			if ((level > 1) && (!isHeard [2])) {
 				part3.clip = musicParts [2];
 				StartCoroutine (RaiseVolume (2));
 				isHeard [2] = true;
@@ -64,7 +64,7 @@ public class AudioManager : MonoBehaviour {
 				isHeard [2] = false;
 			}
 
-			if ((level > 1) && (!isHeard [3])) {
+			if ((level > 2) && (!isHeard [3])) {
 				part4.clip = musicParts [3];
 				StartCoroutine (RaiseVolume (3));
 				isHeard [3] = true;
