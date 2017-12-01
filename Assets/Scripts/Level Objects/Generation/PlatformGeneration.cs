@@ -115,26 +115,28 @@ public class PlatformGeneration : MonoBehaviour {
 	private void SpawnPlatform(ref Vector2 spawnPosition, Vector2[] prePlatformPos){
 		GameObject platform = (GameObject)Instantiate (prefab, this.transform);
 		platform.GetComponent<SpriteRenderer> ().color = colours [colourIndex];
-		#region X Spacing
-		for (int i = 0; i < prePlatformPos.Length; i++) {
-			float disBetween = Mathf.Abs (spawnPosition.x - prePlatformPos [i].x);
-			if (disBetween < xSpacing) {
-				if (spawnPosition.x < prePlatformPos [i].x)
-					spawnPosition.x -= xSpacing - disBetween - Random.Range(0f, 0.5f);
-				else
-					spawnPosition.x += xSpacing - disBetween + Random.Range(0f, 0.5f);
-			}
-		}
-		#endregion
 
-		#region Y Spacing
-		for (int i = 0; i < prePlatformPos.Length; i++) {
-			float disBetween = Mathf.Abs (spawnPosition.y - prePlatformPos [i].y);
-			if (disBetween < ySpacing) {
-				if (spawnPosition.y < prePlatformPos [i].y)
-					spawnPosition.y -= ySpacing - disBetween;
-				else
-					spawnPosition.y += ySpacing - disBetween;
+		#region Spacing
+		for (int j = 0; j<2; j++){
+			for (int i = 0; i < prePlatformPos.Length; i++) {
+				Vector2 disBetween = new Vector2();
+				disBetween.x = Mathf.Abs (spawnPosition.x - prePlatformPos [i].x);
+				disBetween.y = Mathf.Abs (spawnPosition.y - prePlatformPos [i].y);
+				if ((disBetween.x < xSpacing) && (disBetween.y < ySpacing)){
+					Debug.Log(platform.GetInstanceID().ToString() + " " + prePlatformPos [i].x.ToString() + " " + j.ToString());
+					//Spread X
+					if (j ==0){
+						if (spawnPosition.x < prePlatformPos [i].x)
+							spawnPosition.x -= xSpacing - disBetween.x  + Random.Range(0.05f, 0.5f);
+						else
+							spawnPosition.x += xSpacing - disBetween.x + Random.Range(0.05f, 0.5f);
+					}else{ //Spread Y
+						if (spawnPosition.y < prePlatformPos [i].y)
+							spawnPosition.y -= ySpacing - disBetween.y + Random.Range(0.05f, 0.5f);
+						else
+							spawnPosition.y += ySpacing - disBetween.y + Random.Range(0.05f, 0.5f);
+					}
+				}
 			}
 		}
 		#endregion
