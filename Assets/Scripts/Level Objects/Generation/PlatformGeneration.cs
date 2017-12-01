@@ -40,6 +40,8 @@ public class PlatformGeneration : MonoBehaviour {
 
 	public Color[] colours;
 
+	private List<Vector2> positions;
+
 	#region Mono Methods
 	#if UNITY_EDITOR
 	private void OnDrawGizmosSelected(){
@@ -53,6 +55,7 @@ public class PlatformGeneration : MonoBehaviour {
 		lowestY = reference.position.y;
 		lastLevel = lowestPosition + spawnOffset;
 		nextLevel = lastLevel + Random.Range (level.levelSpacing.x, level.levelSpacing.y) - spawnOffset;
+		positions = new List<Vector2> ();
 	}
 
 	private void Update(){
@@ -103,13 +106,21 @@ public class PlatformGeneration : MonoBehaviour {
 			SpawnPlatform (ref platformPosition, newPlatformsPos.ToArray ());
 			newPlatformsPos.Add (platformPosition);
 			previousSpots.Add (platformPosition.x);
+			positions.Add (platformPosition);
 		}
 		if (previousSpots.Count > 3) {
 			previousSpots.RemoveRange (0, previousSpots.Count - 3);
 		}
+		if (positions.Count > 10) {
+			positions.RemoveRange (0, positions.Count - 10);
+		}
 		bubbleGenScript.platformSpots = previousSpots.ToArray ();
 		nextLevel += Random.Range (level.levelSpacing.x, level.levelSpacing.y);
 
+	}
+
+	public Vector2[] GetPositions(){
+		return positions.ToArray ();
 	}
 
 	private void SpawnPlatform(ref Vector2 spawnPosition, Vector2[] prePlatformPos){
@@ -123,7 +134,6 @@ public class PlatformGeneration : MonoBehaviour {
 				disBetween.x = Mathf.Abs (spawnPosition.x - prePlatformPos [i].x);
 				disBetween.y = Mathf.Abs (spawnPosition.y - prePlatformPos [i].y);
 				if ((disBetween.x < xSpacing) && (disBetween.y < ySpacing)){
-					Debug.Log(platform.GetInstanceID().ToString() + " " + prePlatformPos [i].x.ToString() + " " + j.ToString());
 					//Spread X
 					if (j ==0){
 						if (spawnPosition.x < prePlatformPos [i].x)
@@ -149,9 +159,11 @@ public class PlatformGeneration : MonoBehaviour {
 		if (leftSide < 0f) {
 			platformTrans = ((GameObject)Instantiate (prefab, this.transform)).transform;
 			platformTrans.position = new Vector3 ((spawnWidth / 2f) + (xSpacing / 2f) + leftSide, spawnPosition.y, zPos);
+			positions.Add ((Vector2)platformTrans.position);
 		} else if (rightSide > -xSpacing) {
 			platformTrans = ((GameObject)Instantiate (prefab, this.transform)).transform;
 			platformTrans.position = new Vector3 (-(spawnWidth / 2f) + (xSpacing / 2f) + rightSide, spawnPosition.y, zPos);
+			positions.Add ((Vector2)platformTrans.position);
 		}
 		if (Score.main.isCapped)
 			colourIndex = Random.Range (0, colours.Length);

@@ -24,6 +24,7 @@ public class BubbleGeneration : MonoBehaviour {
 	public float radius;
 	public float zPosition;
 	public Level level;
+	public PlatformGeneration platformGen;
 
 	[HideInInspector]
 	public bool isSpawning = false;
@@ -89,6 +90,7 @@ public class BubbleGeneration : MonoBehaviour {
 		lastLevelY = nextLevelY;
 		int spawnAmount = Random.Range ((int)Mathf.Round (level.amountPerLevel.x), (int)Mathf.Round (level.amountPerLevel.y) + 1);
 		List<Vector2> bubblePositions = new List<Vector2> ();
+		Vector2[] platformPositions = platformGen.GetPositions ();
 
 		//Spawn New Bubbles
 		if (isSpawning) {
@@ -105,7 +107,7 @@ public class BubbleGeneration : MonoBehaviour {
 					bubbleXPosition = Mathf.Clamp (bubbleXPosition, -(spawnWidth / 2f) + radius, (spawnWidth / 2f) - radius);
 				}
 
-				if (SpawnBubble (ref bubbleXPosition, lastLevelY + (spawnOffset / 2f) + yOffset, bubblePositions.ToArray ())) {
+				if (SpawnBubble (ref bubbleXPosition, lastLevelY + (spawnOffset / 2f) + yOffset, bubblePositions.ToArray (), platformPositions)) {
 					bubblePositions.Add (new Vector2 (bubbleXPosition, lastLevelY + yOffset + (spawnOffset / 2f)));
 				}
 			}
@@ -116,9 +118,18 @@ public class BubbleGeneration : MonoBehaviour {
 
 	}
 
-	private bool SpawnBubble(ref float xPosition, float yPosition, Vector2[] bubblePositions){
+	private bool SpawnBubble(ref float xPosition, float yPosition, Vector2[] bubblePositions, Vector2[] platformPositions){
 		GameObject bubble = (GameObject)Instantiate (prefab, this.transform);
 		bubble.GetComponent<Bubble> ().Initalize ();
+
+		//Platform Collision
+		for (int i = 0; i < platformPositions.Length; i++) {
+			if (Vector2.Distance (new Vector2 (xPosition, yPosition), platformPositions [i]) < (platformGen.xSpacing / 2f) + radius) {
+				if (Mathf.Abs(yPosition - platformPositions [i].y) < (platformGen.ySpacing / 2f) + radius) {
+					yPosition = platformPositions [i].y + (platformGen.ySpacing / 2f) + radius;
+				}
+			}
+		}
 
 		//Spacing
 		for (int i = 0; i < bubblePositions.Length; i++) {

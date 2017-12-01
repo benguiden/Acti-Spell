@@ -1694,7 +1694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &742980377
 Transform:
   m_ObjectHideFlags: 0
@@ -4050,7 +4050,7 @@ MonoBehaviour:
   spawnOffset: 8
   despawnOffset: -9
   xSpacing: 2
-  ySpacing: 0.2
+  ySpacing: 0.25
   level:
     amount: {x: 1.75, y: 3.6}
     levelSpacing: {x: 2, y: 3.35}
@@ -4268,6 +4268,7 @@ MonoBehaviour:
   level:
     amountPerLevel: {x: 1, y: 2}
     levelSpacing: {x: 3, y: 4}
+  platformGen: {fileID: 1528656329}
   isSpawning: 1
   platformSpots: []
 --- !u!1 &1632156230
@@ -4846,7 +4847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05320751167ced545ae4cf1dbd3143db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  themeIndex: 4
+  themeIndex: 0
   themes:
   - name: Food
     sprites:
