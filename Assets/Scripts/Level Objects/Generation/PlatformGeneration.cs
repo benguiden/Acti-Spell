@@ -108,11 +108,11 @@ public class PlatformGeneration : MonoBehaviour {
 			previousSpots.Add (platformPosition.x);
 			positions.Add (platformPosition);
 		}
-		if (previousSpots.Count > 3) {
-			previousSpots.RemoveRange (0, previousSpots.Count - 3);
+		if (previousSpots.Count > 5) {
+			previousSpots.RemoveRange (0, previousSpots.Count - 5);
 		}
-		if (positions.Count > 10) {
-			positions.RemoveRange (0, positions.Count - 10);
+		if (positions.Count > 13) {
+			positions.RemoveRange (0, positions.Count - 13);
 		}
 		bubbleGenScript.platformSpots = previousSpots.ToArray ();
 		nextLevel += Random.Range (level.levelSpacing.x, level.levelSpacing.y);
@@ -128,7 +128,10 @@ public class PlatformGeneration : MonoBehaviour {
 		platform.GetComponent<SpriteRenderer> ().color = colours [colourIndex];
 
 		#region Spacing
-		for (int j = 0; j<2; j++){
+		bool noCollide = false;
+		int j = 0;
+		while (!noCollide){
+			noCollide = true;
 			for (int i = 0; i < prePlatformPos.Length; i++) {
 				Vector2 disBetween = new Vector2();
 				disBetween.x = Mathf.Abs (spawnPosition.x - prePlatformPos [i].x);
@@ -136,6 +139,7 @@ public class PlatformGeneration : MonoBehaviour {
 				if ((disBetween.x < xSpacing) && (disBetween.y < ySpacing)){
 					//Spread X
 					if (j ==0){
+						j++;
 						if (spawnPosition.x < prePlatformPos [i].x)
 							spawnPosition.x -= xSpacing - disBetween.x  + Random.Range(0.05f, 0.5f);
 						else

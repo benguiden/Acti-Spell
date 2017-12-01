@@ -123,10 +123,15 @@ public class BubbleGeneration : MonoBehaviour {
 		bubble.GetComponent<Bubble> ().Initalize ();
 
 		//Platform Collision
-		for (int i = 0; i < platformPositions.Length; i++) {
-			if (Vector2.Distance (new Vector2 (xPosition, yPosition), platformPositions [i]) < (platformGen.xSpacing / 2f) + radius) {
-				if (Mathf.Abs(yPosition - platformPositions [i].y) < (platformGen.ySpacing / 2f) + radius) {
-					yPosition = platformPositions [i].y + (platformGen.ySpacing / 2f) + radius;
+		bool noCollide = false;
+		while (!noCollide) {
+			noCollide = true;
+			for (int i = 0; i < platformPositions.Length; i++) {
+				if (Vector2.Distance (new Vector2 (xPosition, yPosition), platformPositions [i]) < (platformGen.xSpacing / 2f) + radius) {
+					if (Mathf.Abs (yPosition - platformPositions [i].y) < (platformGen.ySpacing / 2f) + radius) {
+						yPosition = platformPositions [i].y + (platformGen.ySpacing / 2f) + radius + Random.Range (0f, 0.1f);
+						noCollide = false;
+					}
 				}
 			}
 		}
