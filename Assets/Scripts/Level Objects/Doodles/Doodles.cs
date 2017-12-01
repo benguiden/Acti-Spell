@@ -47,6 +47,8 @@ public class Doodles : MonoBehaviour
 
 	private float highestY = 0f;
 
+	private List<Vector2> doodlePositions, doodleSizes;
+
 	#endregion
 
 	#region Mono Methods
@@ -54,6 +56,8 @@ public class Doodles : MonoBehaviour
 	private void Start ()
 	{
 		reference = Camera.main.transform;
+		doodlePositions = new List<Vector2> ();
+		doodleSizes = new List<Vector2> ();
 		SpawnDoodle();
 	}
 
@@ -112,6 +116,26 @@ public class Doodles : MonoBehaviour
 		themeIndex++;
 		if (themeIndex >= themes.Length)
 			themeIndex = 0;
+	}
+
+	public Vector2[] GetDoodlePositions(){
+		return doodlePositions.ToArray ();
+	}
+
+	public void AddDoodlePosition(Vector2 newPosition){
+		doodlePositions.Add (newPosition);
+		if (doodlePositions.Count > 4)
+			doodlePositions.RemoveRange (0, doodlePositions.Count - 4);
+	}
+
+	public Vector2[] GetDoodleSizes(){
+		return doodleSizes.ToArray ();
+	}
+
+	public void AddDoodleSize(Vector2 newSize){
+		doodleSizes.Add (newSize);
+		if (doodleSizes.Count > 4)
+			doodleSizes.RemoveRange (0, doodleSizes.Count - 4);
 	}
 
 }

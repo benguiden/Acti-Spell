@@ -63,6 +63,28 @@ public class Doodle : MonoBehaviour {
 			thisPos.y = yPosition;
 		else
 			thisPos.y = Camera.main.transform.position.y + parent.spawnOffset - Random.Range (0f, 2f);
+
+		//Test Position Against Other Doodles
+		Vector2[] previousPositions = parent.GetDoodlePositions();
+		Vector2[] previousSizes = parent.GetDoodleSizes ();
+		Vector2 size = (Vector2)sprRen.bounds.extents;
+
+		bool noCollide = false;
+		while (!noCollide) {
+			noCollide = true;
+			for (int i = 0; i < Mathf.Min (previousPositions.Length, previousSizes.Length); i++) {
+				if (Mathf.Abs (thisPos.y - previousPositions [i].y) < size.y + previousSizes [i].y) {
+					if (Mathf.Abs (thisPos.x - previousPositions [i].x) < size.x + previousSizes [i].x) {
+						noCollide = false;
+						thisPos.y = previousPositions [i].y + (size.y * 2f) + (previousSizes [i].y * 2f) + Random.Range (0f, 0.5f);
+					}
+				}
+			}
+		}
+
+
+		parent.AddDoodlePosition ((Vector2)thisPos);
+		parent.AddDoodleSize (size);
 		this.transform.position = thisPos;
 
 		//Set Graphic Position
