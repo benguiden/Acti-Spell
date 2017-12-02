@@ -107,7 +107,26 @@ public class Score : MonoBehaviour {
 
 	private void SetScoreText(){
 		scoreText.text = ((int)Mathf.Round (score)).ToString ();
-		scoreMultiplierText.text = "correct" + System.Environment.NewLine + "word combo " + wordMultiplierIndex;
+		scoreMultiplierText.text = "Correct word" + System.Environment.NewLine + "combo " + wordMultiplierIndex;
+	}
+
+	private void StretchScore(){
+		StartCoroutine (IStretchScore (0.2f, 0.35f));
+	}
+
+	private IEnumerator IStretchScore(float amount, float timeToTake){
+		float time = 0f;
+		Color orgColour = scoreMultiplierText.color;
+		while (time < timeToTake) {
+			float newScale = 1f + (amount * Mathf.Sin ((time / timeToTake) * Mathf.PI));
+			scoreMultiplierText.transform.localScale = new Vector3 (newScale, newScale, 1f);
+			scoreMultiplierText.color = Color.Lerp (orgColour, Color.red, Mathf.Sin ((time / timeToTake) * Mathf.PI));
+
+			time += Time.deltaTime;
+			yield return null;
+		}
+		scoreMultiplierText.transform.localScale = new Vector3 (1f, 1f, 1f);
+		scoreMultiplierText.color = orgColour;
 	}
 
 	private void IncreaseScore(){
@@ -169,6 +188,7 @@ public class Score : MonoBehaviour {
 
 	public void RestartWordMultiplier(){
 		wordMultiplierIndex = 0;
+		StretchScore ();
 	}
 
 	public void CheckWordCount(bool increase){
@@ -185,6 +205,7 @@ public class Score : MonoBehaviour {
 		if (wordMultiplierIndex < wordMultipliers.Length - 1) {
 			wordMultiplierIndex++;
 			SetScoreText ();
+			StretchScore ();
 			correctWordCount = 0;
 		}
 	}
