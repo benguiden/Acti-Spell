@@ -10,6 +10,8 @@ public class Platform : MonoBehaviour {
 
 	public AnimationCurve bobAmount;
 
+	public Vector2 squashAmount;
+
 	public float bobTime;
 
 	public bool isGround = false;
@@ -26,6 +28,8 @@ public class Platform : MonoBehaviour {
 
 	private float bobResetTime = 0f;
 
+	private Vector3 orgScale;
+
 	private void Start(){
 		if (this.gameObject.tag == "Platform") {
 			platformIndex = LevelController.main.GetPlatformCount ();
@@ -34,7 +38,7 @@ public class Platform : MonoBehaviour {
 			Debug.LogWarning ("Warning: Instance of Platform with no 'Platform' tag.");
 		}
 		originalY = this.transform.localPosition.y;
-		//isBobbing = false;
+		orgScale = this.transform.localScale;
 	}
 
 	private void Update(){
@@ -93,12 +97,20 @@ public class Platform : MonoBehaviour {
 		bobResetTime = bobTime * 2.5f;
 		float time = 0f;
 		Vector3 pos = this.transform.localPosition;
+		Vector3 scale = this.transform.localScale;
 		while (time < bobTime) {
 			pos.y = originalY + (bobAmount.Evaluate (time / bobTime));
 			this.transform.localPosition = pos;
+
+			float squashTime = Mathf.Sin ((time / bobTime) * Mathf.PI);
+			scale.x = orgScale.x + (squashAmount.x * squashTime);
+			scale.y = orgScale.y + (squashAmount.y * squashTime);
+			this.transform.localScale = scale;
+
 			time += Time.deltaTime;
 			yield return null;
 		}
+		this.transform.localScale = orgScale;
 		pos = this.transform.localPosition;
 		pos.y = originalY;
 		this.transform.localPosition = pos;
