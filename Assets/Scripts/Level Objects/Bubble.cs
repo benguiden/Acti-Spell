@@ -40,12 +40,10 @@ public class Bubble : MonoBehaviour {
 		rotatespeed = 8f+ Random.Range(0f, 4f);
 	}
 	void Update() {
-		
 		Vector3 newPos = pos;
 		newPos.x += Mathf.PingPong (Time.time * jiggleSpeed, jiggleAmount);
 		transform.localEulerAngles = new Vector3 (0, 0, rotateAmount - Mathf.PingPong (Time.time * rotatespeed, rotateAmount * 2f));
 		transform.position = newPos;
-
 	}
 
 	private void OnDestroy(){

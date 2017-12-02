@@ -79,17 +79,17 @@ public class PlayerController : MonoBehaviour {
 	#endif
 
 	#region GameStates
-	private void Start(){
+	private void Awake(){
 		sound = gameObject.GetComponent<AudioSource> ();
 		anim = gameObject.GetComponent<Animator> ();
 		SetJumpHeight (jumpHeight);
 		childRen = this.GetComponentInChildren<SpriteRenderer> ();
-		StartCoroutine (StartDelay (0.5f));
-		/*if (childRen == null)
-			Debug.LogError ("Error: No Sprite Renderer componenet in child Game Object of '" + this.gameObject.name + "' with Player Controller componenet.");
-		else
-			child = childRen.gameObject;*/
 	}
+
+	private void Start(){
+		StartCoroutine (StartDelay (0.5f));
+	}
+		
 
 	private void OnValidate(){
 		SetJumpHeight (jumpHeight);
@@ -242,8 +242,6 @@ public class PlayerController : MonoBehaviour {
 					grounded = true;
 					lastPlatform = platforms [i];
 					if (landed) {
-					//	GameObject speck = ((GameObject)Instantiate (dust, platforms [i].transform, false));
-					//	Destroy (speck, 1f);
 						Vector3 offset = new Vector3 (-0.75f, 0.2f, 0f);
 						Vector3 invertedOffset = new Vector3 (0.75f, 0.2f, 0f);
 						GameObject newDust = ((GameObject)Instantiate (dust, (platforms [i].transform.position + offset), platforms [i].transform.rotation));

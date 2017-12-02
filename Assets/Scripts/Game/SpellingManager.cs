@@ -159,7 +159,6 @@ public class SpellingManager : MonoBehaviour {
 		}
 
 		CalculateFontSize (currentWord);
-
 		return currentWord;
 	}
 
@@ -171,10 +170,10 @@ public class SpellingManager : MonoBehaviour {
 			}
 		}
 		spawnedWord = (GameObject)Instantiate (wordPrefab, this.transform);
-		spawnedWord.name = "New Word";
 		Vector3 newPos = spawnedWord.transform.position;
 		newPos.y = wordSpawnReference.position.y + wordSpawnOffset;
 		spawnedWord.transform.position = newPos;
+
 		spawnedWord.GetComponentInChildren<Font3D> ().SetText (NewWord ());
 		state = SpellingState.DespawningWord;
 	}

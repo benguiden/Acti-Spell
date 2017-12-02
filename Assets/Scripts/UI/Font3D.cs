@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Font3D : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class Font3D : MonoBehaviour {
 	public float _letterGap;
 	public float _k;
 	public Transform _reference;
+	public Text _debugText;
 
 	//Static
 	public static Sprite[] letterSprites;
@@ -19,13 +21,14 @@ public class Font3D : MonoBehaviour {
 	public static float letterGap;
 	public static float k;
 	public static Transform reference;
+	public static Text debugText;
 
 	//Private
 	private string text;
 	#endregion
 
 	#region Mono Methods
-	private void Start(){
+	private void Awake(){
 		if (setStatic) {
 			letterSprites = _letterSprites;
 			if (letterSprites.Length != 26)
@@ -34,6 +37,7 @@ public class Font3D : MonoBehaviour {
 			letterGap = _letterGap;
 			k = _k;
 			reference = _reference;
+			debugText = _debugText;
 			Destroy (this.gameObject);
 		}
 	}
@@ -54,15 +58,23 @@ public class Font3D : MonoBehaviour {
 		foreach (Transform child in transform){
 			Destroy (child.gameObject);
 		}
+			
+		newString = newString.ToLower ();
 
-		//Make Sprite Array out of String
-		List<char> lettersRaw = new List<char>(newString.ToLower().ToCharArray());
-		for (int i = lettersRaw.Count - 1; i >= 0; i--) {
-			if (((int)lettersRaw [i] < 97) || ((int)lettersRaw [i] > 124)) {
-				lettersRaw.RemoveAt (i);
+
+		char[] letters = newString.ToCharArray ();
+
+		for (int i = letters.Length - 1; i >= 0; i--) {
+			if (((int)letters [i] < 97) || ((int)letters [i] > 124)) {
+				Debug.LogError ("Error: Unidentified character in string. Unidentified character: " + letters [i].ToString () + "\n In word: " + newString + ". Please report to Ben!");
+				if (debugText != null){
+					debugText.text = "Error: Unidentified character in string. Unidentified character: " + letters [i].ToString () + "\n In word: " + newString + ". Please report to Ben!";
+				}
+				Debug.Break ();
 			}
 		}
-		char[] letters = lettersRaw.ToArray ();
+
+
 		int[] spriteIndexes = new int[letters.Length];
 		float canvasWidth = 0f;
 		for (int i = 0; i < letters.Length; i++) {
@@ -82,7 +94,6 @@ public class Font3D : MonoBehaviour {
 			if (i < spriteIndexes.Length - 1)
 				xPos += (letterSprites [spriteIndexes [i + 1]].bounds.size.x / 2f * letterScale);
 		}
-
 	}
 
 	private void SetLetter(float xPos, float scale, int spriteIndex){

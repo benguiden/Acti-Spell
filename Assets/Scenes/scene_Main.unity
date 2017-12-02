@@ -1318,6 +1318,7 @@ MonoBehaviour:
   _letterGap: 0.2
   _k: 1.923077
   _reference: {fileID: 535506418}
+  _debugText: {fileID: 858158341}
 --- !u!4 &511838838
 Transform:
   m_ObjectHideFlags: 0
