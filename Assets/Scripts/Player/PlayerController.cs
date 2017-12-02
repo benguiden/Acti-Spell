@@ -282,7 +282,7 @@ public class PlayerController : MonoBehaviour {
 		for (int i = bubbles.Length - 1; i >= 0; i--) {
 			if (CheckBubbleCollision (bubbles [i]) && bubbles [i].enabled == true) {
 				//Collision!
-				SpellingManager.main.AddLetter(bubbles[i].letter);
+				SpellingManager.main.AddLetter(bubbles[i].letter, bubbles[i]);
 				Pitch += 0.15f;
 				sound.pitch = Pitch;
 				sound.PlayOneShot (bubblePop);

@@ -196,7 +196,7 @@ public class SpellingManager : MonoBehaviour {
 		}
 	}
 
-	public void AddLetter(char letter){
+	public void AddLetter(char letter, Bubble poppedBubble){
 		currentSpelling += letter.ToString ();
 		displayText.text = currentSpelling;
 		if (letter != currentWordLetters [currentLetterIndex]) {
@@ -207,6 +207,14 @@ public class SpellingManager : MonoBehaviour {
 				Score.main.nextLevelReady = false;
 			}else if (Score.main.isCapped)
 				NewWordGroup ();
+
+			//Change bubble to red
+			SpriteRenderer bubbleRen = poppedBubble.GetComponent<SpriteRenderer>();
+			if (bubbleRen != null)
+				bubbleRen.color = Color.red;
+			TextMesh bubbleText = poppedBubble.GetComponentInChildren<TextMesh>();
+			if (bubbleText != null)
+				bubbleText.color = Color.red;
 
 			bubbleGen.isSpawning = false;
 			state = SpellingState.WaitingToDespawn;
