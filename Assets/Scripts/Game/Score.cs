@@ -11,9 +11,8 @@ public class Score : MonoBehaviour {
 
 	public int lives = 3;
 
-	public GameObject heartOne;
-	public GameObject heartTwo;
-	public GameObject heartThree;
+	public GameObject[] hearts;
+	public AnimationCurve heartDropCurve;
 
 	[Tooltip("The transfrom reference that score will increase to.")]
 	public Transform reference;
@@ -93,17 +92,26 @@ public class Score : MonoBehaviour {
 			SetScoreText ();
 			SetUIPosition ();
 		}
-		if (lives < 3) {
-			heartThree.SetActive (false);
-		}
-		if(lives < 2) {
-			heartTwo.SetActive(false);
-		}
-		if (lives < 1) {
-			heartOne.SetActive(false);
-		}
+
 	}
 	#endregion
+
+	public void CheckLives(){
+		if ((lives < hearts.Length) && (lives >= 0)) {
+			StartCoroutine (DropHeart (hearts [lives], 0.25f));
+		}
+	}
+
+	private IEnumerator DropHeart(GameObject heart, float timeToTake){
+		float time = 0f;
+		while (time < timeToTake) {
+			float scale = heartDropCurve.Evaluate (time / timeToTake);
+			heart.transform.localScale = new Vector3 (scale, scale, 1f);
+			time += Time.deltaTime;
+			yield return null;
+		}
+		heart.SetActive (false);
+	}
 
 	private void SetScoreText(){
 		scoreText.text = ((int)Mathf.Round (score)).ToString ();

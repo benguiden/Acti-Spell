@@ -49,6 +49,7 @@ public class CameraFollow: MonoBehaviour {
 			//Check Fail
 			if (target.position.y < highestY + failOffset) {
 				Score.main.lives--;
+				Score.main.CheckLives ();
 				if (Score.main.lives == 0) {
 					follow = false;
 					target.gameObject.SetActive (false);
