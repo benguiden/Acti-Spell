@@ -83,7 +83,7 @@ public class LevelController : MonoBehaviour {
 				Animator bubAnim = bubble.GetComponent<Animator> ();
 				bubAnim.SetTrigger ("collected");
 				bubble.enabled = false;
-				DestroyNow (bubble.gameObject, 0.5f);
+				DestroyNow (bubble.gameObject, 0.75f);
 			}
 		}
 	}

@@ -289,7 +289,7 @@ public class PlayerController : MonoBehaviour {
 				Animator bubAnim = bubbles[i].GetComponent<Animator> ();
 				bubAnim.SetTrigger ("collected");
 				LevelController.main.GetBubble (i).gameObject.GetComponent<Bubble> ().enabled = false;
-				Destroy (LevelController.main.GetBubble(i).gameObject, 0.5f);
+				Destroy (LevelController.main.GetBubble(i).gameObject, 0.75f);
 			}
 		}
 	}

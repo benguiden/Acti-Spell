@@ -107,11 +107,11 @@ public class Score : MonoBehaviour {
 
 	private void SetScoreText(){
 		scoreText.text = ((int)Mathf.Round (score)).ToString ();
-		scoreMultiplierText.text = "Correct word" + System.Environment.NewLine + "combo " + wordMultiplierIndex;
+		scoreMultiplierText.text = wordMultiplierIndex.ToString ();
 	}
 
 	private void StretchScore(){
-		StartCoroutine (IStretchScore (0.2f, 0.35f));
+		StartCoroutine (IStretchScore (0.4f, 0.35f));
 	}
 
 	private IEnumerator IStretchScore(float amount, float timeToTake){

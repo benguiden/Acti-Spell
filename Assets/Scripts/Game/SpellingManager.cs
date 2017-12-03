@@ -236,7 +236,10 @@ public class SpellingManager : MonoBehaviour {
 				LevelController.main.RemoveBubbles ();
 				state = SpellingState.WaitingToDespawn;
 				Score.main.CheckWordCount (true);
-				currentWordGroup.RemoveAt (currentWordIndex);
+				if (currentWordIndex < currentWordGroup.Count)
+					currentWordGroup.RemoveAt (currentWordIndex);
+				else
+					Debug.LogError ("Error to report to Ben: Word index greater than word list length. Index: " + currentWordIndex.ToString () + "   List Length: " + currentWordGroup.Count);
 			}
 				
 		}
