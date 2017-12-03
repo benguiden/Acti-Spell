@@ -247,6 +247,8 @@ public class PlayerController : MonoBehaviour {
 						GameObject newDust = ((GameObject)Instantiate (dust, (platforms [i].transform.position + offset), platforms [i].transform.rotation));
 						GameObject newDust2 = ((GameObject)Instantiate (dust, (platforms [i].transform.position + invertedOffset), platforms [i].transform.rotation));
 						newDust2.gameObject.GetComponent<SpriteRenderer> ().flipX = true;
+						newDust.transform.parent = platforms [i].transform;
+						newDust2.transform.parent = platforms [i].transform;
 						Destroy (newDust, 0.5f);
 						Destroy (newDust2, 0.5f);
 						landed = false;
