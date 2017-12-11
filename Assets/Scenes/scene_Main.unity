@@ -1267,7 +1267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &435350212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2497,19 +2497,19 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &833431233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833431232}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7777b24eb7d180f44a3c6dbe1c977f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FPSCounter: 1
+  FPSCounter: 0
   DebugUI: {fileID: 435350211}
   logText: {fileID: 858158341}
 --- !u!4 &833431234
@@ -2592,7 +2592,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Version 1.2.03a
+  m_Text: Version 1.2.11
 --- !u!222 &858158342
 CanvasRenderer:
   m_ObjectHideFlags: 0
